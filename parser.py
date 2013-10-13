@@ -61,15 +61,21 @@ def parseFiles(fList):
                     feat = l.split('##')[0]
                     vote = getVotes(feat)
                     rev = l.split('##')[1]
+
+                    rev = re.sub('\\r\\n', '', rev)
+
+
                     allSents.append((f, linenum, vote, rev))
 
                 else:
                     # more than 1 reviews in a sentence
                     feat1 = l.split('##')[0]
                     rev2 = l.split('##')[2]
+                    rev2 = re.sub('\\r\\n', '', rev2)
 
                     rev1_feat2 = l.split('##')[1]
                     rev1 = cleanReview(rev1_feat2)
+                    rev1 = re.sub('\\r\\n', '', rev1)
 
                     vote1 = getVotes(feat1)
                     vote2 = getVotes(rev1_feat2)
@@ -77,6 +83,7 @@ def parseFiles(fList):
                     allSents.append((f, linenum, vote1, rev1))
                     allSents.append((f, linenum, vote2, rev2))
 
+                    print allSents[-1]
 
                     # to check error handling uncomment the code below
                     # print vote1, rev1
