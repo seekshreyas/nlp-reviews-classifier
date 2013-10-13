@@ -1,801 +1,848 @@
 line 0 [0: (neutral) correct!]: [t]
 
-line 1 [-3: (negative) correct!]: ##The world of MP3 players is blinding, and since most people don't understand the technology [myself included], user-friendliness is EXTREMELY IMPORTANT. 
+line 1 [1: (positive) correct!]: Works[+3]##Works great, no odor, and uses regular bags.
 
-line 2 [-3: (negative) correct!]: instruction[-2] ##Unfortunately, Creative offered scant few pages of instruction, which meant that I was on own from the outset. 
+line 2 [0: (neutral) correct!]: ##Can't complain at all!
 
-line 3 [-6: (negative) correct!]: touch-pad[-2], navigate[-3] ##After attempting to navigate the clumsy touch-pad system, I could not get the unit to download my wma files. 
+line 3 [0: (neutral) correct!]: [t]
 
-line 4 [0: (neutral) correct!]: ##When most of us purchase these little devises, we do so because of their diminuitive size and extraordinary storage capacities. 
+line 4 [0: (neutral) correct!]: Diaper Champ[+2]##So far (3 weeks), we've had no problems with the Diaper Champ at all.
 
-line 5 [-28: (negative) correct!]: EXPLAIN[-3] ##SO, YOU MIGHT INQUIRE, WHY DON'T THEY MAKE IT A FIRST PRIORITY TO CAREFULLY, SIMPLY EXPLAIN HOW DOWNLOAD MUSIC FROM YOUR MUSIC LIBRARY TO THEIR DEVICE??? This seems academic to me.
+line 5 [0: (neutral) correct!]: diapers[+2]##It contains the smell from our baby's diapers and we can use just about any kind of bag inside.
 
-line 6 [-4: (negative) correct!]: navigating[-3] ##Most of us just want to plug and play, not spend a year navigating a maze of complicated options...like transfering everything on a hard drive to this stupid thing.
+line 6 [0: (neutral) correct!]: ##I also sprinkled baking soda in the bottom of the Diaper Champ to help absorb odors - every once in awhile I just empty the old baking soda out and replace it.
 
-line 7 [-2: (negative) correct!]: ##I don't care what ELSE it can do.
+line 7 [-2: (negative) ooooooooops!]: odors[+2],refills[+2]##I don't know if we'll run into trouble down the road with odors, but so far I have no complaints and I'm very happy not to have to buy those refills.
 
-line 8 [-1: (negative) correct!]: ##I just want MUSIC to eminate from it when I want, how I want.
+line 8 [0: (neutral) correct!]: [t]
 
-line 9 [2: (positive) correct!]: sound[+2] ##All of this said [as it's on it's way back to Amazon], the one song it did include provided far better sound than the IPOD. 
+line 9 [0: (neutral) correct!]: ##We started with the Diaper Genie as most new parents do.
 
-line 10 [2: (positive) correct!]: bass[+2],highs[+2} ##The base was deeper and the highs were crisper. 
+line 10 [-1: (negative) correct!]: ##We hated that thing!
 
-line 11 [-8: (negative) correct!]: touch-pad[-3], instruction[-3] ##Unfortunately, the touch-pad issues [non-intuitive] and poor instruction guide killed it. 
+line 11 [0: (neutral) correct!]: ##The "new" design still needs lots of improvement!
 
-line 12 [0: (neutral) correct!]: [t]
+line 12 [0: (neutral) correct!]: ##The bags never fit right and then it never spun right.
 
-line 13 [-3: (negative) correct!]: ##Why get locked in to crappy Itunes weather you want to or not? 
+line 13 [0: (neutral) correct!]: ##And after about two months it just sat there in the corner of her room and was never used.
 
-line 14 [4: (positive) correct!]: machine[+3] ##what a kick butt Mp3 machine and the freedom to get songs from a reasonable source, instead of paying for them two or three times, then get the Creative Zen IPOD killer, kiss my ass Itunes!
+line 14 [-1: (negative) correct!]: ##As she entered into toddlerhood we started having some bad diapers just becasue of her cutting teeth and diet changes.
 
-line 15 [0: (neutral) correct!]: ##i got 6000 mp3's you'll never register or gay up.     
+line 15 [0: (neutral) correct!]: ##We decided we had to have something so we started researching.
 
-line 16 [0: (neutral) correct!]: [t]
+line 16 [1: (positive) correct!]: Diaper Champ[+3]##The Diaper Champ is the best we found!
 
-line 17 [-1: (negative) correct!]: ##Two days after writing this review below, I want to remove another two stars. 
+line 17 [0: (neutral) correct!]: bags[+2]##There are no specail bags to deal with or buy!
 
-line 18 [0: (neutral) correct!]: ##I just discovered another con in my list of pros and cons.
+line 18 [0: (neutral) correct!]: bag[+2]##We use the cheap $1.99 13 gallon vanilla scented bags from the grocery store but you can use any bag you have laying around.
 
-line 19 [-2: (negative) correct!]: Zen Micro[-2] ##This one is particularly bothersome: Allegedly one can use the Zen Micro as a portable drive to store and transport data from one computer to another.
+line 19 [0: (neutral) correct!]: ##There is also no trick to it.
 
-line 20 [-1: (negative) correct!]: ##Ahhh! There is a catch, the manufacturer does not tell you. 
+line 20 [0: (neutral) correct!]: ##No spinning it or anyhting!
 
-line 21 [-2: (negative) correct!]: store[+2], INSTALL[-2] ##Although you can store any type of file on the Zen Micro to download onto a different computer, you need to INSTALL (on the computer you are moving the data to) Zen Micro software and drivers to do it!!! 
+line 21 [0: (neutral) correct!]: ##Just flip the handle and the diaper is gone!
 
-line 22 [0: (neutral) correct!]: ##I just tried to move a load of plain data files from my home computer to my office work computer, and it is promting me to install Zen Micro software, etc.... 
+line 22 [0: (neutral) correct!]: smelling[-1]##Now it will start smelling if you leave it with diapers in it for an extended period but all of them will!
 
-line 23 [1: (positive) correct!]: ##I have used similar devices and they are seamless and simple. 
+line 23 [0: (neutral) correct!]: diaper[+2]##We empty ours every day and we have never had an odors from it!
 
-line 24 [-1: (negative) correct!]: software[-2] ##Who wants to go through the hassles of loading software onto a "foreign" computer just to move over some simple (*.txt) files?  
+line 24 [-1: (negative) ooooooooops!]: product[+3]##It is far better than just a trash can or the Diaper Genie and it's fairly inexpensive as baby products go!
 
-line 25 [0: (neutral) correct!]: ##This brings my review to one star! 
+line 25 [0: (neutral) correct!]: [t]
 
-line 26 [-1: (negative) correct!]: ##But Amazon won't allow me to reduce the number of stars once I have already established three two days ago.  
+line 26 [0: (neutral) correct!]: ##In concept, it's a fabulous idea.
 
-line 27 [7: (positive) correct!]: sound[+3], portability[+2] ##The sound is great, the portability, etc... all the "stuff" you expect from a good MP-3 player, this Zen Micro has it. 
+line 27 [0: (neutral) correct!]: refills[+3]##I love that you don't have to purchase expensive refills.
 
-line 28 [0: (neutral) correct!]: ##It COULD have been a great product. 
+line 28 [0: (neutral) correct!]: ##I just go to [the store] and purchase tall kitchen bags and use those for the Diaper Champ.
 
-line 29 [-2: (negative) correct!]: ##Why isn't it? 
+line 29 [0: (neutral) correct!]: diaper wipes[-2]##The cons, at times the diaper wipes get stuck in the disposal area making it hard to turn the handle back and forth.
 
-line 30 [0: (neutral) correct!]: ##Read the next six mixed pros and cons: .  
+line 30 [-1: (negative) correct!]: Diaper Champ[-2]##In addition, I don't believe that it is odorless.
 
-line 31 [0: (neutral) correct!]: ##1.
+line 31 [0: (neutral) correct!]: odor[-2]##My daughter is only 4 months old and we do notice an odor.
 
-line 32 [-2: (negative) correct!]: Button sensitivity[-2] ##) Button sensitivity: Even reduced to the lowest sensitivity setting, the buttons are far two sensitive, really takes some getting use to, and even then, it is still too sensitive. 
+line 32 [0: (neutral) correct!]: ##I'm concerned that as she gets older the #2 diapers will only get worse.
 
-line 33 [-1: (negative) correct!]: ##The company has received thousands of complaints about this and refuses to do anything about it. . 
+line 33 [0: (neutral) correct!]: Diaper Genie[+2][cs]##If I had to do it over again, even with the cost savings of using any type of bag, I would go w/ the Diaper Genie.
 
-line 34 [0: (neutral) correct!]: ##2.
+line 34 [0: (neutral) correct!]: [t]
 
-line 35 [-16: (negative) correct!]: FEATURE[-3], recharge cord[-3] ##) WORST FEATURE POSSIBLE, THIS ALONE MAKES IT RATE ONE STAR: What's up with no recharge cord? 
+line 35 [0: (neutral) correct!]: Diaper Champ[+3][p][cc]##It's far better than all others on the market.
 
-line 36 [-4: (negative) correct!]: cost[-3]##You have to purchase that separately for some outrageous cost. 
+line 36 [-3: (negative) ooooooooops!]: convenient[+2],refills[+2]##it's easier and much more convenient to use because it doesn't have CLUMSY and CONFUSING (not to mention expensive) refills.
 
-line 37 [-1: (negative) correct!]: ##If you want to recharge it, you MUST connect it to your computer. 
+line 37 [0: (neutral) correct!]: [t]
 
-line 38 [0: (neutral) correct!]: ##The recharge cord will do the job in a fraction of the time that the USB cable will hooked to your computer. 
+line 38 [1: (positive) correct!]: use[+3]##There is no odor and extremely easy to use.
 
-line 39 [-2: (negative) correct!]: charged[-2] ##I took my Zen Micro with me over the weekend, and was forced to lug my laptop with me on the trip for one reason: to keep the Zen Micro charged. 
+line 39 [-1: (negative) correct!]: ##Having one of these helps from needing to take out the trash daily for the guys!
 
-line 40 [0: (neutral) correct!]: ##Infuriating! Nearly all other MP-3 producing companies include a recharging cord with their product that can be plugged into a wall socket. 
+line 40 [0: (neutral) correct!]: [t]
 
-line 41 [1: (positive) correct!]: ##If you want a wall-socket recharging cord, you have to dish out somewhere between $30 and $35, plus shipping and handling, for a cord that cost less than $1 to manufacture and market. 
+line 41 [0: (neutral) correct!]: ##My daughter is now 2 and 1/2, and I am still enjoying this product.
 
-line 42 [-2: (negative) correct!]: product[-2] ##I have trashed this product on other opinion sites based on this major flaw alone. 
+line 42 [0: (neutral) correct!]: ##We purchased it based on the reviews, and it really lived up to our expectations.
 
-line 43 [0: (neutral) correct!]: ##What is up with nickle and dimeing consumers on the recharge cord? 
+line 43 [0: (neutral) correct!]: ##We liked it because:
 
-line 44 [0: (neutral) correct!]: ##Buy from another company and run from Creative, Inc. 
+line 44 [0: (neutral) correct!]: garbage bags[+2]##1. It uses regular garbage bags instead of brand refills.
 
-line 45 [-1: (negative) correct!]: ##Their product may appear more enconomical, but it isn't in the long run. . 
+line 45 [-2: (negative) correct!]: ##2. You can dump regular trash into it and not feel as though you've wasted plastic.
 
-line 46 [0: (neutral) correct!]: ##3.
+line 46 [0: (neutral) correct!]: product[+3][p]##3. It never smelled - at all.
 
-line 47 [-4: (negative) correct!]: prices[-3] ##) Creative, Inc. the maker includes the barest of the bare minimum in the box, then through gross profiteering nickles and dimes you on EVERY single accessory at extraordinarily inflated prices. 
+line 47 [1: (positive) correct!]: ##Here's the catch for us- our daughter never drank formula, which is what gives baby waste a foul smell, and when she was eating solids we followed the American Pediatric Association recommendation to flush solid products instead of disposing of them.
 
-line 48 [-4: (negative) correct!]: case[-2] ##The box included a little polyester, pull-string BAG, (yes, you read right a BAG, something a boy would carry ten marbles in) and tries to pass it off as the case. 
+line 48 [-1: (negative) correct!]: ##I don't know how this product would hold up to either of these situations.
 
-line 49 [-2: (negative) correct!]: case[-2] ##If you want to purchase a real case or container or clip-on carrier for you Zen Micro, expect to purchase it separately and to dish out big time. . 
+line 49 [0: (neutral) correct!]: ##I just know it really worked for us.
 
-line 50 [0: (neutral) correct!]: ##4.
+line 50 [-1: (negative) ooooooooops!]: container[+2]##The container is hard to open, which is exactly what you want when your baby becomes a toddler, and you do have to flip the handle carefully (which has saved more than a few of her toys,too.) I don't consider these difficulties but features for the older baby.
 
-line 51 [4: (positive) correct!]: battery[+3] ##) One outstanding positive feature is the battery. It holds a charge for a long time, longer than most other similar products and the user can replace it easily or take another along as a backup. 
+line 51 [1: (positive) correct!]: ##We graduated to real underwear last week in our house, and I'm passing this on instead of retiring it- it's too good to sit unused in the basement or dump.
 
-line 52 [0: (neutral) correct!]: ##Some other companies require you to send your player back and then charge you an additional $130 to replace their batteries. 
+line 52 [0: (neutral) correct!]: [t]
 
-line 53 [3: (positive) correct!]: rechargeable battery[+3] ##Creative did well on its rechargeable battery feature. .
+line 53 [-1: (negative) correct!]: ##WRONG!
 
-line 54 [0: (neutral) correct!]: ##5.
+line 54 [0: (neutral) correct!]: size[-2][u]##Even with newborn diapers it filled way too fast.
 
-line 55 [0: (neutral) correct!]: ##) I purchased this device primarily to record off the built-in FM receiver for lectures and seminars that are broadcast live over a FM signal for the hearing impaired. 
+line 55 [0: (neutral) correct!]: size[-2],odor[-2][u]##It seemed as if we were empting the pail everyday and it was in no way odorless.
 
-line 56 [1: (positive) correct!]: FM receiver[+1] ##The Zen Micro FM receiver is ok, not great. 
+line 56 [0: (neutral) correct!]: ##Save your money invest in plastic bags and dispose of diapers by sealing them in the bags and placing them in the regular garbage.
 
-line 57 [-2: (negative) correct!]: FM receiver[-][cc] ##IRiver has a better FM receiver built in, but the drawback to IRiver products is they are flimsy and poorly constructed. 
+line 57 [0: (neutral) correct!]: [t]
 
-line 58 [0: (neutral) correct!]: ##I have gone through two of them in two years. . 
+line 58 [-2: (negative) correct!]: ##A MUST HAVE!
 
-line 59 [0: (neutral) correct!]: ##6.
+line 59 [-2: (negative) ooooooooops!]: product[+3][u]##This is a MUST HAVE product for all new moms!
 
-line 60 [3: (positive) correct!]: constructed[+3][u] ##) The Zen Micro appears sturdy and well constructed, hefty, if you will, far better than many of its competitors. . 
+line 60 [0: (neutral) correct!]: ##The one thing that sets this product apart from the diaper genie is that this product can use regular garbage bags.
 
-line 61 [-2: (negative) correct!]: charges[-2] ##As I wrote, this COULD have been a great product, but expect hidden charges (read gross profiteering and price gouging) as the company royally sticks you on every conceivable accessory necessary for normal daily usage.     
+line 61 [-1: (negative) correct!]: ##ANY Garbage bags will fit.
 
-line 62 [0: (neutral) correct!]: [t]
+line 62 [-1: (negative) correct!]: Diaper Genie[-2][cs]##The Diaper Genie needs it's own refill bags in order to work and that's just more money that you don't have to spend.
 
-line 63 [2: (positive) correct!]: Zen Micro[+2] ##Well, I have an Ipod mini - and I really like it, but all in all, I like the Zen Micro more.
+line 63 [2: (positive) correct!]: work[+3]##This is easy to work and easy to dispose of the dirty diapers.
 
-line 64 [-1: (negative) correct!]: ##  Why?  
+line 64 [-1: (negative) correct!]: ##FANTASTIC!
 
-line 65 [8: (positive) correct!]: size[+2], space[+2][u], battery[+2], look[+2]##Smaller size, 1 gb of more space, radio, voice recording, removable battery, cooler look, all in one.  
+line 65 [0: (neutral) correct!]: [t]
 
-line 66 [-4: (negative) correct!]: touchpad[-1] ##The touchpad is annoying sometimes (give me the click-wheel and pressable buttons any day), but not at all as difficult to get over as other people are saying.
+line 66 [-1: (negative) correct!]: item[-2][u]##I find the major problem with this item is that if you have a very messy diaper and can't tightly bundle it without a mess, the mess gets all over the module that dumps the diaper and the stink is OUTSIDE of the diaper pail.
 
-line 67 [4: (positive) correct!]: small[+3] ##I love how small the thing is, and the blue glow - I've had it for two weeks with no electronic problems at all.  
+line 67 [0: (neutral) correct!]: [t]
 
-line 68 [6: (positive) correct!]: Media Source[+2], file transfers[+3] ##Creative Media Source is very easy to use once you get the hang of it, and the file transfers are fast.  
+line 68 [-1: (negative) correct!]: fit[-2]##My main complaints are that it should be deeper or wider as it doesn't even fit a smaller sized garbage bag.
 
-line 69 [7: (positive) correct!]: Sound[+2], fm tuner[+2], recorder[+2] ##Sound quality is great, fm tuner is fine, as is the recorder.  
+line 69 [0: (neutral) correct!]: hole[-2]##The hole to put the diaper in needs to be larger as I am now using medium diapers (I have a 3 month old) and they're on the brink of being too large to fit no matter how compact I make then and how un-soiled they are.
 
-line 70 [3: (positive) correct!]: player[+2] ##This is the mp3 player with everything I need.  As long as it lasts me a good three years, I'm satisfied.        
+line 70 [-2: (negative) correct!]: ##I have no issues w/ odor but baby poop doesn't start to smell really bad till they start on soilid so odor will not be a problem no matter what till then and that's many many months down the road.
 
 line 71 [0: (neutral) correct!]: [t]
 
-line 72 [0: (neutral) correct!]: ##I am one of the many people who (a) are PC Based and (b) can't stand to see the multitudes of people with those funky white headphones that belong to Ipod users. ##I first want to say that I think Apple is making the same old mistake as they did with Macintosh years ago. 
+line 72 [0: (neutral) correct!]: odors[-2],deal[+1]##This pail doesn't really keep in odors anymore and we'll probably have to get a new one, but since you can use regular garbage bags (we actually use the bags we get our groceries in because they hang perfectly) its still probably a better deal than the genie.
 
-line 73 [0: (neutral) correct!]: ##This proprietory software to download. 
+line 73 [0: (neutral) correct!]: [t]
 
-line 74 [0: (neutral) correct!]: ##(That was a major turn off). 
+line 74 [0: (neutral) correct!]: ##We just had a baby and were debating getting either this product or the Diaper genie and this is what sold us on this product
 
-line 75 [-1: (negative) correct!]: ##I am the type of person that will always go against the masses of blind followers so there was no way I was getting an Ipod. 
+line 75 [0: (neutral) correct!]: [t]
 
-line 76 [2: (positive) correct!]: player[+2][p] ##Also If you want a device that does soo much more than the Ipod mini but is at the same price, this is the player for you. 
+line 76 [0: (neutral) correct!]: ##We received this diaper pail as a gift while expecting our second child.
 
-line 77 [-2: (negative) correct!]: ##The reason why I didn't give the Zen Micro 5 stars is that they also seem to want to conform the the Ipod sense of style. 
+line 77 [0: (neutral) correct!]: ##and what a Godsend!
 
-line 78 [-2: (negative) correct!]: Headphones[-2] ##and supply those stupid white Headphones. 
+line 78 [-1: (negative) ooooooooops!]: fill[+2], unload[+2]##It is much easier to fill and unload than the Diaper Genie, plus, why buy refills when you can use trash bags from the Dollar Store?
 
-line 79 [-1: (negative) correct!]: ##I also think that if you are going to offer them in different colors then commit all the way and have the entire device in that color, not just the front and color the head phones as well. 
+line 79 [0: (neutral) correct!]: diaper[+3]##It also holds a lot more diapers.
 
-line 80 [0: (neutral) correct!]: ##Let's face it. 
+line 80 [0: (neutral) correct!]: size[+1]##look at the size of it!
 
-line 81 [0: (neutral) correct!]: ##Apple is Apple. 
+line 81 [0: (neutral) correct!]: ##Any diaper pail, if you leave it for long enough, is going to smell.
 
-line 82 [0: (neutral) correct!]: ##So Creative should be "Creative". 
+line 82 [-1: (negative) correct!]: odor[-1]##I have noticed an odor (one the I expected!) when unloading the Diaper Champ but at least you don't smell anything every time you use it.
 
-line 83 [0: (neutral) correct!]: [t]
+line 83 [0: (neutral) correct!]: ##unlike the Diaper Genie!
 
-line 84 [0: (neutral) correct!]: ##I've been looking for a portable MP3 player for awhile now. 
+line 84 [0: (neutral) correct!]: diaper[+3]##I highly recommend this!
 
-line 85 [0: (neutral) correct!]: ##With so many choices it was a tough decision. 
+line 85 [0: (neutral) correct!]: [t]
 
-line 86 [0: (neutral) correct!]: ##My first instinct was to go with an iPod. 
+line 86 [-1: (negative) correct!]: diaper genie[-2][cs]##For my first I had a diaper genie which was not only costly with the refills but it was also very stinky.
 
-line 87 [1: (positive) correct!]: ##I visited quite a few forums and while the iPod is a great player I was concerned with the battery life and the inability to change them without breaking open the case.  
+line 87 [-1: (negative) correct!]: ##I would not recommend buying that one.
 
-line 88 [0: (neutral) correct!]: ##I started looking at the Creative Zen Micro and after reading numerous reviews from message boards and magazines I decided I'd give the Zen a try. 
+line 88 [-1: (negative) correct!]: ##My second child I didn't get any.
 
-line 89 [1: (positive) correct!]: ##All I can say is what a wonderful choice! 
+line 89 [-2: (negative) correct!]: ##Now for our third child I saw the Diaper Champ and figured why not register for it and try it out.
 
-line 90 [0: (neutral) correct!]: ##I ordered from Amazon and got the Limited Edition package that includes a free battery!  
+line 90 [1: (positive) correct!]: Diaper Champ[+1][p]##I have to say that I am very happy with it so far.
 
-line 91 [3: (positive) correct!]: small[+3][u] ##Upon opening the box I was confronted with this small cute little MP3 player. 
+line 91 [0: (neutral) correct!]: ##I did dump a little deoderizer tablet in it.
 
-line 92 [0: (neutral) correct!]: ##I popped one of the batteries in and to my surprised it started right up. 
+line 92 [1: (positive) correct!]: replacement[+2]##I am happy with the fact that I can use any bag in there and dont' have to pay out the nose for replacements.
 
-line 93 [4: (positive) correct!]: installation[+3] ##The software included is an easy installation and you have the option of using the Creative software, Windows Media Player 10, or simply Windows Explorer to move music back and forth between your Zen Touch. 
+line 93 [2: (positive) correct!]: use[+3]##It's also so easy to use and holds a great deal of diapers.
 
-line 94 [0: (neutral) correct!]: ##I did a quick test by selecting a few files and copying them over and they loaded right in. 
+line 94 [0: (neutral) correct!]: ##I haven't noticed any seepage of smells.
 
-line 95 [0: (neutral) correct!]: ##Pressed play and I was off. 
+line 95 [0: (neutral) correct!]: [t]
 
-line 96 [-1: (negative) correct!]: touch pad[-1] ##The touch pad does take a little getting used to. 
+line 96 [-1: (negative) correct!]: ##My husband and I bought this instead of the Diaper Genie since we didn't want to be bothered with buying refills for the Genie.
 
-line 97 [0: (neutral) correct!]: ##I'm still trying to manage the thing myself, but I've found that if you put the sensitivity to low it is fine.  
+line 97 [0: (neutral) correct!]: ##Well, I suppose this is better than an open pail, but to have a nursery in which there is no unpleasant smell is quite impossible no matter what you use.
 
-line 98 [2: (positive) correct!]: cable[+1],adapter[+1],headphones[+1], stand[+1],pouch[+1]##The package also comes with a USB cable, an AC adapter, a pair of headphones (they're okay until you get a better pair), a stand, and a microfiber pouch to carry your Zen Touch in.  
+line 98 [0: (neutral) correct!]: Champ[+3]##The bags attach inside the Champ easily and all one has to do is cram the diaper down and flip the handle.
 
-line 99 [4: (positive) correct!]: Zen Touch[+3][u] ##Overall I'm incredibly impressed with my new Zen Touch. 
+line 99 [0: (neutral) correct!]: ##Presto!
 
-line 100 [4: (positive) correct!]: looks[+3] ##It's cute as anything and the glowing blue LED looks super cool around the edges. 
+line 100 [0: (neutral) correct!]: ##Diaper falls into bag inside the Champ.
 
-line 101 [3: (positive) correct!]: player[+2] ##For the price I think this is a remarkably fun MP3 player.
+line 101 [-1: (negative) correct!]: function[-1][u]##But, sometimes, if the Champ is too full, the flip handle won't function.
 
-line 102 [1: (positive) correct!]: ##Enjoy!     
+line 102 [-2: (negative) correct!]: diaper[-2]##(I never know when the Champ is full as there is no way too tell.  Even though not particularly aesthetic, how about making the Champ clear and see-through?) So, I lift the lid and find a wad of diaper, which I must remove, usually stuck inside the lid itself because the bag is too full.
 
-line 103 [0: (neutral) correct!]: [t]
+line 103 [-1: (negative) correct!]: ##A couple of tips to having a clean-smelling nursery even with the Champ: Double bagging- Get those diaper sacks you would use to dispose of diapers if you're in a place where you don't want to dump a dirty diaper, like in your friend's wastebasket or kitchen garbage.
 
-line 104 [4: (positive) correct!]: player[+3][p] ##I've had this player for more than 4 months and I'm very happy with it. 
+line 104 [0: (neutral) correct!]: ##Bag the diaper in this small clean-smelling bag and then chuck it in the Champ.
 
-line 105 [0: (neutral) correct!]: ##I use it on an average 5 hours a day I hook it up to my Belkin FM transmitter in the car or to my Logitech 2.
+line 105 [0: (neutral) correct!]: ##Another tip is to wash out the Champ frequently and spray the inside and lid with Lysol after every full bag is removed.
 
-line 106 [2: (positive) correct!]: Speakers[+2] ##1 Speakers at home, I rarely use it with the earbuds, though they are much better than the ones you normally get with other mp3 players.  
+line 106 [0: (neutral) correct!]: [t]
 
-line 107 [7: (positive) correct!]: Look[+3], Feel[+3] ##The Look & Feel: I have the black one and the contrasting neon blue on the buttons add a very nice ambience. 
+line 107 [-1: (negative) ooooooooops!]: diaper pail[+2]##I bought this diaper pail when my son was just a few days old and I absolutely LOVE it!
 
-line 108 [0: (neutral) correct!]: ##The light pulsates when you are charging it almost as if it were breathing. 
+line 108 [0: (neutral) correct!]: ##I used to work in a daycare and we had a diaper genie.
 
-line 109 [2: (positive) correct!]: tiny[-1][u], back[+3] ##The player itself is tiny , it gets a bit bulky when you put it in the hardcase, which you need to do if you don't want to get scrathes on the back(its a nice looking back too ). 
+line 109 [0: (neutral) correct!]: ##It was such a pain to use.
 
-line 110 [2: (positive) correct!]: feels[+2][p] ##It feels tiny in the hand without it. 
+line 110 [-1: (negative) correct!]: ##We all hated it.
 
-line 111 [2: (positive) correct!]: stand[+2] ##The stand that comes with it is very useful to prop it up on the desk. 
+line 111 [-1: (negative) ooooooooops!]: use[+3]##The diaper champ couldn't be easier to use.
 
-line 112 [-1: (negative) correct!]: ##The belt clip however is not very useful if you move around a lot. 
+line 112 [0: (neutral) correct!]: refills[+3]##And the biggest plus is that you don't have to buy any expensive refills.
 
-line 113 [6: (positive) correct!]: looks[+3], read[+2][u] ##The blue backlit LCD looks really neat and is easy to read. 
+line 113 [-1: (negative) correct!]: ##It takes regular trash bags.
 
-line 114 [-2: (negative) correct!]: touch controls[-1] ##The touch controls took a little getting used to but now I wouldn't change it for the scroll wheel. 
+line 114 [0: (neutral) correct!]: ##I generally put kitchen size bags in it, but you can use just about any size if you are in a pinch.
 
-line 115 [4: (positive) correct!]: touch buttons[+3] ##The touch buttons are textured so that your finger sdon't slip which was very thoughtful.   
+line 115 [0: (neutral) correct!]: odor[+3][cs]##And it does an excellent job of keeping the odor contained, which the diaper genie never did!
 
-line 116 [3: (positive) correct!]: Build[+3] ##Reliability & Build  I dropped the player once from about 4 ft, and it fell hard, but kept on playing. 
+line 116 [0: (neutral) correct!]: diaper champ[+2]##If you are looking for a user-friendly diaper pail that actually does keep the odor contained, than the diaper champ is the one for you!
 
-line 117 [1: (positive) correct!]: hardcase[+1] ##The hardcase they give with it must work well.  
+line 117 [0: (neutral) correct!]: [t]
 
-line 118 [2: (positive) correct!]: solid[+2][p] ##It feels solid and not flimsy like the carbon.  
+line 118 [-1: (negative) correct!]: ##It was a PAIN.
 
-line 119 [3: (positive) correct!]: sound[+3] ##Sound  I'm no audiophile but I was amazed by the clarity the player had, it was much better than the sound card on my Computer and louder too. 
+line 119 [0: (neutral) correct!]: ##Everytime I tried to unload it the sausage links(as I call them) would unravel and I think the odor control was only so so.
 
-line 120 [3: (positive) correct!]: sound[+3] ##I have had the ipod mini and it performs on the level with my sound card but the micro beats it outright.  
+line 120 [-1: (negative) correct!]: ##it wasn't much different than putting the diaper in a shopping back and putting it in the regular trash.
 
-line 121 [5: (positive) correct!]: sound[+3] ##Best of all the WMAs(I have a lot of them) sound great.  
+line 121 [-3: (negative) ooooooooops!]: ITEM[+3],use[+2],odor[+3]##THIS ITEM IS EXCEPTIONAL I like the ease of use and it held the odor in great.
 
-line 122 [3: (positive) correct!]: features[+3] ##Utility Its got a huge list of features including an FM Recorder a Calender and contacts list. 
+line 122 [0: (neutral) correct!]: ##For even better odor control we would put a plug ins in the outlet closest to it.
 
-line 123 [-1: (negative) correct!]: ##Its not convinient to enter name of course but synchronise it with outlook and it becomes a gem of a address book. 
+line 123 [-1: (negative) correct!]: ##I had no problem with stuck diapers and if I did it wasn't often but I can see how it would happen.
 
-line 124 [4: (positive) correct!]: recorded[+3] ##The songs recorded with FM are as good as the original signal. 
+line 124 [0: (neutral) correct!]: [t]
 
-line 125 [0: (neutral) correct!]: ##The interface takes 2 secs after you press record to show up but its actually started recording at the moment you press record.  
+line 125 [1: (positive) correct!]: Diaper Champ[+3]##Diaper Champ is by far the best diaper pail!
 
-line 126 [-2: (negative) correct!]: software[-1] ##Software The software that comes along with it is not very intuitive but once you are used to it,it  does the job well. 
+line 126 [-1: (negative) ooooooooops!]: holds[+3]##It holds a lot of diapers, not to mention the odor!
 
-line 127 [4: (positive) correct!]: playlists[+3] ##Creating and modifying playlists is easy and clean.  
+line 127 [1: (positive) correct!]: use[+3]##It's easy to use (just a flip of the lid, and the diaper is gone!).
 
-line 128 [-2: (negative) correct!]: battery life[-2] ##There are 2 things that need fixing  First is the battery life. It will run for 6 hrs without problems with medium usage of the buttons. 
+line 128 [1: (positive) correct!]: empty[+3]##It's also easy to empty out.
 
-line 129 [-4: (negative) correct!]: USB[-2] ##Second might be a problem I might have with my PC but not too sure, when the player is connected on the USB and I start playing on it and also using the windows explorer, it sometimes pauses by itself and tries to synchronise with the PC during play, which is a bit irritating.     
+line 129 [-1: (negative) correct!]: ##Just unlock the top, and remove the plastic bag.
 
-line 130 [0: (neutral) correct!]: [t]
+line 130 [1: (positive) correct!]: garbage bags[+3]##And best of all, no wasting money on special refill bags---this takes ordinary garbage bags!
 
-line 131 [4: (positive) correct!]: creative zen[+2] ##I think that for its price compared to the ipod the creative zen is pretty good.  
+line 131 [0: (neutral) correct!]: diaper pail[+3]##Whether you are using disposable or cloth diapers, this is the truly the only diaper pail to get!
 
-line 132 [0: (neutral) correct!]: ##i have a lot of files in wma so that was the biggest factor in my decision to purchase the zen.  
+line 132 [0: (neutral) correct!]: [t]
 
-line 133 [-5: (negative) correct!]: headphone jack[-3] ##HOWEVER after just one month my headphone jack was BROKEN as a result of normal, every-day use.  
+line 133 [0: (neutral) correct!]: ##My original purpose in buying the Diaper Champ instead of the Genie was to use it with cloth diapers.
 
-line 134 [0: (neutral) correct!]: ##by broken i mean that it would no longer transmit sound.  
+line 134 [1: (positive) correct!]: ##As a first-time mom, I got the great idea that cloth would be better, and this was the only diaper disposal that advertised compatibility with cloth diapers.
 
-line 135 [5: (positive) correct!]: support[+3] ##The good news is that the creative support is very responsive and after some emails and postal exchanges, i had a new zen.  
+line 135 [0: (neutral) correct!]: ##She never wore even one- the hospital started me on Huggies, and I never turned back (as a side note- if you do have the patience for cloth diapers, pay the extra $ and go for Kushies; they're beautifully made and work very well from what I've heard).
 
-line 136 [-1: (negative) correct!]: ##i havent used it much yet so i dont know if i will have the same problem; obviously i hope not.  
+line 136 [1: (positive) correct!]: pail[+3],odor[+3][u]##Even though I never ventured into the cloth land, I was very impressed by how well this works at keeping diapers and their accompanying odor in the pail and out of our life!
 
-line 137 [-2: (negative) correct!]: organization[-2][u] ##i dont especially like how music files are unstructured; basically they are just dumped into one folder with no organization, like you might have in windows explorer folders and subfolders.  
+line 137 [0: (neutral) correct!]: Opening[-1]##Opening the Champ to empty out the bag is a little tricky- I pinched my thumb a few times before I got the hang of it.
 
-line 138 [-2: (negative) correct!]: ##in principle playlists, album names, artist names, etc would help you organize but this only works IF your tracks have all the necessary data; mine do not.  
+line 138 [0: (neutral) correct!]: refills[+3]##Being a very economical person, I appreciate the fact that any plastic bag can be used with this system- I never did like the prospect of buying special Diaper Genie refills.
 
-line 139 [0: (neutral) correct!]: ##and if you have 2500 songs, as you might very well, you will be reluctant to edit the clip properties of 2500 files.  
+line 139 [-1: (negative) correct!]: ##If you have a really sensitive nose, I can suggest buying some scented kitchen trash bags to use with the Diaper Champ- since the odor is contained in the Champ, once you have to open it to empty out the full bag, you're quite often greeted with a rather unpleasant blast of odor, and scented bags help with that.
 
-line 140 [2: (positive) correct!]: sound[+1] ##the sound is quite good, in terms of volume.  
+line 140 [0: (neutral) correct!]: plunger[-1]##As one other reviewer pointed out, it does occasionally take a little effort to push down the "plunger" to get the diapers in the pail, even though upon inspection the bag doesn't really look full.
 
-line 141 [-3: (negative) correct!]: headphones[-2] ##the headphones are not very comfortable, but most people have a certain style they like so just go buy new ones or keep the ones you have.  
+line 141 [0: (neutral) correct!]: emptying[+1]##But from my experience, by the time it gets to that point, the bag is really heavy, so I think this is kind of helpful- it's a built-in way of keeping the bag manageable upon emptying.
 
-line 142 [3: (positive) correct!]: installation[+2], touch pad[+1] ##i didnt have any installation problems; and the touch pad is fine, even if it is sort of inaccurate.  
+line 142 [1: (positive) correct!]: gift[+3][p]##This is a really great buy, for yourself or as a shower gift.
 
-line 143 [0: (neutral) correct!]: ##you just get used to it after a while.  
+line 143 [0: (neutral) correct!]: ##I'm beginning to think that the main reason Genie's so popular is their cutesy name.
 
-line 144 [4: (positive) correct!]: cheaper[+2][u],WMA files[+2][u] ##i didnt get ipod because i dont especially like itunes (no music i want, but thats just me) and the creative product was cheaper; and i needed to be able to use WMA files.  
+line 144 [-1: (negative) correct!]: ##It's certainly not worth the money or the upkeep.
 
-line 145 [3: (positive) correct!]: price[+2][p] ##all-in-all, its good enough for its price as long as it doesnt break again due to normal use.       
+line 145 [0: (neutral) correct!]: Champ[+3]##Go for the Champ.
 
-line 146 [0: (neutral) correct!]: [t]
+line 146 [0: (neutral) correct!]: ##It lives up to its name.
 
-line 147 [-1: (negative) correct!]: ##This is a difficult player to review because I would recommend it on a case-by-case basis. 
+line 147 [0: (neutral) correct!]: [t]
 
-line 148 [0: (neutral) correct!]: ##If you're not computer savvy or if you want things as simple as they can be, get the iPod. 
+line 148 [1: (positive) correct!]: product[+3][u]##I love this product!
 
-line 149 [0: (neutral) correct!]: ##Bottom line.  
+line 149 [2: (positive) correct!]: dispose[+3]##With the enormous numbers of diapers that you go through with a newborn, it was great how easy it was to dispose of the dirty ones.
 
-line 150 [0: (neutral) correct!]: ##However, since you're reading this review, you want to avoid getting an iPod. 
+line 150 [-2: (negative) ooooooooops!]: trash bags[+3][u]##Plus, the fact that it used regular trash bags is great.
 
-line 151 [1: (positive) correct!]: ##For whatever reason. There is also a low number of people, like me, who love iTunes but want to get the Zen Micro. 
+line 151 [0: (neutral) correct!]: refills[+3]##No need to pay for the special refills that the other brands require!
 
-line 152 [0: (neutral) correct!]: ##I'll talk more about that later.  
+line 152 [0: (neutral) correct!]: [t]
 
-line 153 [-1: (negative) correct!]: ##First of all, why does every single piece of media library software that comes with an MP3 player suck? 
+line 153 [-1: (negative) ooooooooops!]: product[+3][p]##and we still LOVE it!
 
-line 154 [0: (neutral) correct!]: ##(iTunes being an exception of course). 
+line 154 [1: (positive) correct!]: ##We have been using the Diaper Genie for the past 17 months and are very happy with it.
 
-line 155 [-3: (negative) correct!]: software[-2], feature[-2][u] ##The Creative MediaSource software that comes with the Zen Micro is cluttered, and excludes my favorite feature in iTunes, the ability to automatically copy everything you import into a certain folder. 
+line 155 [-1: (negative) correct!]: ##We opted to purchase this diaper pail even though my SIL gave us her used diaper pail (the other popular pail. one that uses its own brand of bags) for free--and we are VERY glad we did.
 
-line 156 [0: (neutral) correct!]: ##I like to keep all of my Mp3s in one folder and manually doing this is a pain. 
+line 156 [1: (positive) correct!]: ##Here's what we love about this pail.
 
-line 157 [-1: (negative) correct!]: ##Bottomline, don't even bother with the software that comes with the Zen Micro.  
+line 157 [-1: (negative) ooooooooops!]: holds[+3]##*holds a LOT of diapers--a full week of toddler diapers!
 
-line 158 [-2: (negative) correct!]: Player[-1] ##NAGATIVES of the Player itself:  You need to do a little work before having full enjoyement of this player.  
+line 158 [-1: (negative) ooooooooops!]: trash bags[+3]##(we wrap them nice and tight) *we use our regular kitchen trash bags--cheap!
 
-line 159 [0: (neutral) correct!]: ##1.
+line 159 [0: (neutral) correct!]: odor[+3]##*holds the odor in nicely!
 
-line 160 [-1: (negative) correct!]: ##Set the sensitivity of the touch pad to LOW. 
+line 160 [-1: (negative) ooooooooops!]: use[+3]##(every now and then I spray down the inside of the pail with Lysol) *easy one-hand use *impossible for my inquisitive child to get the dirty diapers OUT of the pail Every now and then odors do escape the pail, but that is rare--and it usually just means that we've crammed too much in there and need to change the bag.
 
-line 161 [-1: (negative) correct!]: ##Also, as soon as you select a song and set your desired volume level, put the player on HOLD. 
+line 161 [0: (neutral) correct!]: ##Spraying down the inside of the container (and letting it air out) periodically definitely helps.
 
-line 162 [-2: (negative) correct!]: sensitivy[-1] ##Even on the LOW sensitivy level, a slight touch can skip or pause the track.  
+line 162 [-1: (negative) ooooooooops!]: Diaper Champ[+3][u]##We keep the Diaper Champ in our daughter's nursery and her room definitely does NOT smell like dirty diapers.
 
-line 163 [0: (neutral) correct!]: ##2. 
+line 163 [0: (neutral) correct!]: [t]
 
-line 164 [0: (neutral) correct!]: ##Update the firmware which can be found on the Creative web site. 
+line 164 [0: (neutral) correct!]: holds[+3]##It holds quite a few diapers, and pops them in quickly and easily.
 
-line 165 [-2: (negative) correct!]: player[-2]##This fixes some glitches such as the player freezing.    
+line 165 [-3: (negative) ooooooooops!]: trash bags[+3]##I use the same store-brand tall kitchen trash bags I already use in the kitchen for it -- no special "diaper" trash bags necessary.
 
-line 166 [-1: (negative) correct!]: ##POSITIVES:  Reasons for getting the Zen Micro instead of the iPod:  1. 
+line 166 [0: (neutral) correct!]: opening[-1]##The opening could be a little wider, I suppose, but I haven't really seen anything else that could be improved.
 
-line 167 [2: (positive) correct!]: battery[+2] ##The battery is removable. 
+line 167 [0: (neutral) correct!]: works[+2]##It works with a minimum of fuss.
 
-line 168 [0: (neutral) correct!]: ##You can buy a new battery for 49.99. 
+line 168 [0: (neutral) correct!]: [t]
 
-line 169 [-2: (negative) correct!]: ##With the iPod, if the battery has reached it's life span (after about a year), and you didn't buy the warranty from the store, you need to buy a NEW player.
+line 169 [0: (neutral) correct!]: diaper champ[+3][u]##The diaper champ turns the smelly diaper into "what diaper smell" in less time than that.
 
-line 170 [0: (neutral) correct!]: ## 2. ##
+line 170 [-1: (negative) correct!]: ##I hesitated and wondered what I REALLY needed for the nursery.
 
-line 171 [1: (positive) correct!]: FM radio[+1] ## FM radio built in (Howard Stern).  
+line 171 [1: (positive) correct!]: purchases[+3]##This is one of the best purchases we made.
 
-line 172 [0: (neutral) correct!]: ##3. 
+line 172 [1: (positive) correct!]: ##The champ, the baby bjorn, fluerville diaper bag, and graco pack and play bassinet all vie for the best baby purchase.
 
-line 173 [1: (positive) correct!]: microphone[+1] ##Record memos using the built in microphone.  
+line 173 [1: (positive) correct!]: product[+3],use[+3],effective[+3][u]##Great product, easy to use, economical, effective, absolutly fabulous.
 
-line 174 [0: (neutral) correct!]: ##4.
+line 174 [-1: (negative) ooooooooops!]: champ[+3][cs]##Update I knew that I loved the champ, and useing the diaper genie at a friend's house REALLY reinforced that!
 
-line 175 [1: (positive) correct!]: looks[+2] ##The player looks SO much better when you're actually holding it. 
+line 175 [0: (neutral) correct!]: champ[+3],odor[+3][cs]##There is no comparison, the chanp is easy and smell free, the genie was difficult to use one handed (which is absolutly vital if you have a little one on a changing pad) and there was a deffinite odor eminating from the genie plus we found that the quick tie garbage bags where the ties are integrated into the bag work really well because there isn't any added bulk around the sealing edge of the champ.
 
-line 176 [-1: (negative) correct!]: ##The photos don't do it justice. 
+line 176 [0: (neutral) correct!]: [t]
 
-line 177 [3: (positive) correct!]: back[+2] ##The back of the player is nice too, with water ripples inside the clear white coating.  
+line 177 [1: (positive) correct!]: pail[+3]##I love this pail!
 
-line 178 [0: (neutral) correct!]: ##5. 
+line 178 [1: (positive) correct!]: smell[+3],ease of use[+3],garbage bags[+3][u]##No smell, easy to use with one hand free, and best of all it uses regular tall kitchen garbage bags so you don't get suckered in to using only the bags made for the pail that are imposible to find!
 
-line 179 [2: (positive) correct!]: storage[+2] ##You can use it as a storage Hard Drive.    
+line 179 [1: (positive) correct!]: ##I have heard that it will eventually become my sons favorite place to put his toys when he becomes a toddler, but I've got 2 years to worry about that and I'm sure I'll figure out preventative measures like any other mom.
 
-line 180 [0: (neutral) correct!]: ##Now, about the iTunes. 
+line 180 [0: (neutral) correct!]: ##4 months later.
 
-line 181 [1: (positive) correct!]: iTunes[+1] ##I have no problem using iTunes with the Zen Micro (in a makeshift sorta way).   
+line 181 [-1: (negative) correct!]: ##OK.
 
-line 182 [0: (neutral) correct!]: ##This is what I do:  I copy all the music I want to import to the Zen Micro into an iTunes play list. 
+line 182 [-1: (negative) correct!]: ##I still like it but don't think it rates the 5 stars I gave it but can't change that.
 
-line 183 [0: (neutral) correct!]: ##After that, you connect your Zen Micro and open My Computer. 
+line 183 [0: (neutral) correct!]: ##Once your child goes on to solid foods BEWARE!
 
-line 184 [0: (neutral) correct!]: ##Click on "Zen Micro Media Explorer" and then click on "Transfer Data Between PC and Device" after that, a File Explorer window opens. 
+line 184 [-2: (negative) correct!]: diaper pail[-2]##Solid food poop is VERY STINKY and this diaper pail doesn't really contain the smell.
 
-line 185 [0: (neutral) correct!]: ##And all you do is select all the tracks in the iTunes playlist and drag them to the File Explorer window.  
+line 185 [-1: (negative) correct!]: diaper pail[-2][u]##I still like it a lot and am not changing it for another, but it is sort of stinky.
 
-line 186 [-1: (negative) correct!]: ##It's not as seamless as if you were to use an iPod, but it only takes a few seconds longer. 
+line 186 [0: (neutral) correct!]: [t]
 
-line 187 [1: (positive) correct!]: ##So yeah, you can have the best of both worlds.  
+line 187 [0: (neutral) correct!]: diaper pail[+3][p]##I think it's great.
 
-line 188 [-2: (negative) correct!]: ##* Of Course, if you've BOUGHT tracks from iTunes, this won't work. 
+line 188 [-1: (negative) correct!]: diaper pail[-2]##I just wished that it didn't fill up so fast!
 
-line 189 [0: (neutral) correct!]: ##You can only copy songs you've downloaded for free or ripped from a CD.  
+line 189 [0: (neutral) correct!]: diaper pail[+2]##It definitely keeps the smell out.
 
-line 190 [-1: (negative) correct!]: ##**I honestly don't see the point of buying songs from iTunes when there are so many free alternatives. 
+line 190 [0: (neutral) correct!]: [t]
 
-line 191 [0: (neutral) correct!]: ##But if you get that "fuzzy legal feeling" from paying for songs, at least buy them from allofmp3.com, there are no restrictions and the songs cost pennies.     
+line 191 [0: (neutral) correct!]: odor[-2]##But now that she is eating solids the odor is escaping out and we are constantly using airfreshner.
 
-line 192 [0: (neutral) correct!]: [t]
+line 192 [-1: (negative) ooooooooops!]: odor[+1][u]##First 4 months it was in our bedroom and we did not even smell any odor.
 
-line 193 [0: (neutral) correct!]: ##I'm addicted to music. 
+line 193 [0: (neutral) correct!]: ##Bottom line if you buy this for your newborn, it is fine.
 
-line 194 [0: (neutral) correct!]: ##I'm also somewhat of an audiophile. 
+line 194 [0: (neutral) correct!]: odor[-1]##But be prepared to buy something else (diaper genie ?) which can trap the odor better.
 
-line 195 [1: (positive) correct!]: ##Mp3 players are like a blessing and a curse for people like me. 
+line 195 [0: (neutral) correct!]: ##Every time!
 
-line 196 [0: (neutral) correct!]: ##On the one hand, you have the ability to store and plays over 1000 songs on one little piece of machine. 
+line 196 [0: (neutral) correct!]: [t]
 
-line 197 [-1: (negative) correct!]: ##On the other hand, you get terrible sound quality. 
+line 197 [0: (neutral) correct!]: diaper champ[+3]##The diaper champ is the best!
 
-line 198 [0: (neutral) correct!]: ##I decided to go with the convienence factor and purchase a creative zen micro. 
+line 198 [0: (neutral) correct!]: ##Having used it with 2 children 13 months apart.
 
-line 199 [0: (neutral) correct!]: ##I was at [random electronic store], browsing through players, and came across two that made the cut. 
+line 199 [0: (neutral) correct!]: ##I can honestly speak to its worth!
 
-line 200 [-1: (negative) correct!]: ##The first was an ipod 5gb (I could kick myself for not buying it), and the other was a creative 5gb. 
+line 200 [0: (neutral) correct!]: Champ[+3]##I have tried other pails, but none have compared positively to the Champ.
 
-line 201 [0: (neutral) correct!]: ##The creative came with a free trial of [random file sharing company] "to go". 
+line 201 [1: (positive) correct!]: use[+3]##1) The champ is easy to use.
 
-line 202 [0: (neutral) correct!]: ##So that's the one I bought. 
+line 202 [-1: (negative) correct!]: ##One pail that I used was so difficult to change the bag and insert the dirty diaper.
 
-line 203 [-1: (negative) correct!]: ##Too bad.  
+line 203 [-1: (negative) correct!]: ##You had to remove the entire lid and lay it on the floor (which led to my toddler running away with it which is gross) while trying to fit the bag correctly into the slot.
 
-line 204 [-4: (negative) correct!]: made[-3][u] ##First thing I noticed was that the creative wasn't well made. 
+line 204 [-1: (negative) correct!]: ##For diaper disposal, you had to push a button and the lid would or would not pop open.
 
-line 205 [-3: (negative) correct!]: player[-3]##One drop from a pocket or desktop, and it'd be a goner.  
+line 205 [0: (neutral) correct!]: Champ[+2][u]##With the Champ all you had to do was drop the dirty diaper into the opening and flip the lid.
 
-line 206 [-5: (negative) correct!]: sound[-3] ## Problems with the sound quality were evident right away, but even I couldn't imagine they'd be that bad. 
+line 206 [1: (positive) correct!]: dispose[+2]##It was so easy my toddler would dispose of her on diapers.
 
-line 207 [-7: (negative) correct!]: eq[-3], bass[-3] ##The eq is awful, and even at top volumes, the bass is flat sounding. 
+line 207 [0: (neutral) correct!]: ##The Champ also has hinges for you to place a new bag.
 
-line 208 [0: (neutral) correct!]: volume [-1] ##Cranking the master volume level up past the mark of the bar only leads to distortion and compromised sound quality. 
+line 208 [0: (neutral) correct!]: store bags[+3][u]##2) The Champ uses regular store bags.
 
-line 209 [-3: (negative) correct!]: headphone jack[-3] ##The headphone jack gave out after only a couple weeks of use, and the stock earbuds were replaced same day with some high end sony's I'd been having. 
+line 209 [-1: (negative) ooooooooops!]: Champ[+3]##You do not have to waste money or time trying to purchase special bags for the Champ.
 
-line 210 [-1: (negative) correct!]: ##They didn't really make any difference. 
+line 210 [0: (neutral) correct!]: ##You can save your bags from your shopping trip and insert them into the Champ.
 
-line 211 [0: (neutral) correct!]: ##I also experimented with an adapter for the car. 
+line 211 [0: (neutral) correct!]: ##Special bags are expensive, hard to find, and you never have enough.
 
-line 212 [-2: (negative) correct!]: sound[-2] ##If you've been listening to cd's in your car for awhile, dealing with the drop-off in sound quality may take some getting used to. 
+line 212 [0: (neutral) correct!]: ##This will never be a problem with the Champ.
 
-line 213 [2: (positive) correct!]: car adapter[+2] ##However, if there was one thing I liked about the creative, it would be the car adapter. 
+line 213 [-1: (negative) correct!]: ##Don't Caregivers need more simplicity in their lives?
 
-line 214 [0: (neutral) correct!]: ##Hands down, better quality than ipod's. 
+line 214 [0: (neutral) correct!]: ##The Champ gives you peace of mind and wallet.
 
-line 215 [-1: (negative) correct!]: ##that isn't saying much, but hey, I like to be positive.   
+line 215 [0: (neutral) correct!]: Champ[+3]##3)The Champ is Odor Free for at least 15 months.
 
-line 216 [-2: (negative) correct!]: storage[-2][u] ##Even after all the nightmare sound problems, I'd still half-way like this product if it kept it's promise; the ability to store 1500 songs. 
+line 216 [-1: (negative) ooooooooops!]: Champ[+2]##The Champ did not start letting a little odor through until well over a year.
 
-line 217 [-2: (negative) correct!]: storage[-2][u] ##I got about 700 loaded up before it told me I was full, and at that point, I was ready to toss it out the window.   
+line 217 [0: (neutral) correct!]: ##I cannot speak to the accuracy of its odor containing capabilities due to it was working overtime with 2 childrens diapers.
 
-line 218 [-2: (negative) correct!]: ##If you do not care about sound/music quality in the least, and don't mind the ability to store 800 songs less than promised, get the creative zen micro.   ##Otherwise, you should get an ipod. 
+line 218 [0: (neutral) correct!]: ##If you have only one child the Champ may last you until the child is out of diapers.
 
-line 219 [-2: (negative) correct!]: creative[-][cc]##My friend has an ipod, and although the sound quality probably won't meet most audiophile standards, the product itself is better than anything creative has made.
+line 219 [0: (neutral) correct!]: other pail[-2][cc]##The other pail I used started to smell after 2 weeks of use.
 
-line 220 [0: (neutral) correct!]: ##features[-][u][cc]It hold's a promised amount of songs, and the headphone jack/volume controls deliver a more impressive performance than creative's.   
+line 220 [1: (positive) correct!]: Champ[+3]##Regardless to this fact, I believe the Champ is the best way to go.
 
-line 221 [0: (neutral) correct!]: ##If you're an audiophile, you already know that mp3 players are far from impressive. 
+line 221 [0: (neutral) correct!]: ##The positives outway the negatives.
 
-line 222 [-1: (negative) correct!]: ##player[-][s]However, this one makes an ipod sound like your old LP's, so even if you're a casual listener, I'd advise that you avoid the purchase of this product. Terrible.      
+line 222 [-1: (negative) correct!]: ##There probably isn't a pail out on the market that doesn't get smelly after a while.
 
-line 223 [0: (neutral) correct!]: [t]
+line 223 [0: (neutral) correct!]: Champ[+3]##Let the Champ win you over!
 
-line 224 [0: (neutral) correct!]: ##I bought this two months ago at a local retailer, after spending considerable time reading reviews here of this and other 5GB players. 
+line 224 [0: (neutral) correct!]: [t]
 
-line 225 [2: (positive) correct!]: compatibility with windows media player[+3]  ##While they all seem to have their own positives and negatives, I picked the Zen Micro over the Ipod mini, because I am not an Apple person, never has been - I wanted something that is fully compatible with Windows Media Player. 
+line 225 [0: (neutral) correct!]: ##My biggest concern was would this truly control the odor and yes it did.
 
-line 226 [2: (positive) correct!]: format[+2] ##Also, the WMA compression format is superior to MP3, especially at lower bit rates, so I needed a player that could handle WMA and integrate well with my Windows XP computers.  
+line 226 [0: (neutral) correct!]: ##dirty diapes and soaked diapers.
 
-line 227 [3: (positive) correct!]: accessories[+3] ##I was fortunate to get the packaging that still included all the accessories (desk stand/hard case, belt clip, wall charger, etc). 
+line 227 [-1: (negative) correct!]: ##I only noticed an odor one time and that was because I did not close thelid when I changed out the bag.
 
-line 228 [4: (positive) correct!]: Zen Micro[+3] ##And so far, I have been very, very happy with my Zen Micro. 
+line 228 [0: (neutral) correct!]: odor[+3]##No need for deodorizers.
 
-line 229 [3: (positive) correct!]: working[+3][u] ##It's being used daily and I have had none of the problems reported by other reviewers (headphone jack, player locking up, etc). 
+line 229 [0: (neutral) correct!]: empty[+3]##I use the regular kitchen trash bags and it is so easy to empty.
 
-line 230 [0: (neutral) correct!]: ##Just in case, I bought a two-year extended warranty for about 15% of the purchase price of the player.   
+line 230 [0: (neutral) correct!]: noise[+3]##even did while daughter sleep and no noise!
 
-line 231 [0: (neutral) correct!]: ##I promptly gave the included earbuds to my wife, I'm using a pair of Sennheiser PXC250 noise-canceling headphones with the Zen Micro. 
+line 231 [-1: (negative) ooooooooops!]: smell[+3]##I use the scented bags and even if I don't no smell!
 
-line 232 [7: (positive) correct!]: features[+3], user interface[+3] ##The Micro has an impressive array of very nice features and a well designed user interface. 
+line 232 [-1: (negative) ooooooooops!]: space[+3][u]##This holds alot and does not take up alot of space.
 
-line 233 [4: (positive) correct!]: feel[+3] ##What I like the most:  - Small and solid feel. 
+line 233 [0: (neutral) correct!]: [t]
 
-line 234 [3: (positive) correct!]: size[+2],feel[+2] ##The Zen Micro is smaller than it looks in pictures, and feels very solid. 
+line 234 [0: (neutral) correct!]: ##When my wife and I got the Diaper Champ, we thought that it would work perfectly.
 
-line 235 [5: (positive) correct!]: backlight[+3] ##The blue backlight is pretty cool. 
+line 235 [-1: (negative) correct!]: ##We read the reviews on and saw that people liked it much better then the Diaper Genie, but I'm not 100% sure.
 
-line 236 [4: (positive) correct!]: screen[+2], touchpad[+2] ##The screen is clear and readable, and the touch pad works very well, it took me less than a day to get the hang of it, and now I like it better than having to click buttons or fiddle with a separate volume control.  
+line 236 [0: (neutral) correct!]: top loader[-2]##We found that when you put a dirty diaper into the top loader, there was a tendency to get streaks which would then get on the plunger which would then have to get cleaned each time it was used.
 
-line 237 [9: (positive) correct!]: sound[+3], audio quality[+3] ##- Great sound! I was very impressed, I encode at 192 kbps and the audio quality is great, especially with the better headphones. 
+line 237 [-1: (negative) correct!]: Diaper Champ[-2]##We resorted to using small plastic bags to store the dirty diapers and dumping them in a trash can and using the Diaper Champ for wet diapers only.
 
-line 238 [0: (neutral) correct!]: ##I managed to fit about 700 tracks on the player, but many of those are 6-15 minute long classical tracks.   
+line 238 [0: (neutral) correct!]: diaper wipes[-2]##We also had a problem with diaper wipes getting caught when the top was flipped.
 
-line 239 [0: (neutral) correct!]: ##- Integration with Media Player. 
+line 239 [0: (neutral) correct!]: ##This eventually ruined the foam pad that is applied to the flip top to keep odors in.
 
-line 240 [2: (positive) correct!]: transfer[+2], sync with media player[+1][u] ##The first thing I did was upgrade the firmware to the version required for WMP10, it syncs flawlessly with Media Player and transfers are fast.  
+line 240 [0: (neutral) correct!]: ##I had to go and pull the crumpled foam out just so we could turn the lid.
 
-line 241 [1: (positive) correct!]: battery[+1] ##- Replaceable battery. 
+line 241 [-2: (negative) ooooooooops!]: Diaper Champ[+1][cs]##But like I stated, its better then a trash can, but I'm not sure if its better then the Diaper Genie.
 
-line 242 [0: (neutral) correct!]: ##A must for me, the fact that you can carry extra batteries is a big bonus.  
+line 242 [0: (neutral) correct!]: [t]
 
-line 243 [0: (neutral) correct!]: ##- The FM Radio. 
+line 243 [-1: (negative) ooooooooops!]: diapers[+3],refills[+3]##It holds almost a week's worth of diapers, and you don't need expensive refills - any kitchen bags work.
 
-line 244 [0: (neutral) correct!]: ##I find myself listening to the radio a lot. 
+line 244 [0: (neutral) correct!]: smell[+2]##At first I had a problem with some smell, then I realized if you flip the lid back and always keep the same side facing in - then there is no smell at all!
 
-line 245 [2: (positive) correct!]: ##You have to be in an area with good reception, but where I live I can get most of my favorite stations quite well.  
+line 245 [0: (neutral) correct!]: ##It is also to wipe clean if you do get the chute a bit dirty.
 
-line 246 [0: (neutral) correct!]: ##- Doubles as a removable disk drive. 
+line 246 [-1: (negative) correct!]: ##I second that you just need to fold up the diaper (with wipes inside) neatly, but that is not a big deal.
 
-line 247 [2: (positive) correct!]: interface[+2][u] ##With the right firmware, drag and drop to and from the player like any other jump drive.  
+line 247 [-2: (negative) correct!]: ##The latch isn't terribly difficult, and I wouldn't want it to be too easy since it sits in my son's room.
 
-line 248 [3: (positive) correct!]: player[+3][p] ##I have not yet used all the features, like the calendar, etc, but as a music player this little thing rocks.  
+line 248 [0: (neutral) correct!]: [t]
 
-line 249 [-3: (negative) correct!]: battery life[-2] ##The only reason for not giving it 5 stars: the claimed battery life of 12 hours is very optimistic - possible maybe if you really sit down and listen continuously for 12 hours without ever touching the player, but in real life I can probably get 6-8 hours at most. 
+line 249 [0: (neutral) correct!]: ##She said her sister had the Diaper Champ and that it took regular garbage bags and worked just as well.
 
-line 250 [1: (positive) correct!]: ##Plus, from the Creative discussion forums it is clear that they have some problems with excessive battery drainage with the current firmware. 
+line 250 [-1: (negative) ooooooooops!]: Diaper Champ[+3]##Personally, I am VERY pleased with the Diaper Champ.
 
-line 251 [0: (neutral) correct!]: ##They seem to be working on a fix and will probably sort it out soon. 
+line 251 [0: (neutral) correct!]: operate[+3][u]##It is mindless to operate.
 
-line 252 [0: (neutral) correct!]: ##For me, I get through a typical day's listening just fine, and I could probably squeeze out two days, but it really is no big deal to just charge the Micro overnight. 
+line 252 [0: (neutral) correct!]: ##It takes garage bags that we use elsewhere in the abode.
 
-line 253 [-3: (negative) correct!]: battery life[-2] ##Even the "shorter" battery life, though, has not impaired my positive experience with the Zen Micro in any way. 
+line 253 [0: (neutral) correct!]: Diaper Champ[+3][u]##It doesn't stink, ever (like some have assumed since it doesn't wrap each diaper into its own neat little cocoon).
 
-line 254 [4: (positive) correct!]: warranty price[+2][u], accessories[+2], player[+][s] ##If you can get one with all the accessories and a cheap extended warranty, this is the player to get! Highly recommended.     
+line 254 [1: (positive) correct!]: clean[+3]##And it is very easy to clean.
 
-line 255 [0: (neutral) correct!]: [t]
+line 255 [0: (neutral) correct!]: diaper[+3]##I can keep one hand on my baby and dump the diaper at the same time, it is that simple.
 
-line 256 [0: (neutral) correct!]: ##Update 8/11/05:  The latest release of the iPOD firmware fixes teh calender sync bug i noted below.  
+line 256 [-1: (negative) correct!]: ##I am SO thankful I got that advice when I did because I had the Diaper Genie on my registry aforementioned to her warning.
 
-line 257 [0: (neutral) correct!]: ##I bought this a couple of months ago after researching all the reviews comparing with the iPod mini. 
+line 257 [0: (neutral) correct!]: ##I'd abhor having to drive all the way to a baby superstore to purchase bags her dirty diapers are just going to get thrown away in.
 
-line 258 [2: (positive) correct!]: price[+2] ##The Micro seeemed like an iPod for less. 
+line 258 [0: (neutral) correct!]: ##I am very pleased with our choice.
 
-line 259 [0: (neutral) correct!]: ##I got rid of my older PDA figuring that since the only function I used on it anyways was to manage my contacts and calender, I could now use my Zen Micro.  
+line 259 [0: (neutral) correct!]: [t]
 
-line 260 [3: (positive) correct!]: sound[+3] ##Pros: - Excellent sound, even with the headphones that come out of the box, but it absolutely rocked with my Bose Quietcomfort 2 set. 
+line 260 [1: (positive) correct!]: diaper pail[+3]##This is a great diaper pail.
 
-line 261 [7: (positive) correct!]: look[+3], size[+3][u] ##- Looks sleek, compact, has a radio.  
+line 261 [1: (positive) correct!]: use[+3]##There is no odor and it is very easy to use.
 
-line 262 [-3: (negative) correct!]: accessories[-2] ##Limitations: - Not a lot of original accessories like the iPod. 
+line 262 [-1: (negative) ooooooooops!]: refills[+3]##(You can do it one handed while still hanging on to the baby.) Also, we like using regular trash bags instead of having to worry about buying refills (like with the Diaper Genie).
 
-line 263 [-1: (negative) correct!]: ##I waited for Creative's FM transmitter for a month, finally bought a Belkin Tunecast II, which is not great. 
+line 263 [0: (neutral) correct!]: diaper pail[+3],space[+2]##And it's the largest diaper pail I've seen without taking up more floor space.
 
-line 264 [0: (neutral) correct!]: ##I get occasional hiss while driving. 
+line 264 [0: (neutral) correct!]: [t]
 
-line 265 [-2: (negative) correct!]: battery life[-2] ##- The battery life leaves a lot to be desired. 
+line 265 [0: (neutral) correct!]: ##We have both a Diaper Champ and a Diaper Genie.
 
-line 266 [0: (neutral) correct!]: ## Though rated at 12 hrs, I could barely manage 8 and I have two spares as well. 
+line 266 [0: (neutral) correct!]: Champ[+3][cc]##and we definitely prefer our Champ!
 
-line 267 [-4: (negative) correct!]: firmware[-3] ##I downloaded the new firmware which was supposed to take care of the problem, but it hasn't worked. 
+line 267 [-1: (negative) ooooooooops!]: cost effective[+3],use[+3],capacity[+3][cs]##Not only is it much more cost effective (you can use regular trash bags rather than Refills at $5 a pop), it is easier to use and clean, and has a larger capacity.
 
-line 268 [-4: (negative) correct!]: outlook sync[-2] ##- The outlook synch only works for non recurring appointments, which personally is very annoying to me but probably wont be to most people. - ##Several people complained about the touchpad and frankly i'm starting to see why. 
+line 268 [0: (neutral) correct!]: ##Only problem.
 
-line 269 [-1: (negative) correct!]: touchpad[-1] ##I occassionally flip songs while working out as i accidently hit the pad even lightly (yes i have it in maximum desensitized mode). 
+line 269 [0: (neutral) correct!]: unit[-2]##it can be frustrating and messy when you put that last diaper in before realizing the unit is full.
 
-line 270 [0: (neutral) correct!]: ##I wish they has a "lock" function like cell phones to prevent this. 
+line 270 [0: (neutral) correct!]: pluger[-2]##The pluger gets stuck & you have to manually extract the mess.
 
-line 271 [-4: (negative) correct!]: audible.com book compatibility[-3][u] ##- Not compatible with Audible.com books.  
+line 271 [0: (neutral) correct!]: [t]
 
-line 272 [-3: (negative) correct!]: Zen Micro[-2] ##Overall, it does its basic function very well, but we expect more from the mp3 players today and the Zen Micro does not rise to the occassion.     
+line 272 [0: (neutral) correct!]: item[-1]##I registered for this item because of the good reviews it got, however I was not impressed.
 
-line 273 [0: (neutral) correct!]: [t]
+line 273 [0: (neutral) correct!]: diapers[-2]##For one thing, The diapers always get jammed in it.
 
-line 274 [0: (neutral) correct!]: ##I first signed up for Napster on line.  
+line 274 [0: (neutral) correct!]: product[-2]##The product also leaves a faint smell in the room.  
 
-line 275 [0: (neutral) correct!]: ##Loved the service so much I decided to buy an MP3 player and upgrade from the basic Napster to Napster To Go. 
+line 275 [0: (neutral) correct!]: Diaper Champ[-1]##All in all, the Diaper Champ serves its purpose, but it does not live up to its good reviews.
 
-line 276 [0: (neutral) correct!]: ##They have a list of compatible players which I miss read.  
+line 276 [0: (neutral) correct!]: [t]
 
-line 277 [-1: (negative) correct!]: ##So my first MP3 player purchase was incorrect.  
+line 277 [1: (positive) correct!]: diaper champ[+1]##I got the diaper champ because of the great reviews as well as the fact that you can use regular garbage bags.
 
-line 278 [0: (neutral) correct!]: ##To transfer songs requires you to pay 99 cents.  
+line 278 [0: (neutral) correct!]: works[+3]##It works great.
 
-line 279 [0: (neutral) correct!]: ##The player I first purchased was the Creative Nomad Jukebox Zen Xtra 40 GB MP3 Player.  
+line 279 [0: (neutral) correct!]: smell[+3]##I can't smell anything (and believe me, this is quite something with my baby).
 
-line 280 [-1: (negative) correct!]: ##This player is not compatible with Napster To Go. 
+line 280 [0: (neutral) correct!]: works[+2]##I ended up buying one for upstairs and one for downstairs because it works so well and because I change him so often downstairs.
 
-line 281 [0: (neutral) correct!]: ##The player was large and bulky.  
+line 281 [0: (neutral) correct!]: ##It's much better than putting diapers in a downstairs trashcan.
 
-line 282 [-1: (negative) correct!]: ##The buttons are located on the sides making it difficult to use.  
+line 282 [0: (neutral) correct!]: ##The reviews were definitely right.
 
-line 283 [0: (neutral) correct!]: ##The plus was the storage size but I didn't like hearing the hard drive spin.  
+line 283 [0: (neutral) correct!]: [t]
 
-line 284 [-1: (negative) correct!]: ##I also hated the packaging, with a passion.  
+line 284 [1: (positive) correct!]: Diaper Champ[+2]##We have been using our Diaper Champ for almost 14 months now and we are very happy with it.
 
-line 285 [0: (neutral) correct!]: ##It was one of those plastic glued containers that can take you thirty minutes to open.  
+line 285 [0: (neutral) correct!]: odors[+2]##It sits in the corner of our bathroom and we have never had any problems with odors at all (and we live in the damp and humid South, where odors of all kinds are generally rife).
 
-line 286 [0: (neutral) correct!]: ##Accessories were cheap looking.  
+line 286 [2: (positive) correct!]: install[+2],change[+1],clean[+2],use[+3]##It is easy to install and change the ordinary trash bags, easy to clean, and most important, easy to use one handed - just insert folded dirty diaper and flip the handle.
 
-line 287 [0: (neutral) correct!]: ##The player was not very appealing either.  
+line 287 [0: (neutral) correct!]: ##As the bag fills, you may need to flip twice to ensure that the weighted cylinder has completely pushed the diaper into the bag.
 
-line 288 [-1: (negative) correct!]: ##All this before I found out the bad news.  
+line 288 [0: (neutral) correct!]: ##For the first 9 months or so, we only needed to empty this once a week.
 
-line 289 [0: (neutral) correct!]: ##Finally I upgraded the firmware and log in to Napster.  
+line 289 [0: (neutral) correct!]: ##Now that our son's diapers are a little larger, they take up more space, and we empty twice a week.
 
-line 290 [-1: (negative) correct!]: ##Upon logging in I received a notification that my player works with Napster but not Napster To Go. 
+line 290 [0: (neutral) correct!]: wipes[+1]##We have never had any problems with anything like loose wipes getting stuck (we always wrap them in the dirty diaper).
 
-line 291 [0: (neutral) correct!]: ##It was time to exchange it for the other player the Creative Zen Micro 5 GB MP3 Player Black.  
+line 291 [-1: (negative) ooooooooops!]: open[+1]##It is a bit difficult to get the unit open (the advice to take it slowly is sound), but now that our son is walking and exploring, I consider this a positive attribute!
 
-line 292 [0: (neutral) correct!]: ##Its a few bucks more and has only 5 GB's of storage but its well worth the trade off. 
+line 292 [2: (positive) correct!]: use[+2],odors[+2],bargins[+2]##Update (March 2005): My son has been out of diapers for almost 2 years now, but the Diaper Champ hung in there till the very end - easy to use, no problems with odors, and one of the best bargains among all of the paraphernalia required for the modern baby :-)
 
-line 293 [0: (neutral) correct!]: ##This is Creative's attempt to compete with the IPod mini.  
+line 293 [0: (neutral) correct!]: [t]
 
-line 294 [-2: (negative) correct!]: ##To bad Napster software is not compatible with Apple IPod's.  
+line 294 [0: (neutral) correct!]: ##I originally put this item on my baby registry because friends of mine highly recommended the use of a diaper pail. 
 
-line 295 [0: (neutral) correct!]: ##Its my first purchase choice.  
+line 295 [-1: (negative) ooooooooops!]: Diaper Champ[+2][cc]##I decided to go with the Diaper Champ rather than the more popular Diaper Genie, because I didn't like the idea of having to buy special bags.
 
-line 296 [0: (neutral) correct!]: ##Actually only three players are on the list for Napster To Go. 
+line 296 [-1: (negative) correct!]: costly[-2][u][cc]## Too costly and not efficient if you ask me!
 
-line 297 [3: (positive) correct!]: player[+3][p] ##Don't worry this player rocks.  
+line 297 [-3: (negative) ooooooooops!]: PRODUCT[+3]##THIS PRODUCT IS A LIFESAVER!!
 
-line 298 [4: (positive) correct!]: appeal[+3] ##It was also the most appealing.   
+line 298 [-6: (negative) ooooooooops!]: ODOR[+3]##I HAVE NEVER HAD AN ODOR PROBLEM!
 
-line 299 [0: (neutral) correct!]: ##Immediately you could tell a very distinct difference between the two Creative MP3 players.  
+line 299 [0: (neutral) correct!]: odor[+2]##No one has ever come to my house and noticed 'diaper odor.'
 
-line 300 [4: (positive) correct!]: packing[+3][u] ##For the Zen Creative focused on packaging which looked well thought out, well presented and easy to open and put back together.  
+line 300 [0: (neutral) correct!]: Diaper Champ[+2]##In fact, people who have been present while I changed my almost 3 month old son's diaper have been amazed at how the very 'potent' smell of the dirty diaper seems to disappear once I dispose of the diaper in the Diaper Champ.
 
-line 301 [0: (neutral) correct!]: ##I keep boxes for all my equipment for storage and moving.  
+line 301 [0: (neutral) correct!]: ##For those who are experiencing odor problems, here are some suggestions which should solve the problem:  
 
-line 302 [4: (positive) correct!]: casing[+3] ##It has a cardboard slip cover with a nice layered box casing inside.  
+line 302 [-3: (negative) correct!]: ##1. CHANGE BAGS FREQUENTLY!!
 
-line 303 [0: (neutral) correct!]: ## You will find a small folder/envelope on top along with the player.  
+line 303 [0: (neutral) correct!]: ##I change mine about 1 or 2 times a week.
 
-line 304 [0: (neutral) correct!]: ##Accessories are in reusable bags unlike the Nomad which requires you to tear each back plastic store bag open. 
+line 304 [-4: (negative) correct!]: ##For those who complain that the pail gets stuck, that is probably a good indication that the BAG IS GETTING TOO FULL!! 
 
-line 305 [4: (positive) correct!]: case[+3] ##A distinct IPod relation is evident with white colored cables, power plug and the very nice Zen case with a white rubber inside covering.  
+line 305 [0: (neutral) correct!]: ##Also, making sure that the tape on the diapers is secure will prevent that from happening as well.
 
-line 306 [0: (neutral) correct!]: ##It has Apple insipid written all over it.  
+line 306 [-7: (negative) correct!]: CLEAN[-1]##2. YOU STILL HAVE TO CLEAN THE THING!!
 
-line 307 [3: (positive) correct!]: design[+3] ##I do give create to Creative for their attractive design.    
+line 307 [0: (neutral) correct!]: ##Hello, it does house dirty diapers!! 
 
-line 308 [2: (positive) correct!]: functionality[+2] ##Creative has put a lot of effort into making this player appeal to those true geeks that search for coolness and functionality in electronic devices. 
+line 308 [0: (neutral) correct!]: ##All I do is wipe it down with some antibacterial wipes (takes about 10 seconds!!) and then maybe spray some Lysol in it and let it air out for a minute or two.
 
-line 309 [1: (positive) correct!]: player[+1][p]##Creative was defiantly giving the IPod a run for their money with this device.  
+line 309 [-3: (negative) ooooooooops!]: WORKS[+2]##SIMPLE AND IT WORKS!
 
-line 310 [-1: (negative) correct!]: player[+][p][cs]##It makes the Nomad I purchase feel and look like junk.  
+line 310 [-18: (negative) correct!]: Diaper Champ[-1]##Also, for those that complain that the Diaper Champ isn't as effective as time passes, keep the following in mind: AS BABIES GET OLDER, THEIR DIETS CHANGES (aka SOLID FOODS!) AND SO DOES THE SMELL OF THEIR DIAPERS!
 
-line 311 [2: (positive) correct!]: quality[+2] ##Everything shines of quality.  
+line 311 [-3: (negative) correct!]: ##In talking with other parents, I get the same feedback - as babies get older and become toddlers, ALL DIAPER PAILS become gradually less and less effective until they are just no longer useful.
 
-line 312 [1: (positive) correct!]: player[+1][cs] ##I was more excited about this player upon opening than I was about the Nomad.  
+line 312 [0: (neutral) correct!]: ##Again, this is because as their diet changes, so does the consistency and odor of their stool, in other words, it gets stinkier!!!  
 
-line 313 [0: (neutral) correct!]: ##First I removed each piece and laid them out on my coffee table.  
+line 313 [1: (positive) correct!]: product[+2],price[+2]##All in all, this product is definitely one I would recommend and certainly worth the very reasonable price.
 
-line 314 [2: (positive) correct!]: accessories[+2] ##I am now staring at an array of stuff including Zen Micro player, stereo earbud headphones, a rechargeable lithium-ion battery, an AC/DC power adapter, a USB 2.0 cable, a belt-clip, a stand, a stylish cloth pouch, an installation CD, a quick-start guide, and Creative MediaSource software.  
+line 314 [0: (neutral) correct!]: [t]
 
-line 315 [0: (neutral) correct!]: ##Next I wanted to update the software, after a quick firmware upgrade the player was ready to go. 
+line 315 [2: (positive) correct!]: diaper champ[+3],use[+2],refills[+1]##I love the diaper champ, it is really easy to use and since you can use regular garbage bags it doesn't cost an arm and a leg for refills.
 
-line 316 [0: (neutral) correct!]: ##I sync the player with Napster software and it downloaded the library I had already created. 
+line 316 [1: (positive) ooooooooops!]: pail[-2]##The only downside to this is that it can get pretty stinky long before the pail is full.
 
-line 317 [0: (neutral) correct!]: ##My PC only supports USB 1.0 not the 2.0 which is blazing fast. 
+line 317 [0: (neutral) correct!]: pail[-2]##I wash ours out with lysol each time I empty it, and that helps, but when its hot out- well, just be prepared.
 
-line 318 [0: (neutral) correct!]: ##So the download was much slower.   
+line 318 [0: (neutral) correct!]: [t]
 
-line 319 [4: (positive) correct!]: interface[+3] ##The interface works great.  
+line 319 [0: (neutral) correct!]: ## We used this diaper pail from the day we brought our son home, until about 13 months.  
 
-line 320 [3: (positive) correct!]: touchpad[+2] ##I enjoy getting use to the touch pad. 
+line 320 [-1: (negative) correct!]: ODEROUS[-3]##That's when it went from Oderless, to ODEROUS!
 
-line 321 [2: (positive) correct!]: navigation[+2] ##In minutes I was easily navigating through the menus.  
+line 321 [0: (neutral) correct!]: ##Even when empty!
 
-line 322 [4: (positive) correct!]: sound[+3] ##What impressed me most was the sound.  
+line 322 [0: (neutral) correct!]: ##So, I took it to the tub, scrub it down with disinfectant.  
 
-line 323 [4: (positive) correct!]: sound[+3] ##At 128 the songs sound very good.  
+line 323 [0: (neutral) correct!]: semelled[-2]##It still smelled.
 
-line 324 [0: (neutral) correct!]: ##My hobby is home audio and home theater.  
+line 324 [0: (neutral) correct!]: ##So then I used straight bleach.  
 
-line 325 [3: (positive) correct!]: audio quality[+2] ##The Zen lives up to the audio quality I love and expect.  
+line 325 [0: (neutral) correct!]: ##That seemed to work -- for about 3 days.  
 
-line 326 [4: (positive) correct!]: headphones[+2] ##The Earbuds are great headphones as good as my AGK Studio 240, well not as good but darn close.  
+line 326 [0: (neutral) correct!]: smell[-2]##Then it started to smell whether there were diapers in it or not.
 
-line 327 [1: (positive) correct!]: ##Creative says that the software engine for this MP3 is the best hands down.  
+line 327 [-1: (negative) correct!]: ##However, for the previous 13 months-this is what I encountered - PROS - 
 
-line 328 [0: (neutral) correct!]: ##I believe them.  
+line 328 [0: (neutral) correct!]: bags[+2]##Using your own bags is much cheaper and convenient.
 
-line 329 [0: (neutral) correct!]: ##Overall this play is my introduction into the market.  
+line 329 [0: (neutral) correct!]: height[+2]##The height is a more convenient reach than others, where you have to hunch over.
 
-line 330 [0: (neutral) correct!]: Zen[+][s]##The Zen was an impressive purchase and I would highly recommend it to anyone using Napster.  
+line 330 [0: (neutral) correct!]: stable[+2]##Its stable, so a curious toddler can't easily tip it over.
 
-line 331 [-1: (negative) correct!]: ##If you're an itunes person then no one could argue against an IPod.      
+line 331 [-1: (negative) correct!]: open[-2]##CONS - Difficult to open to change bag-twice my bags caught on a sharp edge inside and snagged as I was pulling out-leaving dirty diapers all over the floor.
 
-line 332 [0: (neutral) correct!]: [t]
+line 332 [0: (neutral) correct!]: diapers[-2]##Also, diapers tend to stay in the middle, causing the pail to get backed up.
 
-line 333 [0: (neutral) correct!]: ##I got my Zen Micro last week. 
+line 333 [-1: (negative) correct!]: Diapers[-2]##Diapers can get stuck when turned around if you don't tightly wrap them first. 
 
-line 334 [4: (positive) correct!]: player[+3][p] ##I absolutely love it. 
+line 334 [0: (neutral) correct!]: ##My toddler thought rotating the  top was fun-he always wanted to play with it
 
-line 335 [3: (positive) correct!]: size[+3] ##It's so small. 
+line 335 [-1: (negative) correct!]: ## (Being a diaper pail, I'd prefer he not be enticed by something so unsanitary.)     
 
-line 336 [4: (positive) correct!]: look[+3]##It looks sleek and modern. 
+line 336 [0: (neutral) correct!]: [t]
 
-line 337 [3: (positive) correct!]: storage[+3] ##It holds plenty of songs. 
+line 337 [-1: (negative) ooooooooops!]: product[+2]##I wanted this product because i didn't have to buy special bags for it and it also came highly recommended.
 
-line 338 [4: (positive) correct!]: sound[+3] ##The sound is amazing. 
+line 338 [0: (neutral) correct!]: open[-1]##The only problem i have is with the handle you use to open the top compartment.
 
-line 339 [3: (positive) correct!]: menu[+2] ##The menu is easy to use and understand. 
+line 339 [0: (neutral) correct!]: pull[-1]##The way you have to shove your fingers under it and pull is just too tight.
 
-line 340 [3: (positive) correct!]: touchpad controls[+2] ##I love the touchpade controls. 
+line 340 [0: (neutral) correct!]: open[-2]##I can't tell you how many times i've chipped a nail or hurt my fingertips because of the force needed to open it.
 
-line 341 [3: (positive) correct!]: touchpad controls[+2][p] ##They're easy to use. 
+line 341 [0: (neutral) correct!]: ##That would be my only complaint.
 
-line 342 [3: (positive) correct!]: radio[+2], voice recording[2] ##The radio and voice recording are nice. 
+line 342 [0: (neutral) correct!]: [t]
 
-line 343 [3: (positive) correct!]: headphones[+2] ##The earbud headphones are really nice. 
+line 343 [-1: (negative) ooooooooops!]: product[+3]##This is a GREAT product!
 
-line 344 [2: (positive) correct!]: batterylife[+2] ##The battery has a long life. 
+line 344 [0: (neutral) correct!]: Diapers[-1][cc]##I had never liked the idea of the Diaper Genie because of the refills.
 
-line 345 [3: (positive) correct!]: battery replacement[+2] ##It's rechargable and supposedly easy to replace though I haven't had to do it yet of course. 
+line 345 [-1: (negative) correct!]: ##Not only can they be a pain to install, but who needs one extra thing to watch a supply of?
 
-line 346 [3: (positive) correct!]: file transfer/rip software[+2] ##The file ripping/transfering software that comes with the player is easy to use. 
+line 346 [1: (positive) correct!]: ##I mean, with babies it's already far too easy to run out of diapers or formula. 
 
-line 347 [2: (positive) correct!]: file transfer[+2][p][cc] ##It's faster than WMP. 
+line 347 [-1: (negative) correct!]: ##I couldn't picture myself yelling to hubby, "Honey, I know you have sixty other things to get...can you also pick up refills for the diaper pail?"  
 
-line 348 [0: (neutral) correct!]: player[+1] ##So far I have no complaints with this player. 
+line 348 [0: (neutral) correct!]: works[+2]##The Champ works great.
 
-line 349 [0: (neutral) correct!]: player[+][s] ##If anyone is thinkning of getting an ipod mini, forget it and go with this player. 
+line 349 [0: (neutral) correct!]: garbage bags[+1]##We use regular kitchen sized garbage bags.
 
-line 350 [6: (positive) correct!]: price[+2], storage[+2], size[+2] ##It's cheaper, holds more songs and is smaller.      
+line 350 [0: (neutral) correct!]: odor[+2]##We've never experienced odor from the pail.
 
-line 351 [0: (neutral) correct!]: [t]
+line 351 [1: (positive) correct!]: assemble[+2], fit[+2]##It was easy to assemble, and the diapers fit perfectly into the little nook before they make their way into the pail portion.
 
-line 352 [0: (neutral) correct!]: ##If you are like me who wants move to the next phase of portable audio from conventional portable CD players I hope you find this usefull.   
+line 352 [1: (positive) correct!]: filp[+2]##I also love that you can flip the device with one hand...
 
-line 353 [0: (neutral) correct!]: ##Space : 5GB =2500 songs. 
+line 353 [0: (neutral) correct!]: ##Highly recommended!!!
 
-line 354 [0: (neutral) correct!]: ##If you have a huge CD collection, 5GB can hold only a part of your CD collection. 
+line 354 [-1: (negative) correct!]: ##Makes life easier and keeps baby's room smelling like baby, not dirty diapers!
 
-line 355 [0: (neutral) correct!]: ##Remember mp3 format lets you store tons of songs. 
+line 355 [0: (neutral) correct!]: [t]
 
-line 356 [2: (positive) correct!]: storage[+2][u]##I have stored 40 audio CDs and i still have close to 2.8 GB free.   
+line 356 [0: (neutral) correct!]: unit[+3]##Excellent diaper disposal unit.
 
-line 357 [3: (positive) correct!]: software[+2] ##User Interface: The software is simple and straight forward. 
+line 357 [0: (neutral) correct!]: ##I used it in conjunction with Glad 3ply kitchen trash bags with odor control (scented).
 
-line 358 [1: (positive) correct!]: ##Havent read the manual till now (remember I am good time computer user). 
+line 358 [0: (neutral) correct!]: product[+3]##I am soooo pleased with this product!!!
 
-line 359 [-4: (negative) correct!]: PC  software[-2] ##PC software that comes with the player is not as simple as i Tunes but its not bad at all. 
+line 359 [0: (neutral) correct!]: investment[+2]##A wise investment for the pocketbook & for the nose!!!
 
-line 360 [-1: (negative) correct!]: scroll bar[-1] ##The scrol bar agian takes some getting used to. 
+line 360 [0: (neutral) correct!]: [t]
 
-line 361 [1: (positive) correct!]: storage [+2][u] ##You can use the player to store your computer data files (Good feature to have).   
+line 361 [0: (neutral) correct!]: Diaper Champ[+3]##Diaper Champ is great.
 
-line 362 [4: (positive) correct!]: Battery[+3] ##Battery : A Big Big plus. 
+line 362 [0: (neutral) correct!]: ##But just to let you know that I've been breastfeeding and the poop doesn't stink as much as formula poop.  
 
-line 363 [2: (positive) correct!]: battery usage[+2][u]##Most of the other players I checked dont have user servicable battery. 
+line 363 [1: (positive) correct!]: Diaper Champ[+3]##So I can't tell you if Diaper Champ will be as good at containing the formula generated poop smell, but it's excellent at containing the smell of poop of my breastfed baby!
 
-line 364 [0: (neutral) correct!]: ##Zen micro does. 
+line 364 [0: (neutral) correct!]: [t]
 
-line 365 [0: (neutral) correct!]: ##I have two spare batteries (brought on ebay for 28 bucks each). 
+line 365 [0: (neutral) correct!]: Diaper Champ[+2][cc]##Friends told me that the Diaper Genie did not work very well, so bought the Diaper Champ based on on-line reviews and I have been happy with it.
 
-line 366 [1: (positive) correct!]: ##Remember this is a huge plus when travelling. 
+line 366 [0: (neutral) correct!]: works[+2]##It works easily with one hand, which is important.
 
-line 367 [2: (positive) correct!]: battery life[+2][u] ##Each battery lasts about 10-11 hours. 
+line 367 [-2: (negative) ooooooooops!]: trash bag[+2]##Also, it takes any kitchen sized trash bag, so there is no special bag to stock.
 
-line 368 [0: (neutral) correct!]: ##If one battery drains just snap the spare one and you are back in bussiness. 
+line 368 [1: (positive) correct!]: Diaper Champ[+2]##While the perfect ordor free diaper pail has yet to be invented, the Diaper Champ is a good as it gets.
 
-line 369 [3: (positive) correct!]: battery charging[+2][u] ##Another good feature is that you can charge the battery by just connecting the player to your computer using the USB cable.  
+line 369 [0: (neutral) correct!]: [t]
 
-line 370 [3: (positive) correct!]: FM tuner[+2] ##FM tuner & Microphone : Having a tuner in the player is a blessing. 
+line 370 [0: (neutral) correct!]: seal[-2]##Gets stinky after a few months, the seal on the piston doesn't seal anymore.
 
-line 371 [0: (neutral) correct!]: ##Dont have to switch to another device for FM tuner.  
+line 371 [0: (neutral) correct!]: wipes[-2]##Also, diapers and wipes get stuck in the grove below the piston.
 
-line 372 [-3: (negative) correct!]: FM reception[-2][u] ##Since zen does not have an external antena it has some problems catching weak signals but it works. 
+line 372 [0: (neutral) correct!]: ##Large diapers have to be wrapped tightly. 
 
-line 373 [4: (positive) correct!]: microphone[+3] ##Builtin microphone is great for recording short voice notes. 
+line 373 [0: (neutral) correct!]: diaper Dekor[-1][cc]##I gave up and got a diaper Dekor.
 
-line 374 [0: (neutral) correct!]: ##I have heard in other players these have to be brought separately.    
+line 374 [0: (neutral) correct!]: ##Much more hands off and takes any size diapers.
 
-line 375 [4: (positive) correct!]: sound[+3] ##Sound: This is where I love Zen the most. 
+line 375 [0: (neutral) correct!]: stinky[-1]##Also much less stinky.
 
-line 376 [3: (positive) correct!]: sound[+3] ##Excellent sound I mean the player has juice. 
+line 376 [0: (neutral) correct!]: diaper champ[-3]##Don't buy the diaper champ.
 
-line 377 [0: (neutral) correct!]: ##I dont use the headphones that come with it instead I use Bose Triport headphones. 
+line 377 [0: (neutral) correct!]: ##You will be sorry after a few months.     
 
-line 378 [1: (positive) correct!]: ##The player has great potential (ur experiance may differ based on your headphones). 
+line 378 [0: (neutral) correct!]: [t]
 
-line 379 [6: (positive) correct!]: bass[+3], treble[+3] ##The bass treble the sound detail is awsome. 
+line 379 [0: (neutral) correct!]: ##So far so good.
 
-line 380 [0: (neutral) correct!]: player[+][cc] ##I compared it to other CD players (Two models of Panasonic, Rio & samsung) and they were no way even near Zen Micro.  
+line 380 [0: (neutral) correct!]: pail[+1],worked[+2]##I was using the cheapie pail...and it worked ok until the opening device fell apart.
 
-line 381 [3: (positive) correct!]: look[+2] ##Looks and shape: I have a black one and the first time I charged it and switched it on jeez the blue light looked so cool. 
+line 381 [0: (neutral) correct!]: ##I am wondering how some of these reviewers are able to stand having kids?  
 
-line 382 [2: (positive) correct!]: size[+2] ##Its compact and has rounded edges. 
+line 382 [-1: (negative) correct!]: ##Even the old pail hardly smelled bad to me, I think after you have changed diapers for 4 years, you get somewhat immune to it.
 
-line 383 [1: (positive) correct!]: size[+1] ##Fits well in hand in trouser pockets.   
+line 383 [-1: (negative) ooooooooops!]: product[+2]##I could probably use a trash can and be ok at this point, but this prduct seems to work very well so far.
 
-line 384 [2: (positive) correct!]: belt clip[+1], stand[+1] ##Freebies you get: A cradle with detachable stand and belt clip, some thing very handy and useful. 
+line 384 [0: (neutral) correct!]: [t]
 
-line 385 [-3: (negative) correct!]: belt clip[-1], design[-2] ##I dont use the belt clip cuz it fails to hold the player securely (design problem). 
+line 385 [0: (neutral) correct!]: ##Let me just say this... After being a nanny for almost 10 years I have tried them all. 
 
-line 386 [0: (neutral) correct!]: ##Instead I use a cellphone cover with a belt clip and it works just fine. 
+line 386 [0: (neutral) correct!]: pail.[+3]##This one is really great.
 
-line 387 [-1: (negative) correct!]: headphones[-3], accessories[+2] ##You get a USB cable headphones, a pouch, software except headphones you will like every thing else.  
+line 387 [1: (positive) correct!]: Champ[+2]##I actually took a friends word on it and went with this Champ when registering and I am glad I did.
 
-line 388 [-4: (negative) correct!]: headphones[-2], beltclip design[-2] ##What I dont like: Nothing much except Headphones, Belt clip design. 
+line 388 [-1: (negative) correct!]: ##I just knew all along what products I would not use, but was undecided on the actual one I wanted. 
 
-line 389 [-1: (negative) correct!]: ##Creative has not lounched any silicon cover for the player like ipod's (I think belkin makes it for ipod).  
+line 389 [0: (neutral) correct!]: Champ[+3]##Well the Champ has survived it's first year with our son and it is great!!
 
-line 390 [0: (neutral) correct!]: ##Stuff you may need to buy: Wired remote from creative. 
+line 390 [0: (neutral) correct!]: ##We just bought another for baby boy number two coming next month. 
 
-line 391 [0: (neutral) correct!]: ##This is a must have. 
+line 391 [-1: (negative) ooooooooops!]: refills[+3]##The thought of not having to buy refills and just using regular bags is awesome!
 
-line 392 [0: (neutral) correct!]: ##Spare batteries incase  you need some extra hours without charging. 
+line 392 [0: (neutral) correct!]: work[+2]##We just buy the smaller bags that come like 250 to a roll and are sented and they are like $6.00 and they work great.
 
-line 393 [3: (positive) correct!]: sound[+2] ##FM transmitter (belkin has a good one) to use Zen with your car Sterio FM Tunner   Latest Find: Connected this baby to my $3800 audiophile audio system and it produced clean sound compared to Ipod. 
+line 393 [-1: (negative) ooooooooops!]: bags[+3]##We just recently had to buy another roll of bags. SO $6.00 for a year of bags- can't beat that!!
 
-line 394 [0: (neutral) correct!]: ##Tested with the same mp3 for benchmarking     
+line 394 [-1: (negative) ooooooooops!]: change[+2]##We lysol the champ every time we change the bag out and have not had any problems.
 
-line 395 [0: (neutral) correct!]: [t]
+line 395 [0: (neutral) correct!]: ##Would reccommend to anyone and everyone!!
 
-line 396 [0: (neutral) correct!]: ##I can't help but feel peeved by the attitude created by Apple enthusiasts that basically detracts from anything that attempts to compete with Apple products in the marketplace.  
+line 396 [0: (neutral) correct!]: [t]
 
-line 397 [2: (positive) correct!]: player[+2][u] ##Thankfully, Creative has come through with a product that puts the Ipod back in its place.  
+line 397 [-2: (negative) correct!]: ##Don't listen to the bad reviews!
 
-line 398 [2: (positive) correct!]: Zen micro[+2] ##While I have not had the "privilege", as many call it, of owning an Ipod, based on the experience of friends who have had some misfortune with their Ipod (and subsequently purchased the Zen Touch or Zen Micro), I can pretty much rest assured that my decision to purchase the Zen Micro was one of the more informed ones.
+line 398 [1: (positive) correct!]: diaper pail[+2]##This is really a nice diaper pail.
 
-line 399 [-1: (negative) correct!]: ##Nevertheless, I still get shirked when someone out of ignorance states "But it's not an IPod!" or "Never heard of it, I'll go with the IPod". 
+line 399 [0: (neutral) correct!]: diaper pail[+2]##I recommend it to both parents of infants and toddlers.
 
-line 400 [0: (neutral) correct!]: ##
+line 400 [0: (neutral) correct!]: diaper pail[+2]##In fact, I liked it so much after using it with my son who is now 2 years old, that I bought one for our new baby's room.
+
+line 401 [0: (neutral) correct!]: ##Originally with my son we had a Diaper Genie.  
+
+line 402 [-1: (negative) ooooooooops!]: diaper pail[+1][cc][p]##Wow - was that disappointing and we didn't even have it 6 months before it broke.
+
+line 403 [1: (positive) correct!]: Diaper Champ[+2]##I bought the Diaper Champ and have been very happy for the following reasons.
+
+line 404 [0: (neutral) correct!]: refills[+2]##1.  The Diaper Champ doesn't require special refills that are expensive and hard to find!
+
+line 405 [0: (neutral) correct!]: work[+2]##We just use the Glad tall kitchen trash can bags with odor shield from Target and they work wonderfully.
+
+line 406 [-1: (negative) ooooooooops!]: refills[+2]##We don't have to worry about running out of refills with this diaper pail!
+
+line 407 [0: (neutral) correct!]: operated[+2]##2.  It can be operated with one hand - Leaving a hand on your baby on the changing table.
+
+line 408 [0: (neutral) correct!]: safer[+2][cc]##So much safer than the others that require a two handed operation!
+
+line 409 [0: (neutral) correct!]: ##With them, you have to put your baby on the floor or someplace else safe just to put the diaper in the pail.  
+
+line 410 [1: (positive) correct!]: Diaper Champ[+2]##The Diaper Champ is so simple that my toddler loves to put his own diapers in the diaper champ and flip over the handle.
+
+line 411 [0: (neutral) correct!]: ##He thinks it is magic when the diaper "disappears".  
+
+line 412 [1: (positive) correct!]: change[+2]##3.  Bags are easy to change.
+
+line 413 [-1: (negative) correct!]: ##Pop the lid, fold it back on its hinge, pull the trash bag through the ring, and take out the dirty diapers.  
+
+line 414 [0: (neutral) correct!]: ##To replace the bag simply open it up and feed the top of the bag through ring, fold it over the sides of the ring, and close.  
+
+line 415 [0: (neutral) correct!]: ##It takes all of 2 minutes, if that.  4.  
+
+line 416 [0: (neutral) correct!]: ##It keeps smells out of your nursery or toddler room!
+
+line 417 [0: (neutral) correct!]: smell[-1]##Yes, you may get a whiff of a smell when you flip the handle, but then it is gone.
+
+line 418 [0: (neutral) correct!]: ##Remember, it does hold dirty diapers!  
+
+line 419 [1: (positive) ooooooooops!]: smells[-1][s]##To eliminate any smells we simple stuck a Stick Up room deodorizer inside the lid.
+
+line 420 [0: (neutral) correct!]: ##Now when you flip the handle you get the Stick Up smell instead.
+
+line 421 [0: (neutral) correct!]: Works[+3]##Works great!!!!
+
+line 422 [0: (neutral) correct!]: price[+2]##5.  The price is right.
+
+line 423 [0: (neutral) correct!]: ##At $30 we put one in the nursery and one in our toddler's room.       
+

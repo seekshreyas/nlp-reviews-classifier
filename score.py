@@ -7,7 +7,7 @@ from __future__ import division
 
 import re
 
-f = open('input.txt', 'r')
+f = open('data/raw/training/Diaper Champ.txt', 'r')
 f1 = open('output.txt', 'w')
 
 ''' @Summary: Review MicroMP3.txt as reference '''
@@ -63,10 +63,10 @@ for i, line in enumerate(f):
         if re.search("\w+\[\W\d\]", word): # Feature 5
             numeric = word[word.index("[")+1:-1]
             if numeric[0] == '+':
-                score += int(numeric[1])
+                #score += int(numeric[1])
                 mood += int(numeric[1])
             else:
-                score -= int(numeric[1])
+                #score -= int(numeric[1])
                 mood -= int(numeric[1])
             print ">>> product feature: " + word + ", value " + numeric[0:2]
         elif word.isupper() and not word in uppercase_meaningless_words: # Feature 2
