@@ -42,9 +42,11 @@ def parseFiles(fList):
 
     for f in fList:
         fileObj = open(f)
-
+        linenum = 0
         for l in fileObj:
+            linenum += 1
             if not l.startswith('*') and not l.startswith('[t]'):
+
 
                 #find all occurrence of ## in the sentence
                 delimPos = [(a.start(), a.end()) for a in list(re.finditer('##', l))]
@@ -59,7 +61,7 @@ def parseFiles(fList):
                     feat = l.split('##')[0]
                     vote = getVotes(feat)
                     rev = l.split('##')[1]
-                    allSents.append((vote, rev))
+                    allSents.append((f, linenum, vote, rev))
 
                 else:
                     # more than 1 reviews in a sentence
@@ -72,8 +74,8 @@ def parseFiles(fList):
                     vote1 = getVotes(feat1)
                     vote2 = getVotes(rev1_feat2)
 
-                    allSents.append((vote1, rev1))
-                    allSents.append((vote2, rev2))
+                    allSents.append((f, linenum, vote1, rev1))
+                    allSents.append((f, linenum, vote2, rev2))
 
 
                     # to check error handling uncomment the code below
