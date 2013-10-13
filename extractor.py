@@ -14,11 +14,7 @@ email = "shreyas@ischool.berkeley.edu"
 python_version = "Python 2.7.5 :: Anaconda 1.6.1 (x86_64)"
 """
 from __future__ import division
-from optparse import OptionParser
 from nltk.tokenize import word_tokenize
-
-import os
-
 
 #using my parser.py file for getting the input
 import parser
@@ -69,8 +65,8 @@ def getWordCount(sent):
 def main():
     userInput = parser.getInput()
     fileList = parser.getFiles(userInput['train'])
-
     parsedata = parser.parseFiles(fileList)
+
     featdata = featureAggregator(parsedata)
 
     print featdata[:10]
