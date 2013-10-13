@@ -19,27 +19,10 @@ from nltk.tokenize import word_tokenize
 
 import os
 
+
 #using my parser.py file for getting the input
 import parser
 
-def getInput():
-    optionparser = OptionParser()
-
-    optionparser.add_option('-t', '--train', dest='train')
-
-    (option, args) = optionparser.parse_args()
-
-    if not option.train:
-        return optionparser.error('data not provided.\n Usage: --data="path.to.data"')
-
-    return { 'train' : option.train }
-
-
-def getFiles(dir):
-    # os.lisdir(dir)
-    os.chdir(dir)
-    datafiles = [f for f in os.listdir('.') if f.endswith('.txt')]
-    return datafiles
 
 
 def featureAggregator(inputdata):
@@ -49,7 +32,6 @@ def featureAggregator(inputdata):
     """
     outputdata = []
     for inputLine in inputdata:
-
         # aggregate those values into 1 tuple of features
         features = featureExtractor(inputLine[3])
 
@@ -70,6 +52,7 @@ def featureExtractor(sentStr):
 
 
 
+# feature extraction methods
 def getCharCount(sent):
     return int(len(sent))
 
@@ -77,12 +60,17 @@ def getCharCount(sent):
 def getWordCount(sent):
     return len(word_tokenize(sent))
 
+
+
+
+
+
+
 def main():
-    userInput = getInput()
-    fileList = getFiles(userInput['train'])
+    userInput = parser.getInput()
+    fileList = parser.getFiles(userInput['train'])
 
     parsedata = parser.parseFiles(fileList)
-
     featdata = featureAggregator(parsedata)
 
     print featdata[:10]
