@@ -17,6 +17,7 @@ from __future__ import division
 from optparse import OptionParser
 import os
 
+#using my parser.py file for getting the input
 import parser
 
 def getInput():
@@ -39,6 +40,10 @@ def getFiles(dir):
     return datafiles
 
 
+def featureExtractor(inputdata):
+    print inputdata[0]
+
+
 
 def main():
     userInput = getInput()
@@ -46,7 +51,10 @@ def main():
 
     parsedata = parser.parseFiles(fileList)
 
-    print parsedata[:20]
+    featdata = featureExtractor(parsedata)
+
+    # print parsedata[:20]
+    # print len(parsedata)
 
 if __name__ == '__main__':
     main()

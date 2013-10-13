@@ -85,7 +85,7 @@ def parseFiles(fList):
                     allSents.append((f, linenum, vote1, rev1))
                     allSents.append((f, linenum, vote2, rev2))
 
-                    print allSents[-1]
+                    # print allSents[-1]
 
                     # to check error handling uncomment the code below
                     # print vote1, rev1
