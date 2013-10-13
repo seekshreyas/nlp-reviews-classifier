@@ -15,6 +15,9 @@ email = "shreyas@ischool.berkeley.edu"
 python_version = "Python 2.7.5 :: Anaconda 1.6.1 (x86_64)"
 """
 from __future__ import division
+from nltk.tokenize import word_tokenize
+from nltk.corpus import stopwords
+from nltk import FreqDist
 
 import parser
 import extractor
@@ -24,6 +27,7 @@ import random
 import nltk
 
 
+top_words = []
 
 def splitfeatdata(rawdata, fold=10):
     """
@@ -79,7 +83,27 @@ def main():
     fileList = parser.getFiles(userInput['train'])
     parsedata = parser.parseFiles(fileList)
 
+
+    allsent = ''
+    for f in parsedata:
+        allsent += f[3]
+
+    all_words = FreqDist(w.lower()
+                    for w in word_tokenize(allsent)
+                        if w not in stopwords.words('english') )
+
+    global top_words
+    top_words = all_words.keys()[:500]
+
+
     featdata = extractor.featureAggregator(parsedata)
+
+
+
+    print featdata[20]
+
+
+
 
     print "Sample Data Item:\n\n"
 
@@ -93,7 +117,7 @@ def main():
     # print  "A sample feature: %s" % (featdata[:20])
 
 
-    print featdata[20]
+
 
     allacc = splitfeatdata(featdata)
 
