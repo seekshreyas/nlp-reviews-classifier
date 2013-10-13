@@ -51,10 +51,14 @@ def featureExtractor(sentStr):
     featList = {}
     featList['charCount'] = getCharCount(sentStr)
     featList['wordCount'] = getWordCount(sentStr)
+    featList['commaCount']= getCommaCount(sentStr)
+    featList['semicolonCount']= getSemicolonCount(sentStr)
+    featList['uppercount']=getUpperCount(sentStr)
+    featList['digitcount']=getDigitCount(sentStr)
     featList['exclaimCount'] = getExclaimCount(sentStr)
 
 
-    featList.update(getReviewDict(sentStr))
+    # featList.update(getReviewDict(sentStr))
 
 
 
@@ -82,6 +86,12 @@ def getCharCount(sent):
 def getWordCount(sent):
     return len(word_tokenize(sent))
 
+def getCommaCount(sent):
+    commaRegEx = re.compile(',')
+
+    numoccur = len([a.start() for a in commaRegEx.finditer(sent)])
+
+    return numoccur
 
 
 def getExclaimCount(sent):
@@ -91,9 +101,28 @@ def getExclaimCount(sent):
 
     return numoccur
 
+def getSemicolonCount(sent):
+    semicolonRegEx = re.compile(';')
 
+    numoccur = len([a.start() for a in semicolonRegEx.finditer(sent)])
 
+    return numoccur
 
+def getUpperCount(sent):
+    numoccur=0
+    for i in range(len(sent)):
+        i=str(i)
+        if i.isupper==True:
+            numoccur+=1
+    return numoccur
+
+def getDigitCount(sent):
+    numoccur=0
+    for i in range(len(sent)):
+        i=str(i)
+        if i.isdigit==True:
+            numoccur+=1
+    return numoccur
 
 
 
