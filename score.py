@@ -53,7 +53,7 @@ for i, line in enumerate(f):
     score = 0
     mood = 0 # +/- toward product feature
     print("line " + str(i))
-    for word in line.split(" "): 
+    for word in line.split(" "):
         word = word.replace(".","").replace(",","").replace("!","").replace("?","").replace("##","").replace("(","").replace(")","").replace("**","") # Feature 3
         for letter in word:
             if unicode(letter).isnumeric():
