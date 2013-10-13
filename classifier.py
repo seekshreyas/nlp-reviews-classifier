@@ -84,7 +84,7 @@ def main():
     allacc = splitfeatdata(featdata)
 
     print "Accuracy Values: %s" % (allacc)
-    print "Overall Classifier Accuracy %4.2f " % (sum(allacc)/len(allacc))
+    print "Overall Classifier Accuracy %4.4f " % (sum(allacc)/len(allacc))
 
 
 

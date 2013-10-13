@@ -15,11 +15,18 @@ python_version = "Python 2.7.5 :: Anaconda 1.6.1 (x86_64)"
 """
 from __future__ import division
 from nltk.tokenize import word_tokenize
+from nltk.corpus import stopwords
+
+from nltk import FreqDist
 
 #using my parser.py file for getting the input
 import parser
+import re
 
 
+
+
+top_words = []
 
 def featureAggregator(inputdata):
     """
@@ -44,18 +51,47 @@ def featureExtractor(sentStr):
     featList = {}
     featList['charCount'] = getCharCount(sentStr)
     featList['wordCount'] = getWordCount(sentStr)
+    featList['exclaimCount'] = getExclaimCount(sentStr)
+
+
+    featList.update(getReviewDict(sentStr))
+
+
 
     return featList
 
 
 
 # feature extraction methods
+def getReviewDict(sent):
+
+    # print parsedata[:5]
+    contain_features = {}
+    global top_words
+    for word in top_words:
+        contain_features['contains(%s)' % (word)] = (word in set(sent))
+
+    return contain_features
+
+
+
 def getCharCount(sent):
     return int(len(sent))
 
 
 def getWordCount(sent):
     return len(word_tokenize(sent))
+
+
+
+def getExclaimCount(sent):
+    exclaimRegEx = re.compile('!')
+
+    numoccur = len([a.start() for a in exclaimRegEx.finditer(sent)])
+
+    return numoccur
+
+
 
 
 
@@ -66,9 +102,28 @@ def getWordCount(sent):
 def main():
     userInput = parser.getInput()
     fileList = parser.getFiles(userInput['train'])
-    parsedata = parser.parseFiles(fileList)
+    pdata = parser.parseFiles(fileList)
 
-    featdata = featureAggregator(parsedata)
+
+    allsent = ''
+    for f in pdata:
+        allsent += f[3]
+
+    all_words = FreqDist(w.lower()
+                    for w in word_tokenize(allsent)
+                        if w not in stopwords.words('english') )
+
+    global top_words
+    top_words = all_words.keys()[:100]
+
+    # pdata = getParseData()
+    featdata = featureAggregator(pdata)
+
+
+
+
+
+
 
     print featdata[:10]
 
