@@ -61,8 +61,6 @@ def parseFiles(fList):
                     rev = l.split('##')[1]
                     allSents.append((vote, rev))
 
-
-
                 else:
                     # more than 1 reviews in a sentence
                     feat1 = l.split('##')[0]
@@ -77,9 +75,11 @@ def parseFiles(fList):
                     allSents.append((vote1, rev1))
                     allSents.append((vote2, rev2))
 
-                    print vote1, rev1
-                    print vote2, rev2
-                    # print vote1, vote2
+
+                    # to check error handling uncomment the code below
+                    # print vote1, rev1
+                    # print vote2, rev2
+
 
 
         fileObj.close()
@@ -107,7 +107,7 @@ def cleanReview(revstr):
         if not voteregEx.search(temp):
             cleanrev.join(temp)
     else:
-        cleanrev = ''
+        cleanrev = 'N.A.'
 
 
     # print revstr
