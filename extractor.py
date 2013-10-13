@@ -25,7 +25,7 @@ import re
 
 
 
-
+global top_words
 top_words = []
 
 def featureAggregator(inputdata):
@@ -58,8 +58,8 @@ def featureExtractor(sentStr):
     featList['exclaimCount'] = getExclaimCount(sentStr)
 
 
-    # featList.update(getReviewDict(sentStr))
-
+    # feature for presence of top words
+    featList.update(getReviewDict(sentStr))
 
 
     return featList
@@ -72,6 +72,7 @@ def getReviewDict(sent):
     # print parsedata[:5]
     contain_features = {}
     global top_words
+    print top_words
     for word in top_words:
         contain_features['contains(%s)' % (word)] = (word in set(sent))
 
@@ -143,7 +144,7 @@ def main():
                         if w not in stopwords.words('english') )
 
     global top_words
-    top_words = all_words.keys()[:100]
+    top_words = all_words.keys()[:500]
 
     # pdata = getParseData()
     featdata = featureAggregator(pdata)

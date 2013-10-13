@@ -81,9 +81,26 @@ def main():
 
     featdata = extractor.featureAggregator(parsedata)
 
+    print "Sample Data Item:\n\n"
+
+    print "%20s %4s %4s %20s" % ("FILENAME", "LINENUM", "VOTE", "SENTENCE" )
+    print "-" * 79
+    print "%10s %4s %4s %20s" % (featdata[20][0], featdata[20][1], featdata[20][2], featdata[20][3])
+
+
+    for key,val in featdata[20][4].items():
+        print "%30s : %10s" % (key, val )
+    # print  "A sample feature: %s" % (featdata[:20])
+
+
+    print featdata[20]
+
     allacc = splitfeatdata(featdata)
 
+    print "\n\n"
+    print "-" * 60
     print "Accuracy Values: %s" % (allacc)
+    print "==" * 60
     print "Overall Classifier Accuracy %4.4f " % (sum(allacc)/len(allacc))
 
 
