@@ -1,0 +1,801 @@
+line 0 [0: (neutral) correct!]: [t]
+
+line 1 [-3: (negative) correct!]: ##The world of MP3 players is blinding, and since most people don't understand the technology [myself included], user-friendliness is EXTREMELY IMPORTANT. 
+
+line 2 [-3: (negative) correct!]: instruction[-2] ##Unfortunately, Creative offered scant few pages of instruction, which meant that I was on own from the outset. 
+
+line 3 [-6: (negative) correct!]: touch-pad[-2], navigate[-3] ##After attempting to navigate the clumsy touch-pad system, I could not get the unit to download my wma files. 
+
+line 4 [0: (neutral) correct!]: ##When most of us purchase these little devises, we do so because of their diminuitive size and extraordinary storage capacities. 
+
+line 5 [-28: (negative) correct!]: EXPLAIN[-3] ##SO, YOU MIGHT INQUIRE, WHY DON'T THEY MAKE IT A FIRST PRIORITY TO CAREFULLY, SIMPLY EXPLAIN HOW DOWNLOAD MUSIC FROM YOUR MUSIC LIBRARY TO THEIR DEVICE??? This seems academic to me.
+
+line 6 [-4: (negative) correct!]: navigating[-3] ##Most of us just want to plug and play, not spend a year navigating a maze of complicated options...like transfering everything on a hard drive to this stupid thing.
+
+line 7 [-2: (negative) correct!]: ##I don't care what ELSE it can do.
+
+line 8 [-1: (negative) correct!]: ##I just want MUSIC to eminate from it when I want, how I want.
+
+line 9 [2: (positive) correct!]: sound[+2] ##All of this said [as it's on it's way back to Amazon], the one song it did include provided far better sound than the IPOD. 
+
+line 10 [2: (positive) correct!]: bass[+2],highs[+2} ##The base was deeper and the highs were crisper. 
+
+line 11 [-8: (negative) correct!]: touch-pad[-3], instruction[-3] ##Unfortunately, the touch-pad issues [non-intuitive] and poor instruction guide killed it. 
+
+line 12 [0: (neutral) correct!]: [t]
+
+line 13 [-3: (negative) correct!]: ##Why get locked in to crappy Itunes weather you want to or not? 
+
+line 14 [4: (positive) correct!]: machine[+3] ##what a kick butt Mp3 machine and the freedom to get songs from a reasonable source, instead of paying for them two or three times, then get the Creative Zen IPOD killer, kiss my ass Itunes!
+
+line 15 [0: (neutral) correct!]: ##i got 6000 mp3's you'll never register or gay up.     
+
+line 16 [0: (neutral) correct!]: [t]
+
+line 17 [-1: (negative) correct!]: ##Two days after writing this review below, I want to remove another two stars. 
+
+line 18 [0: (neutral) correct!]: ##I just discovered another con in my list of pros and cons.
+
+line 19 [-2: (negative) correct!]: Zen Micro[-2] ##This one is particularly bothersome: Allegedly one can use the Zen Micro as a portable drive to store and transport data from one computer to another.
+
+line 20 [-1: (negative) correct!]: ##Ahhh! There is a catch, the manufacturer does not tell you. 
+
+line 21 [-2: (negative) correct!]: store[+2], INSTALL[-2] ##Although you can store any type of file on the Zen Micro to download onto a different computer, you need to INSTALL (on the computer you are moving the data to) Zen Micro software and drivers to do it!!! 
+
+line 22 [0: (neutral) correct!]: ##I just tried to move a load of plain data files from my home computer to my office work computer, and it is promting me to install Zen Micro software, etc.... 
+
+line 23 [1: (positive) correct!]: ##I have used similar devices and they are seamless and simple. 
+
+line 24 [-1: (negative) correct!]: software[-2] ##Who wants to go through the hassles of loading software onto a "foreign" computer just to move over some simple (*.txt) files?  
+
+line 25 [0: (neutral) correct!]: ##This brings my review to one star! 
+
+line 26 [-1: (negative) correct!]: ##But Amazon won't allow me to reduce the number of stars once I have already established three two days ago.  
+
+line 27 [7: (positive) correct!]: sound[+3], portability[+2] ##The sound is great, the portability, etc... all the "stuff" you expect from a good MP-3 player, this Zen Micro has it. 
+
+line 28 [0: (neutral) correct!]: ##It COULD have been a great product. 
+
+line 29 [-2: (negative) correct!]: ##Why isn't it? 
+
+line 30 [0: (neutral) correct!]: ##Read the next six mixed pros and cons: .  
+
+line 31 [0: (neutral) correct!]: ##1.
+
+line 32 [-2: (negative) correct!]: Button sensitivity[-2] ##) Button sensitivity: Even reduced to the lowest sensitivity setting, the buttons are far two sensitive, really takes some getting use to, and even then, it is still too sensitive. 
+
+line 33 [-1: (negative) correct!]: ##The company has received thousands of complaints about this and refuses to do anything about it. . 
+
+line 34 [0: (neutral) correct!]: ##2.
+
+line 35 [-16: (negative) correct!]: FEATURE[-3], recharge cord[-3] ##) WORST FEATURE POSSIBLE, THIS ALONE MAKES IT RATE ONE STAR: What's up with no recharge cord? 
+
+line 36 [-4: (negative) correct!]: cost[-3]##You have to purchase that separately for some outrageous cost. 
+
+line 37 [-1: (negative) correct!]: ##If you want to recharge it, you MUST connect it to your computer. 
+
+line 38 [0: (neutral) correct!]: ##The recharge cord will do the job in a fraction of the time that the USB cable will hooked to your computer. 
+
+line 39 [-2: (negative) correct!]: charged[-2] ##I took my Zen Micro with me over the weekend, and was forced to lug my laptop with me on the trip for one reason: to keep the Zen Micro charged. 
+
+line 40 [0: (neutral) correct!]: ##Infuriating! Nearly all other MP-3 producing companies include a recharging cord with their product that can be plugged into a wall socket. 
+
+line 41 [1: (positive) correct!]: ##If you want a wall-socket recharging cord, you have to dish out somewhere between $30 and $35, plus shipping and handling, for a cord that cost less than $1 to manufacture and market. 
+
+line 42 [-2: (negative) correct!]: product[-2] ##I have trashed this product on other opinion sites based on this major flaw alone. 
+
+line 43 [0: (neutral) correct!]: ##What is up with nickle and dimeing consumers on the recharge cord? 
+
+line 44 [0: (neutral) correct!]: ##Buy from another company and run from Creative, Inc. 
+
+line 45 [-1: (negative) correct!]: ##Their product may appear more enconomical, but it isn't in the long run. . 
+
+line 46 [0: (neutral) correct!]: ##3.
+
+line 47 [-4: (negative) correct!]: prices[-3] ##) Creative, Inc. the maker includes the barest of the bare minimum in the box, then through gross profiteering nickles and dimes you on EVERY single accessory at extraordinarily inflated prices. 
+
+line 48 [-4: (negative) correct!]: case[-2] ##The box included a little polyester, pull-string BAG, (yes, you read right a BAG, something a boy would carry ten marbles in) and tries to pass it off as the case. 
+
+line 49 [-2: (negative) correct!]: case[-2] ##If you want to purchase a real case or container or clip-on carrier for you Zen Micro, expect to purchase it separately and to dish out big time. . 
+
+line 50 [0: (neutral) correct!]: ##4.
+
+line 51 [4: (positive) correct!]: battery[+3] ##) One outstanding positive feature is the battery. It holds a charge for a long time, longer than most other similar products and the user can replace it easily or take another along as a backup. 
+
+line 52 [0: (neutral) correct!]: ##Some other companies require you to send your player back and then charge you an additional $130 to replace their batteries. 
+
+line 53 [3: (positive) correct!]: rechargeable battery[+3] ##Creative did well on its rechargeable battery feature. .
+
+line 54 [0: (neutral) correct!]: ##5.
+
+line 55 [0: (neutral) correct!]: ##) I purchased this device primarily to record off the built-in FM receiver for lectures and seminars that are broadcast live over a FM signal for the hearing impaired. 
+
+line 56 [1: (positive) correct!]: FM receiver[+1] ##The Zen Micro FM receiver is ok, not great. 
+
+line 57 [-2: (negative) correct!]: FM receiver[-][cc] ##IRiver has a better FM receiver built in, but the drawback to IRiver products is they are flimsy and poorly constructed. 
+
+line 58 [0: (neutral) correct!]: ##I have gone through two of them in two years. . 
+
+line 59 [0: (neutral) correct!]: ##6.
+
+line 60 [3: (positive) correct!]: constructed[+3][u] ##) The Zen Micro appears sturdy and well constructed, hefty, if you will, far better than many of its competitors. . 
+
+line 61 [-2: (negative) correct!]: charges[-2] ##As I wrote, this COULD have been a great product, but expect hidden charges (read gross profiteering and price gouging) as the company royally sticks you on every conceivable accessory necessary for normal daily usage.     
+
+line 62 [0: (neutral) correct!]: [t]
+
+line 63 [2: (positive) correct!]: Zen Micro[+2] ##Well, I have an Ipod mini - and I really like it, but all in all, I like the Zen Micro more.
+
+line 64 [-1: (negative) correct!]: ##  Why?  
+
+line 65 [8: (positive) correct!]: size[+2], space[+2][u], battery[+2], look[+2]##Smaller size, 1 gb of more space, radio, voice recording, removable battery, cooler look, all in one.  
+
+line 66 [-4: (negative) correct!]: touchpad[-1] ##The touchpad is annoying sometimes (give me the click-wheel and pressable buttons any day), but not at all as difficult to get over as other people are saying.
+
+line 67 [4: (positive) correct!]: small[+3] ##I love how small the thing is, and the blue glow - I've had it for two weeks with no electronic problems at all.  
+
+line 68 [6: (positive) correct!]: Media Source[+2], file transfers[+3] ##Creative Media Source is very easy to use once you get the hang of it, and the file transfers are fast.  
+
+line 69 [7: (positive) correct!]: Sound[+2], fm tuner[+2], recorder[+2] ##Sound quality is great, fm tuner is fine, as is the recorder.  
+
+line 70 [3: (positive) correct!]: player[+2] ##This is the mp3 player with everything I need.  As long as it lasts me a good three years, I'm satisfied.        
+
+line 71 [0: (neutral) correct!]: [t]
+
+line 72 [0: (neutral) correct!]: ##I am one of the many people who (a) are PC Based and (b) can't stand to see the multitudes of people with those funky white headphones that belong to Ipod users. ##I first want to say that I think Apple is making the same old mistake as they did with Macintosh years ago. 
+
+line 73 [0: (neutral) correct!]: ##This proprietory software to download. 
+
+line 74 [0: (neutral) correct!]: ##(That was a major turn off). 
+
+line 75 [-1: (negative) correct!]: ##I am the type of person that will always go against the masses of blind followers so there was no way I was getting an Ipod. 
+
+line 76 [2: (positive) correct!]: player[+2][p] ##Also If you want a device that does soo much more than the Ipod mini but is at the same price, this is the player for you. 
+
+line 77 [-2: (negative) correct!]: ##The reason why I didn't give the Zen Micro 5 stars is that they also seem to want to conform the the Ipod sense of style. 
+
+line 78 [-2: (negative) correct!]: Headphones[-2] ##and supply those stupid white Headphones. 
+
+line 79 [-1: (negative) correct!]: ##I also think that if you are going to offer them in different colors then commit all the way and have the entire device in that color, not just the front and color the head phones as well. 
+
+line 80 [0: (neutral) correct!]: ##Let's face it. 
+
+line 81 [0: (neutral) correct!]: ##Apple is Apple. 
+
+line 82 [0: (neutral) correct!]: ##So Creative should be "Creative". 
+
+line 83 [0: (neutral) correct!]: [t]
+
+line 84 [0: (neutral) correct!]: ##I've been looking for a portable MP3 player for awhile now. 
+
+line 85 [0: (neutral) correct!]: ##With so many choices it was a tough decision. 
+
+line 86 [0: (neutral) correct!]: ##My first instinct was to go with an iPod. 
+
+line 87 [1: (positive) correct!]: ##I visited quite a few forums and while the iPod is a great player I was concerned with the battery life and the inability to change them without breaking open the case.  
+
+line 88 [0: (neutral) correct!]: ##I started looking at the Creative Zen Micro and after reading numerous reviews from message boards and magazines I decided I'd give the Zen a try. 
+
+line 89 [1: (positive) correct!]: ##All I can say is what a wonderful choice! 
+
+line 90 [0: (neutral) correct!]: ##I ordered from Amazon and got the Limited Edition package that includes a free battery!  
+
+line 91 [3: (positive) correct!]: small[+3][u] ##Upon opening the box I was confronted with this small cute little MP3 player. 
+
+line 92 [0: (neutral) correct!]: ##I popped one of the batteries in and to my surprised it started right up. 
+
+line 93 [4: (positive) correct!]: installation[+3] ##The software included is an easy installation and you have the option of using the Creative software, Windows Media Player 10, or simply Windows Explorer to move music back and forth between your Zen Touch. 
+
+line 94 [0: (neutral) correct!]: ##I did a quick test by selecting a few files and copying them over and they loaded right in. 
+
+line 95 [0: (neutral) correct!]: ##Pressed play and I was off. 
+
+line 96 [-1: (negative) correct!]: touch pad[-1] ##The touch pad does take a little getting used to. 
+
+line 97 [0: (neutral) correct!]: ##I'm still trying to manage the thing myself, but I've found that if you put the sensitivity to low it is fine.  
+
+line 98 [2: (positive) correct!]: cable[+1],adapter[+1],headphones[+1], stand[+1],pouch[+1]##The package also comes with a USB cable, an AC adapter, a pair of headphones (they're okay until you get a better pair), a stand, and a microfiber pouch to carry your Zen Touch in.  
+
+line 99 [4: (positive) correct!]: Zen Touch[+3][u] ##Overall I'm incredibly impressed with my new Zen Touch. 
+
+line 100 [4: (positive) correct!]: looks[+3] ##It's cute as anything and the glowing blue LED looks super cool around the edges. 
+
+line 101 [3: (positive) correct!]: player[+2] ##For the price I think this is a remarkably fun MP3 player.
+
+line 102 [1: (positive) correct!]: ##Enjoy!     
+
+line 103 [0: (neutral) correct!]: [t]
+
+line 104 [4: (positive) correct!]: player[+3][p] ##I've had this player for more than 4 months and I'm very happy with it. 
+
+line 105 [0: (neutral) correct!]: ##I use it on an average 5 hours a day I hook it up to my Belkin FM transmitter in the car or to my Logitech 2.
+
+line 106 [2: (positive) correct!]: Speakers[+2] ##1 Speakers at home, I rarely use it with the earbuds, though they are much better than the ones you normally get with other mp3 players.  
+
+line 107 [7: (positive) correct!]: Look[+3], Feel[+3] ##The Look & Feel: I have the black one and the contrasting neon blue on the buttons add a very nice ambience. 
+
+line 108 [0: (neutral) correct!]: ##The light pulsates when you are charging it almost as if it were breathing. 
+
+line 109 [2: (positive) correct!]: tiny[-1][u], back[+3] ##The player itself is tiny , it gets a bit bulky when you put it in the hardcase, which you need to do if you don't want to get scrathes on the back(its a nice looking back too ). 
+
+line 110 [2: (positive) correct!]: feels[+2][p] ##It feels tiny in the hand without it. 
+
+line 111 [2: (positive) correct!]: stand[+2] ##The stand that comes with it is very useful to prop it up on the desk. 
+
+line 112 [-1: (negative) correct!]: ##The belt clip however is not very useful if you move around a lot. 
+
+line 113 [6: (positive) correct!]: looks[+3], read[+2][u] ##The blue backlit LCD looks really neat and is easy to read. 
+
+line 114 [-2: (negative) correct!]: touch controls[-1] ##The touch controls took a little getting used to but now I wouldn't change it for the scroll wheel. 
+
+line 115 [4: (positive) correct!]: touch buttons[+3] ##The touch buttons are textured so that your finger sdon't slip which was very thoughtful.   
+
+line 116 [3: (positive) correct!]: Build[+3] ##Reliability & Build  I dropped the player once from about 4 ft, and it fell hard, but kept on playing. 
+
+line 117 [1: (positive) correct!]: hardcase[+1] ##The hardcase they give with it must work well.  
+
+line 118 [2: (positive) correct!]: solid[+2][p] ##It feels solid and not flimsy like the carbon.  
+
+line 119 [3: (positive) correct!]: sound[+3] ##Sound  I'm no audiophile but I was amazed by the clarity the player had, it was much better than the sound card on my Computer and louder too. 
+
+line 120 [3: (positive) correct!]: sound[+3] ##I have had the ipod mini and it performs on the level with my sound card but the micro beats it outright.  
+
+line 121 [5: (positive) correct!]: sound[+3] ##Best of all the WMAs(I have a lot of them) sound great.  
+
+line 122 [3: (positive) correct!]: features[+3] ##Utility Its got a huge list of features including an FM Recorder a Calender and contacts list. 
+
+line 123 [-1: (negative) correct!]: ##Its not convinient to enter name of course but synchronise it with outlook and it becomes a gem of a address book. 
+
+line 124 [4: (positive) correct!]: recorded[+3] ##The songs recorded with FM are as good as the original signal. 
+
+line 125 [0: (neutral) correct!]: ##The interface takes 2 secs after you press record to show up but its actually started recording at the moment you press record.  
+
+line 126 [-2: (negative) correct!]: software[-1] ##Software The software that comes along with it is not very intuitive but once you are used to it,it  does the job well. 
+
+line 127 [4: (positive) correct!]: playlists[+3] ##Creating and modifying playlists is easy and clean.  
+
+line 128 [-2: (negative) correct!]: battery life[-2] ##There are 2 things that need fixing  First is the battery life. It will run for 6 hrs without problems with medium usage of the buttons. 
+
+line 129 [-4: (negative) correct!]: USB[-2] ##Second might be a problem I might have with my PC but not too sure, when the player is connected on the USB and I start playing on it and also using the windows explorer, it sometimes pauses by itself and tries to synchronise with the PC during play, which is a bit irritating.     
+
+line 130 [0: (neutral) correct!]: [t]
+
+line 131 [4: (positive) correct!]: creative zen[+2] ##I think that for its price compared to the ipod the creative zen is pretty good.  
+
+line 132 [0: (neutral) correct!]: ##i have a lot of files in wma so that was the biggest factor in my decision to purchase the zen.  
+
+line 133 [-5: (negative) correct!]: headphone jack[-3] ##HOWEVER after just one month my headphone jack was BROKEN as a result of normal, every-day use.  
+
+line 134 [0: (neutral) correct!]: ##by broken i mean that it would no longer transmit sound.  
+
+line 135 [5: (positive) correct!]: support[+3] ##The good news is that the creative support is very responsive and after some emails and postal exchanges, i had a new zen.  
+
+line 136 [-1: (negative) correct!]: ##i havent used it much yet so i dont know if i will have the same problem; obviously i hope not.  
+
+line 137 [-2: (negative) correct!]: organization[-2][u] ##i dont especially like how music files are unstructured; basically they are just dumped into one folder with no organization, like you might have in windows explorer folders and subfolders.  
+
+line 138 [-2: (negative) correct!]: ##in principle playlists, album names, artist names, etc would help you organize but this only works IF your tracks have all the necessary data; mine do not.  
+
+line 139 [0: (neutral) correct!]: ##and if you have 2500 songs, as you might very well, you will be reluctant to edit the clip properties of 2500 files.  
+
+line 140 [2: (positive) correct!]: sound[+1] ##the sound is quite good, in terms of volume.  
+
+line 141 [-3: (negative) correct!]: headphones[-2] ##the headphones are not very comfortable, but most people have a certain style they like so just go buy new ones or keep the ones you have.  
+
+line 142 [3: (positive) correct!]: installation[+2], touch pad[+1] ##i didnt have any installation problems; and the touch pad is fine, even if it is sort of inaccurate.  
+
+line 143 [0: (neutral) correct!]: ##you just get used to it after a while.  
+
+line 144 [4: (positive) correct!]: cheaper[+2][u],WMA files[+2][u] ##i didnt get ipod because i dont especially like itunes (no music i want, but thats just me) and the creative product was cheaper; and i needed to be able to use WMA files.  
+
+line 145 [3: (positive) correct!]: price[+2][p] ##all-in-all, its good enough for its price as long as it doesnt break again due to normal use.       
+
+line 146 [0: (neutral) correct!]: [t]
+
+line 147 [-1: (negative) correct!]: ##This is a difficult player to review because I would recommend it on a case-by-case basis. 
+
+line 148 [0: (neutral) correct!]: ##If you're not computer savvy or if you want things as simple as they can be, get the iPod. 
+
+line 149 [0: (neutral) correct!]: ##Bottom line.  
+
+line 150 [0: (neutral) correct!]: ##However, since you're reading this review, you want to avoid getting an iPod. 
+
+line 151 [1: (positive) correct!]: ##For whatever reason. There is also a low number of people, like me, who love iTunes but want to get the Zen Micro. 
+
+line 152 [0: (neutral) correct!]: ##I'll talk more about that later.  
+
+line 153 [-1: (negative) correct!]: ##First of all, why does every single piece of media library software that comes with an MP3 player suck? 
+
+line 154 [0: (neutral) correct!]: ##(iTunes being an exception of course). 
+
+line 155 [-3: (negative) correct!]: software[-2], feature[-2][u] ##The Creative MediaSource software that comes with the Zen Micro is cluttered, and excludes my favorite feature in iTunes, the ability to automatically copy everything you import into a certain folder. 
+
+line 156 [0: (neutral) correct!]: ##I like to keep all of my Mp3s in one folder and manually doing this is a pain. 
+
+line 157 [-1: (negative) correct!]: ##Bottomline, don't even bother with the software that comes with the Zen Micro.  
+
+line 158 [-2: (negative) correct!]: Player[-1] ##NAGATIVES of the Player itself:  You need to do a little work before having full enjoyement of this player.  
+
+line 159 [0: (neutral) correct!]: ##1.
+
+line 160 [-1: (negative) correct!]: ##Set the sensitivity of the touch pad to LOW. 
+
+line 161 [-1: (negative) correct!]: ##Also, as soon as you select a song and set your desired volume level, put the player on HOLD. 
+
+line 162 [-2: (negative) correct!]: sensitivy[-1] ##Even on the LOW sensitivy level, a slight touch can skip or pause the track.  
+
+line 163 [0: (neutral) correct!]: ##2. 
+
+line 164 [0: (neutral) correct!]: ##Update the firmware which can be found on the Creative web site. 
+
+line 165 [-2: (negative) correct!]: player[-2]##This fixes some glitches such as the player freezing.    
+
+line 166 [-1: (negative) correct!]: ##POSITIVES:  Reasons for getting the Zen Micro instead of the iPod:  1. 
+
+line 167 [2: (positive) correct!]: battery[+2] ##The battery is removable. 
+
+line 168 [0: (neutral) correct!]: ##You can buy a new battery for 49.99. 
+
+line 169 [-2: (negative) correct!]: ##With the iPod, if the battery has reached it's life span (after about a year), and you didn't buy the warranty from the store, you need to buy a NEW player.
+
+line 170 [0: (neutral) correct!]: ## 2. ##
+
+line 171 [1: (positive) correct!]: FM radio[+1] ## FM radio built in (Howard Stern).  
+
+line 172 [0: (neutral) correct!]: ##3. 
+
+line 173 [1: (positive) correct!]: microphone[+1] ##Record memos using the built in microphone.  
+
+line 174 [0: (neutral) correct!]: ##4.
+
+line 175 [1: (positive) correct!]: looks[+2] ##The player looks SO much better when you're actually holding it. 
+
+line 176 [-1: (negative) correct!]: ##The photos don't do it justice. 
+
+line 177 [3: (positive) correct!]: back[+2] ##The back of the player is nice too, with water ripples inside the clear white coating.  
+
+line 178 [0: (neutral) correct!]: ##5. 
+
+line 179 [2: (positive) correct!]: storage[+2] ##You can use it as a storage Hard Drive.    
+
+line 180 [0: (neutral) correct!]: ##Now, about the iTunes. 
+
+line 181 [1: (positive) correct!]: iTunes[+1] ##I have no problem using iTunes with the Zen Micro (in a makeshift sorta way).   
+
+line 182 [0: (neutral) correct!]: ##This is what I do:  I copy all the music I want to import to the Zen Micro into an iTunes play list. 
+
+line 183 [0: (neutral) correct!]: ##After that, you connect your Zen Micro and open My Computer. 
+
+line 184 [0: (neutral) correct!]: ##Click on "Zen Micro Media Explorer" and then click on "Transfer Data Between PC and Device" after that, a File Explorer window opens. 
+
+line 185 [0: (neutral) correct!]: ##And all you do is select all the tracks in the iTunes playlist and drag them to the File Explorer window.  
+
+line 186 [-1: (negative) correct!]: ##It's not as seamless as if you were to use an iPod, but it only takes a few seconds longer. 
+
+line 187 [1: (positive) correct!]: ##So yeah, you can have the best of both worlds.  
+
+line 188 [-2: (negative) correct!]: ##* Of Course, if you've BOUGHT tracks from iTunes, this won't work. 
+
+line 189 [0: (neutral) correct!]: ##You can only copy songs you've downloaded for free or ripped from a CD.  
+
+line 190 [-1: (negative) correct!]: ##**I honestly don't see the point of buying songs from iTunes when there are so many free alternatives. 
+
+line 191 [0: (neutral) correct!]: ##But if you get that "fuzzy legal feeling" from paying for songs, at least buy them from allofmp3.com, there are no restrictions and the songs cost pennies.     
+
+line 192 [0: (neutral) correct!]: [t]
+
+line 193 [0: (neutral) correct!]: ##I'm addicted to music. 
+
+line 194 [0: (neutral) correct!]: ##I'm also somewhat of an audiophile. 
+
+line 195 [1: (positive) correct!]: ##Mp3 players are like a blessing and a curse for people like me. 
+
+line 196 [0: (neutral) correct!]: ##On the one hand, you have the ability to store and plays over 1000 songs on one little piece of machine. 
+
+line 197 [-1: (negative) correct!]: ##On the other hand, you get terrible sound quality. 
+
+line 198 [0: (neutral) correct!]: ##I decided to go with the convienence factor and purchase a creative zen micro. 
+
+line 199 [0: (neutral) correct!]: ##I was at [random electronic store], browsing through players, and came across two that made the cut. 
+
+line 200 [-1: (negative) correct!]: ##The first was an ipod 5gb (I could kick myself for not buying it), and the other was a creative 5gb. 
+
+line 201 [0: (neutral) correct!]: ##The creative came with a free trial of [random file sharing company] "to go". 
+
+line 202 [0: (neutral) correct!]: ##So that's the one I bought. 
+
+line 203 [-1: (negative) correct!]: ##Too bad.  
+
+line 204 [-4: (negative) correct!]: made[-3][u] ##First thing I noticed was that the creative wasn't well made. 
+
+line 205 [-3: (negative) correct!]: player[-3]##One drop from a pocket or desktop, and it'd be a goner.  
+
+line 206 [-5: (negative) correct!]: sound[-3] ## Problems with the sound quality were evident right away, but even I couldn't imagine they'd be that bad. 
+
+line 207 [-7: (negative) correct!]: eq[-3], bass[-3] ##The eq is awful, and even at top volumes, the bass is flat sounding. 
+
+line 208 [0: (neutral) correct!]: volume [-1] ##Cranking the master volume level up past the mark of the bar only leads to distortion and compromised sound quality. 
+
+line 209 [-3: (negative) correct!]: headphone jack[-3] ##The headphone jack gave out after only a couple weeks of use, and the stock earbuds were replaced same day with some high end sony's I'd been having. 
+
+line 210 [-1: (negative) correct!]: ##They didn't really make any difference. 
+
+line 211 [0: (neutral) correct!]: ##I also experimented with an adapter for the car. 
+
+line 212 [-2: (negative) correct!]: sound[-2] ##If you've been listening to cd's in your car for awhile, dealing with the drop-off in sound quality may take some getting used to. 
+
+line 213 [2: (positive) correct!]: car adapter[+2] ##However, if there was one thing I liked about the creative, it would be the car adapter. 
+
+line 214 [0: (neutral) correct!]: ##Hands down, better quality than ipod's. 
+
+line 215 [-1: (negative) correct!]: ##that isn't saying much, but hey, I like to be positive.   
+
+line 216 [-2: (negative) correct!]: storage[-2][u] ##Even after all the nightmare sound problems, I'd still half-way like this product if it kept it's promise; the ability to store 1500 songs. 
+
+line 217 [-2: (negative) correct!]: storage[-2][u] ##I got about 700 loaded up before it told me I was full, and at that point, I was ready to toss it out the window.   
+
+line 218 [-2: (negative) correct!]: ##If you do not care about sound/music quality in the least, and don't mind the ability to store 800 songs less than promised, get the creative zen micro.   ##Otherwise, you should get an ipod. 
+
+line 219 [-2: (negative) correct!]: creative[-][cc]##My friend has an ipod, and although the sound quality probably won't meet most audiophile standards, the product itself is better than anything creative has made.
+
+line 220 [0: (neutral) correct!]: ##features[-][u][cc]It hold's a promised amount of songs, and the headphone jack/volume controls deliver a more impressive performance than creative's.   
+
+line 221 [0: (neutral) correct!]: ##If you're an audiophile, you already know that mp3 players are far from impressive. 
+
+line 222 [-1: (negative) correct!]: ##player[-][s]However, this one makes an ipod sound like your old LP's, so even if you're a casual listener, I'd advise that you avoid the purchase of this product. Terrible.      
+
+line 223 [0: (neutral) correct!]: [t]
+
+line 224 [0: (neutral) correct!]: ##I bought this two months ago at a local retailer, after spending considerable time reading reviews here of this and other 5GB players. 
+
+line 225 [2: (positive) correct!]: compatibility with windows media player[+3]  ##While they all seem to have their own positives and negatives, I picked the Zen Micro over the Ipod mini, because I am not an Apple person, never has been - I wanted something that is fully compatible with Windows Media Player. 
+
+line 226 [2: (positive) correct!]: format[+2] ##Also, the WMA compression format is superior to MP3, especially at lower bit rates, so I needed a player that could handle WMA and integrate well with my Windows XP computers.  
+
+line 227 [3: (positive) correct!]: accessories[+3] ##I was fortunate to get the packaging that still included all the accessories (desk stand/hard case, belt clip, wall charger, etc). 
+
+line 228 [4: (positive) correct!]: Zen Micro[+3] ##And so far, I have been very, very happy with my Zen Micro. 
+
+line 229 [3: (positive) correct!]: working[+3][u] ##It's being used daily and I have had none of the problems reported by other reviewers (headphone jack, player locking up, etc). 
+
+line 230 [0: (neutral) correct!]: ##Just in case, I bought a two-year extended warranty for about 15% of the purchase price of the player.   
+
+line 231 [0: (neutral) correct!]: ##I promptly gave the included earbuds to my wife, I'm using a pair of Sennheiser PXC250 noise-canceling headphones with the Zen Micro. 
+
+line 232 [7: (positive) correct!]: features[+3], user interface[+3] ##The Micro has an impressive array of very nice features and a well designed user interface. 
+
+line 233 [4: (positive) correct!]: feel[+3] ##What I like the most:  - Small and solid feel. 
+
+line 234 [3: (positive) correct!]: size[+2],feel[+2] ##The Zen Micro is smaller than it looks in pictures, and feels very solid. 
+
+line 235 [5: (positive) correct!]: backlight[+3] ##The blue backlight is pretty cool. 
+
+line 236 [4: (positive) correct!]: screen[+2], touchpad[+2] ##The screen is clear and readable, and the touch pad works very well, it took me less than a day to get the hang of it, and now I like it better than having to click buttons or fiddle with a separate volume control.  
+
+line 237 [9: (positive) correct!]: sound[+3], audio quality[+3] ##- Great sound! I was very impressed, I encode at 192 kbps and the audio quality is great, especially with the better headphones. 
+
+line 238 [0: (neutral) correct!]: ##I managed to fit about 700 tracks on the player, but many of those are 6-15 minute long classical tracks.   
+
+line 239 [0: (neutral) correct!]: ##- Integration with Media Player. 
+
+line 240 [2: (positive) correct!]: transfer[+2], sync with media player[+1][u] ##The first thing I did was upgrade the firmware to the version required for WMP10, it syncs flawlessly with Media Player and transfers are fast.  
+
+line 241 [1: (positive) correct!]: battery[+1] ##- Replaceable battery. 
+
+line 242 [0: (neutral) correct!]: ##A must for me, the fact that you can carry extra batteries is a big bonus.  
+
+line 243 [0: (neutral) correct!]: ##- The FM Radio. 
+
+line 244 [0: (neutral) correct!]: ##I find myself listening to the radio a lot. 
+
+line 245 [2: (positive) correct!]: ##You have to be in an area with good reception, but where I live I can get most of my favorite stations quite well.  
+
+line 246 [0: (neutral) correct!]: ##- Doubles as a removable disk drive. 
+
+line 247 [2: (positive) correct!]: interface[+2][u] ##With the right firmware, drag and drop to and from the player like any other jump drive.  
+
+line 248 [3: (positive) correct!]: player[+3][p] ##I have not yet used all the features, like the calendar, etc, but as a music player this little thing rocks.  
+
+line 249 [-3: (negative) correct!]: battery life[-2] ##The only reason for not giving it 5 stars: the claimed battery life of 12 hours is very optimistic - possible maybe if you really sit down and listen continuously for 12 hours without ever touching the player, but in real life I can probably get 6-8 hours at most. 
+
+line 250 [1: (positive) correct!]: ##Plus, from the Creative discussion forums it is clear that they have some problems with excessive battery drainage with the current firmware. 
+
+line 251 [0: (neutral) correct!]: ##They seem to be working on a fix and will probably sort it out soon. 
+
+line 252 [0: (neutral) correct!]: ##For me, I get through a typical day's listening just fine, and I could probably squeeze out two days, but it really is no big deal to just charge the Micro overnight. 
+
+line 253 [-3: (negative) correct!]: battery life[-2] ##Even the "shorter" battery life, though, has not impaired my positive experience with the Zen Micro in any way. 
+
+line 254 [4: (positive) correct!]: warranty price[+2][u], accessories[+2], player[+][s] ##If you can get one with all the accessories and a cheap extended warranty, this is the player to get! Highly recommended.     
+
+line 255 [0: (neutral) correct!]: [t]
+
+line 256 [0: (neutral) correct!]: ##Update 8/11/05:  The latest release of the iPOD firmware fixes teh calender sync bug i noted below.  
+
+line 257 [0: (neutral) correct!]: ##I bought this a couple of months ago after researching all the reviews comparing with the iPod mini. 
+
+line 258 [2: (positive) correct!]: price[+2] ##The Micro seeemed like an iPod for less. 
+
+line 259 [0: (neutral) correct!]: ##I got rid of my older PDA figuring that since the only function I used on it anyways was to manage my contacts and calender, I could now use my Zen Micro.  
+
+line 260 [3: (positive) correct!]: sound[+3] ##Pros: - Excellent sound, even with the headphones that come out of the box, but it absolutely rocked with my Bose Quietcomfort 2 set. 
+
+line 261 [7: (positive) correct!]: look[+3], size[+3][u] ##- Looks sleek, compact, has a radio.  
+
+line 262 [-3: (negative) correct!]: accessories[-2] ##Limitations: - Not a lot of original accessories like the iPod. 
+
+line 263 [-1: (negative) correct!]: ##I waited for Creative's FM transmitter for a month, finally bought a Belkin Tunecast II, which is not great. 
+
+line 264 [0: (neutral) correct!]: ##I get occasional hiss while driving. 
+
+line 265 [-2: (negative) correct!]: battery life[-2] ##- The battery life leaves a lot to be desired. 
+
+line 266 [0: (neutral) correct!]: ## Though rated at 12 hrs, I could barely manage 8 and I have two spares as well. 
+
+line 267 [-4: (negative) correct!]: firmware[-3] ##I downloaded the new firmware which was supposed to take care of the problem, but it hasn't worked. 
+
+line 268 [-4: (negative) correct!]: outlook sync[-2] ##- The outlook synch only works for non recurring appointments, which personally is very annoying to me but probably wont be to most people. - ##Several people complained about the touchpad and frankly i'm starting to see why. 
+
+line 269 [-1: (negative) correct!]: touchpad[-1] ##I occassionally flip songs while working out as i accidently hit the pad even lightly (yes i have it in maximum desensitized mode). 
+
+line 270 [0: (neutral) correct!]: ##I wish they has a "lock" function like cell phones to prevent this. 
+
+line 271 [-4: (negative) correct!]: audible.com book compatibility[-3][u] ##- Not compatible with Audible.com books.  
+
+line 272 [-3: (negative) correct!]: Zen Micro[-2] ##Overall, it does its basic function very well, but we expect more from the mp3 players today and the Zen Micro does not rise to the occassion.     
+
+line 273 [0: (neutral) correct!]: [t]
+
+line 274 [0: (neutral) correct!]: ##I first signed up for Napster on line.  
+
+line 275 [0: (neutral) correct!]: ##Loved the service so much I decided to buy an MP3 player and upgrade from the basic Napster to Napster To Go. 
+
+line 276 [0: (neutral) correct!]: ##They have a list of compatible players which I miss read.  
+
+line 277 [-1: (negative) correct!]: ##So my first MP3 player purchase was incorrect.  
+
+line 278 [0: (neutral) correct!]: ##To transfer songs requires you to pay 99 cents.  
+
+line 279 [0: (neutral) correct!]: ##The player I first purchased was the Creative Nomad Jukebox Zen Xtra 40 GB MP3 Player.  
+
+line 280 [-1: (negative) correct!]: ##This player is not compatible with Napster To Go. 
+
+line 281 [0: (neutral) correct!]: ##The player was large and bulky.  
+
+line 282 [-1: (negative) correct!]: ##The buttons are located on the sides making it difficult to use.  
+
+line 283 [0: (neutral) correct!]: ##The plus was the storage size but I didn't like hearing the hard drive spin.  
+
+line 284 [-1: (negative) correct!]: ##I also hated the packaging, with a passion.  
+
+line 285 [0: (neutral) correct!]: ##It was one of those plastic glued containers that can take you thirty minutes to open.  
+
+line 286 [0: (neutral) correct!]: ##Accessories were cheap looking.  
+
+line 287 [0: (neutral) correct!]: ##The player was not very appealing either.  
+
+line 288 [-1: (negative) correct!]: ##All this before I found out the bad news.  
+
+line 289 [0: (neutral) correct!]: ##Finally I upgraded the firmware and log in to Napster.  
+
+line 290 [-1: (negative) correct!]: ##Upon logging in I received a notification that my player works with Napster but not Napster To Go. 
+
+line 291 [0: (neutral) correct!]: ##It was time to exchange it for the other player the Creative Zen Micro 5 GB MP3 Player Black.  
+
+line 292 [0: (neutral) correct!]: ##Its a few bucks more and has only 5 GB's of storage but its well worth the trade off. 
+
+line 293 [0: (neutral) correct!]: ##This is Creative's attempt to compete with the IPod mini.  
+
+line 294 [-2: (negative) correct!]: ##To bad Napster software is not compatible with Apple IPod's.  
+
+line 295 [0: (neutral) correct!]: ##Its my first purchase choice.  
+
+line 296 [0: (neutral) correct!]: ##Actually only three players are on the list for Napster To Go. 
+
+line 297 [3: (positive) correct!]: player[+3][p] ##Don't worry this player rocks.  
+
+line 298 [4: (positive) correct!]: appeal[+3] ##It was also the most appealing.   
+
+line 299 [0: (neutral) correct!]: ##Immediately you could tell a very distinct difference between the two Creative MP3 players.  
+
+line 300 [4: (positive) correct!]: packing[+3][u] ##For the Zen Creative focused on packaging which looked well thought out, well presented and easy to open and put back together.  
+
+line 301 [0: (neutral) correct!]: ##I keep boxes for all my equipment for storage and moving.  
+
+line 302 [4: (positive) correct!]: casing[+3] ##It has a cardboard slip cover with a nice layered box casing inside.  
+
+line 303 [0: (neutral) correct!]: ## You will find a small folder/envelope on top along with the player.  
+
+line 304 [0: (neutral) correct!]: ##Accessories are in reusable bags unlike the Nomad which requires you to tear each back plastic store bag open. 
+
+line 305 [4: (positive) correct!]: case[+3] ##A distinct IPod relation is evident with white colored cables, power plug and the very nice Zen case with a white rubber inside covering.  
+
+line 306 [0: (neutral) correct!]: ##It has Apple insipid written all over it.  
+
+line 307 [3: (positive) correct!]: design[+3] ##I do give create to Creative for their attractive design.    
+
+line 308 [2: (positive) correct!]: functionality[+2] ##Creative has put a lot of effort into making this player appeal to those true geeks that search for coolness and functionality in electronic devices. 
+
+line 309 [1: (positive) correct!]: player[+1][p]##Creative was defiantly giving the IPod a run for their money with this device.  
+
+line 310 [-1: (negative) correct!]: player[+][p][cs]##It makes the Nomad I purchase feel and look like junk.  
+
+line 311 [2: (positive) correct!]: quality[+2] ##Everything shines of quality.  
+
+line 312 [1: (positive) correct!]: player[+1][cs] ##I was more excited about this player upon opening than I was about the Nomad.  
+
+line 313 [0: (neutral) correct!]: ##First I removed each piece and laid them out on my coffee table.  
+
+line 314 [2: (positive) correct!]: accessories[+2] ##I am now staring at an array of stuff including Zen Micro player, stereo earbud headphones, a rechargeable lithium-ion battery, an AC/DC power adapter, a USB 2.0 cable, a belt-clip, a stand, a stylish cloth pouch, an installation CD, a quick-start guide, and Creative MediaSource software.  
+
+line 315 [0: (neutral) correct!]: ##Next I wanted to update the software, after a quick firmware upgrade the player was ready to go. 
+
+line 316 [0: (neutral) correct!]: ##I sync the player with Napster software and it downloaded the library I had already created. 
+
+line 317 [0: (neutral) correct!]: ##My PC only supports USB 1.0 not the 2.0 which is blazing fast. 
+
+line 318 [0: (neutral) correct!]: ##So the download was much slower.   
+
+line 319 [4: (positive) correct!]: interface[+3] ##The interface works great.  
+
+line 320 [3: (positive) correct!]: touchpad[+2] ##I enjoy getting use to the touch pad. 
+
+line 321 [2: (positive) correct!]: navigation[+2] ##In minutes I was easily navigating through the menus.  
+
+line 322 [4: (positive) correct!]: sound[+3] ##What impressed me most was the sound.  
+
+line 323 [4: (positive) correct!]: sound[+3] ##At 128 the songs sound very good.  
+
+line 324 [0: (neutral) correct!]: ##My hobby is home audio and home theater.  
+
+line 325 [3: (positive) correct!]: audio quality[+2] ##The Zen lives up to the audio quality I love and expect.  
+
+line 326 [4: (positive) correct!]: headphones[+2] ##The Earbuds are great headphones as good as my AGK Studio 240, well not as good but darn close.  
+
+line 327 [1: (positive) correct!]: ##Creative says that the software engine for this MP3 is the best hands down.  
+
+line 328 [0: (neutral) correct!]: ##I believe them.  
+
+line 329 [0: (neutral) correct!]: ##Overall this play is my introduction into the market.  
+
+line 330 [0: (neutral) correct!]: Zen[+][s]##The Zen was an impressive purchase and I would highly recommend it to anyone using Napster.  
+
+line 331 [-1: (negative) correct!]: ##If you're an itunes person then no one could argue against an IPod.      
+
+line 332 [0: (neutral) correct!]: [t]
+
+line 333 [0: (neutral) correct!]: ##I got my Zen Micro last week. 
+
+line 334 [4: (positive) correct!]: player[+3][p] ##I absolutely love it. 
+
+line 335 [3: (positive) correct!]: size[+3] ##It's so small. 
+
+line 336 [4: (positive) correct!]: look[+3]##It looks sleek and modern. 
+
+line 337 [3: (positive) correct!]: storage[+3] ##It holds plenty of songs. 
+
+line 338 [4: (positive) correct!]: sound[+3] ##The sound is amazing. 
+
+line 339 [3: (positive) correct!]: menu[+2] ##The menu is easy to use and understand. 
+
+line 340 [3: (positive) correct!]: touchpad controls[+2] ##I love the touchpade controls. 
+
+line 341 [3: (positive) correct!]: touchpad controls[+2][p] ##They're easy to use. 
+
+line 342 [3: (positive) correct!]: radio[+2], voice recording[2] ##The radio and voice recording are nice. 
+
+line 343 [3: (positive) correct!]: headphones[+2] ##The earbud headphones are really nice. 
+
+line 344 [2: (positive) correct!]: batterylife[+2] ##The battery has a long life. 
+
+line 345 [3: (positive) correct!]: battery replacement[+2] ##It's rechargable and supposedly easy to replace though I haven't had to do it yet of course. 
+
+line 346 [3: (positive) correct!]: file transfer/rip software[+2] ##The file ripping/transfering software that comes with the player is easy to use. 
+
+line 347 [2: (positive) correct!]: file transfer[+2][p][cc] ##It's faster than WMP. 
+
+line 348 [0: (neutral) correct!]: player[+1] ##So far I have no complaints with this player. 
+
+line 349 [0: (neutral) correct!]: player[+][s] ##If anyone is thinkning of getting an ipod mini, forget it and go with this player. 
+
+line 350 [6: (positive) correct!]: price[+2], storage[+2], size[+2] ##It's cheaper, holds more songs and is smaller.      
+
+line 351 [0: (neutral) correct!]: [t]
+
+line 352 [0: (neutral) correct!]: ##If you are like me who wants move to the next phase of portable audio from conventional portable CD players I hope you find this usefull.   
+
+line 353 [0: (neutral) correct!]: ##Space : 5GB =2500 songs. 
+
+line 354 [0: (neutral) correct!]: ##If you have a huge CD collection, 5GB can hold only a part of your CD collection. 
+
+line 355 [0: (neutral) correct!]: ##Remember mp3 format lets you store tons of songs. 
+
+line 356 [2: (positive) correct!]: storage[+2][u]##I have stored 40 audio CDs and i still have close to 2.8 GB free.   
+
+line 357 [3: (positive) correct!]: software[+2] ##User Interface: The software is simple and straight forward. 
+
+line 358 [1: (positive) correct!]: ##Havent read the manual till now (remember I am good time computer user). 
+
+line 359 [-4: (negative) correct!]: PC  software[-2] ##PC software that comes with the player is not as simple as i Tunes but its not bad at all. 
+
+line 360 [-1: (negative) correct!]: scroll bar[-1] ##The scrol bar agian takes some getting used to. 
+
+line 361 [1: (positive) correct!]: storage [+2][u] ##You can use the player to store your computer data files (Good feature to have).   
+
+line 362 [4: (positive) correct!]: Battery[+3] ##Battery : A Big Big plus. 
+
+line 363 [2: (positive) correct!]: battery usage[+2][u]##Most of the other players I checked dont have user servicable battery. 
+
+line 364 [0: (neutral) correct!]: ##Zen micro does. 
+
+line 365 [0: (neutral) correct!]: ##I have two spare batteries (brought on ebay for 28 bucks each). 
+
+line 366 [1: (positive) correct!]: ##Remember this is a huge plus when travelling. 
+
+line 367 [2: (positive) correct!]: battery life[+2][u] ##Each battery lasts about 10-11 hours. 
+
+line 368 [0: (neutral) correct!]: ##If one battery drains just snap the spare one and you are back in bussiness. 
+
+line 369 [3: (positive) correct!]: battery charging[+2][u] ##Another good feature is that you can charge the battery by just connecting the player to your computer using the USB cable.  
+
+line 370 [3: (positive) correct!]: FM tuner[+2] ##FM tuner & Microphone : Having a tuner in the player is a blessing. 
+
+line 371 [0: (neutral) correct!]: ##Dont have to switch to another device for FM tuner.  
+
+line 372 [-3: (negative) correct!]: FM reception[-2][u] ##Since zen does not have an external antena it has some problems catching weak signals but it works. 
+
+line 373 [4: (positive) correct!]: microphone[+3] ##Builtin microphone is great for recording short voice notes. 
+
+line 374 [0: (neutral) correct!]: ##I have heard in other players these have to be brought separately.    
+
+line 375 [4: (positive) correct!]: sound[+3] ##Sound: This is where I love Zen the most. 
+
+line 376 [3: (positive) correct!]: sound[+3] ##Excellent sound I mean the player has juice. 
+
+line 377 [0: (neutral) correct!]: ##I dont use the headphones that come with it instead I use Bose Triport headphones. 
+
+line 378 [1: (positive) correct!]: ##The player has great potential (ur experiance may differ based on your headphones). 
+
+line 379 [6: (positive) correct!]: bass[+3], treble[+3] ##The bass treble the sound detail is awsome. 
+
+line 380 [0: (neutral) correct!]: player[+][cc] ##I compared it to other CD players (Two models of Panasonic, Rio & samsung) and they were no way even near Zen Micro.  
+
+line 381 [3: (positive) correct!]: look[+2] ##Looks and shape: I have a black one and the first time I charged it and switched it on jeez the blue light looked so cool. 
+
+line 382 [2: (positive) correct!]: size[+2] ##Its compact and has rounded edges. 
+
+line 383 [1: (positive) correct!]: size[+1] ##Fits well in hand in trouser pockets.   
+
+line 384 [2: (positive) correct!]: belt clip[+1], stand[+1] ##Freebies you get: A cradle with detachable stand and belt clip, some thing very handy and useful. 
+
+line 385 [-3: (negative) correct!]: belt clip[-1], design[-2] ##I dont use the belt clip cuz it fails to hold the player securely (design problem). 
+
+line 386 [0: (neutral) correct!]: ##Instead I use a cellphone cover with a belt clip and it works just fine. 
+
+line 387 [-1: (negative) correct!]: headphones[-3], accessories[+2] ##You get a USB cable headphones, a pouch, software except headphones you will like every thing else.  
+
+line 388 [-4: (negative) correct!]: headphones[-2], beltclip design[-2] ##What I dont like: Nothing much except Headphones, Belt clip design. 
+
+line 389 [-1: (negative) correct!]: ##Creative has not lounched any silicon cover for the player like ipod's (I think belkin makes it for ipod).  
+
+line 390 [0: (neutral) correct!]: ##Stuff you may need to buy: Wired remote from creative. 
+
+line 391 [0: (neutral) correct!]: ##This is a must have. 
+
+line 392 [0: (neutral) correct!]: ##Spare batteries incase  you need some extra hours without charging. 
+
+line 393 [3: (positive) correct!]: sound[+2] ##FM transmitter (belkin has a good one) to use Zen with your car Sterio FM Tunner   Latest Find: Connected this baby to my $3800 audiophile audio system and it produced clean sound compared to Ipod. 
+
+line 394 [0: (neutral) correct!]: ##Tested with the same mp3 for benchmarking     
+
+line 395 [0: (neutral) correct!]: [t]
+
+line 396 [0: (neutral) correct!]: ##I can't help but feel peeved by the attitude created by Apple enthusiasts that basically detracts from anything that attempts to compete with Apple products in the marketplace.  
+
+line 397 [2: (positive) correct!]: player[+2][u] ##Thankfully, Creative has come through with a product that puts the Ipod back in its place.  
+
+line 398 [2: (positive) correct!]: Zen micro[+2] ##While I have not had the "privilege", as many call it, of owning an Ipod, based on the experience of friends who have had some misfortune with their Ipod (and subsequently purchased the Zen Touch or Zen Micro), I can pretty much rest assured that my decision to purchase the Zen Micro was one of the more informed ones.
+
+line 399 [-1: (negative) correct!]: ##Nevertheless, I still get shirked when someone out of ignorance states "But it's not an IPod!" or "Never heard of it, I'll go with the IPod". 
+
+line 400 [0: (neutral) correct!]: ##
