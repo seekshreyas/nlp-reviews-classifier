@@ -3,7 +3,9 @@
 """
 Parser
 ========
-Parse the txt files for collecting reviews
+Parse the txt files for outputting the reviews as a list of tuples
+where each tuple is
+(filename, linenumber, aggregatevote, sentence)
 
 author = "Shreyas"
 email = "shreyas@ischool.berkeley.edu"
