@@ -26,6 +26,7 @@ import re
 
 
 
+
 top_words = []
 
 def featureAggregator(inputdata):
@@ -56,7 +57,12 @@ def featureExtractor(sentStr):
     featList['uppercount']=getUpperCount(sentStr)
     featList['digitcount']=getDigitCount(sentStr)
     featList['exclaimCount'] = getExclaimCount(sentStr)
-
+    featList['whiteSpaceCount'] = getWhiteSpaceCount(sentStr)
+    featList['tabCount'] = getTabCount(sentStr)
+    featList['percentCount'] = getPercentCount(sentStr)    
+    featList['etcCount'] = getEtcCount(sentStr)
+    featList['dollarCount'] = getDollarCount(sentStr)
+    featList["avgWordLen"]= getAvgWordLen(sentStr)
 
     # featList.update(getReviewDict(sentStr))
 
@@ -108,6 +114,13 @@ def getSemicolonCount(sent):
 
     return numoccur
 
+def getWhiteSpaceCount(sent):
+    whitespaceRegEx = re.compile(' ')
+
+    numoccur = len([a.start() for a in whitespaceRegEx.finditer(sent)])
+
+    return numoccur
+
 def getUpperCount(sent):
     numoccur=0
     for i in range(len(sent)):
@@ -124,9 +137,46 @@ def getDigitCount(sent):
             numoccur+=1
     return numoccur
 
+def getTabCount(sent):
+    tabRegEx = re.compile('    ')
 
+    numoccur = len([a.start() for a in tabRegEx.finditer(sent)])
 
+    return numoccur
 
+def getPercentCount(sent):
+    numoccur=0
+    for i in sent:
+        i=str(i)
+        if i== '%':
+            numoccur+=1
+    return numoccur
+
+def getEtcCount(sent):
+    numoccur=0
+    for i in sent:
+        i=str(i)
+        if i== 'etc.':
+            numoccur+=1
+    return numoccur
+
+def getDollarCount(sent):
+    numoccur=0
+    for i in sent:
+        i=str(i)
+        if i== '$':
+            numoccur+=1
+    return numoccur
+
+def getAvgWordLen(sent):
+    avg, total = 0,0
+    ln= len(sent)
+    for i in sent:
+        i=str(i)
+        lnword=len(i)
+        total=total+lnword
+    avg=total/ln
+    return avg  
 
 def main():
     userInput = parser.getInput()
