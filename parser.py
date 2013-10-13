@@ -53,7 +53,7 @@ def parseFiles(fList):
                     # no reviews in a sentence
                     feat = 'None'
                     rev = 'N.A.'
-                    print l
+                    # print l
                 elif len(delimPos) == 1:
                     #simple case of only 1 sentence
                     feat = l.split('##')[0]
@@ -66,14 +66,19 @@ def parseFiles(fList):
                 else:
                     # more than 1 reviews in a sentence
                     feat1 = l.split('##')[0]
-                    rev2_raw = l.split('##')[2]
-                    rev1_feat2 = l.split('##')[1]
+                    rev2 = l.split('##')[2]
 
-                    rev2 = cleanReview(rev2_raw)
+                    rev1_feat2 = l.split('##')[1]
+                    rev1 = cleanReview(rev1_feat2)
+
                     vote1 = getVotes(feat1)
                     vote2 = getVotes(rev1_feat2)
 
-                    # print l
+                    allSents.append((vote1, rev1))
+                    allSents.append((vote2, rev2))
+
+                    print vote1, rev1
+                    print vote2, rev2
                     # print vote1, vote2
 
 
@@ -87,12 +92,27 @@ def cleanReview(revstr):
     """
     return the cleaned up review after getting a raw string
     """
-    eolregEx = '/[\.|\?]'
-    eol = re.compile(eolregEx)
+    eolregEx = re.compile('[\.|\?]')
+    voteregEx = re.compile('\[[\+\-][0-3]?\]')
 
-    m = eol.match(revstr)
+    eol = [int(a.end()) for a in eolregEx.finditer(revstr)]
 
-    # print m
+
+    print eol
+
+    if eol:
+        cleanrev = revstr[:eol[-1]]
+        temp = revstr[eol[-1]:]
+
+        if not voteregEx.search(temp):
+            cleanrev.join(temp)
+    else:
+        cleanrev = ''
+
+
+    # print revstr
+    # print cleanrev, '\n'
+    return cleanrev
 
 
 
@@ -101,15 +121,13 @@ def cleanReview(revstr):
 
 
 def getVotes(rawstr):
-    voteRegEx = '\[[\+\-][0-3]?\]'
-
-    vote = re.compile(voteRegEx)
-    vote_raw = vote.findall(rawstr)
+    voteregEx = re.compile('\[[\+\-][0-3]?\]')
+    vote_raw = voteregEx.findall(rawstr)
 
     if len(vote_raw) == 0:
         # rev1 = rawstr
         # feat2 = 0
-        meanvote = 0.0
+        aggrvote = 0.0
 
     else:
         votes = []
@@ -124,9 +142,10 @@ def getVotes(rawstr):
 
             votes.append(vt)
 
-        meanvote = sum(votes)/len(votes)
+        # meanvote = sum(votes)/len(votes)
+        aggrvote = sum(votes)
 
-    return meanvote
+    return aggrvote + 0.0
 
 
 
@@ -139,7 +158,7 @@ def main():
 
     print "-" * 79
     print "No. of files parsed: %d" % (len(fileList))
-    print sents[:20]
+    # print sents[:20]
     print "Total No of sentences: %d" % (len(sents))
 
 
