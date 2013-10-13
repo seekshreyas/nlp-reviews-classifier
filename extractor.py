@@ -49,12 +49,9 @@ def featureAggregator(inputdata):
     """
     outputdata = []
     for inputLine in inputdata:
-        # methods to return values of the features
-        charCount = getCharCount(inputLine[3])
-        wordCount = getWordCount(inputLine[3])
 
         # aggregate those values into 1 tuple of features
-        features = (charCount, wordCount)
+        features = featureExtractor(inputLine[3])
 
         # append those features
         inputLineList = list(inputLine)
@@ -63,6 +60,15 @@ def featureAggregator(inputdata):
         outputdata.append(outputLineTuple)
 
     return outputdata
+
+
+def featureExtractor(sentStr):
+    charCount = getCharCount(sentStr)
+    wordCount = getWordCount(sentStr)
+
+    return (charCount, wordCount)
+
+
 
 def getCharCount(sent):
     return int(len(sent))
