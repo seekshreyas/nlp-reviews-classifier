@@ -98,7 +98,7 @@ def cleanReview(revstr):
     eol = [int(a.end()) for a in eolregEx.finditer(revstr)]
 
 
-    print eol
+    # print eol
 
     if eol:
         cleanrev = revstr[:eol[-1]]
@@ -158,7 +158,7 @@ def main():
 
     print "-" * 79
     print "No. of files parsed: %d" % (len(fileList))
-    # print sents[:20]
+    print sents[:2]
     print "Total No of sentences: %d" % (len(sents))
 
 
