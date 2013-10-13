@@ -20,14 +20,14 @@ import re
 
 
 def getInput():
-    parser = OptionParser()
+    optionparser = OptionParser()
 
-    parser.add_option('-t', '--train', dest='train')
+    optionparser.add_option('-t', '--train', dest='train')
 
-    (option, args) = parser.parse_args()
+    (option, args) = optionparser.parse_args()
 
     if not option.train:
-        return parser.error('data not provided.\n Usage: --data="path.to.data"')
+        return optionparser.error('data not provided.\n Usage: --data="path.to.data"')
 
     return { 'train' : option.train }
 
@@ -128,9 +128,6 @@ def cleanReview(revstr):
 
 
 
-
-
-
 def getVotes(rawstr):
     voteregEx = re.compile('\[[\+\-][0-3]?\]')
     vote_raw = voteregEx.findall(rawstr)
@@ -160,10 +157,14 @@ def getVotes(rawstr):
 
 
 
+
+
 def main():
     userInput = getInput()
     fileList = getFiles(userInput['train'])
     sents = parseFiles(fileList)
+
+
 
     # print fileList
 
@@ -171,6 +172,8 @@ def main():
     print "No. of files parsed: %d" % (len(fileList))
     print sents[:2]
     print "Total No of sentences: %d" % (len(sents))
+
+
 
 
 if __name__ == "__main__":
