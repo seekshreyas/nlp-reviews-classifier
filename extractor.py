@@ -54,6 +54,9 @@ def featureAggregator(inputdata):
 
 
 def featureExtractor(sentStr):
+
+    sentwords = getWordsFromSent(sentStr)
+
     featList = {}
     featList['charCount'] = getCharCount(sentStr)
     featList['wordCount'] = getWordCount(sentStr)
@@ -70,12 +73,22 @@ def featureExtractor(sentStr):
     featList["avgWordLen"]= getAvgWordLen(sentStr)
 
     # feature for presence of top words
-    featList.update(getReviewDict(sentStr))
-    featList.update(getUnigramWordFeatures(sentStr))
-    featList.update(getBigramWordFeatures(sentStr))
+    # featList.update(getReviewDict(sentStr))
+    featList.update(getUnigramWordFeatures(sentStr, sentwords))
+    featList.update(getBigramWordFeatures(sentStr, sentwords))
 
 
     return featList
+
+
+
+def getWordsFromSent(sent):
+    words = [w.lower() for w in word_tokenize(sent)
+                if w
+                    not in stopwords.words('english')
+                    # and len(w) > 1
+            ]
+    return words
 
 
 
@@ -91,16 +104,13 @@ def getReviewDict(sent):
     return contain_features
 
 
-def getUnigramWordFeatures(sent):
-    words = [w.lower() for w in word_tokenize(sent)
-                if w
-                    not in stopwords.words('english')
-                    and len(w) > 1]
+def getUnigramWordFeatures(sent, words):
+
     return dict((word, True) for word in words)
 
 
-def getBigramWordFeatures(sent, score_fn=BAM.chi_sq, n=200):
-    words = word_tokenize(sent)
+def getBigramWordFeatures(sent, words, score_fn=BAM.chi_sq, n=200):
+
     bigram_finder = BigramCollocationFinder.from_words(words)
     bigrams = bigram_finder.nbest(score_fn, n)
 
