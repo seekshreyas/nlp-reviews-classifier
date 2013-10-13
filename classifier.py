@@ -18,6 +18,22 @@ from __future__ import division
 
 import parser
 import extractor
+import random
+
+
+def splitfeatdata(rawdata, frac=0.9):
+    """
+    Randomize, Shuffle and split the data into tranining and test dataset
+    """
+    random.shuffle(rawdata)
+
+    split = int(len(rawdata) * frac)
+    train = rawdata[:split]
+    test = rawdata[split:]
+
+    return (train, test)
+
+
 
 
 def main():
@@ -26,8 +42,10 @@ def main():
     parsedata = parser.parseFiles(fileList)
 
     featdata = extractor.featureAggregator(parsedata)
+    (traindata, testdata) = splitfeatdata(featdata, 0.75)
 
-    print featdata[:5]
+
+
 
 
 if __name__ == '__main__':
