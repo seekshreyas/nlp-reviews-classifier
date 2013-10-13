@@ -33,7 +33,7 @@ def featureAggregator(inputdata):
 
         # append those features
         inputLineList = list(inputLine)
-        inputLineList.extend(features)
+        inputLineList.append(features)
         outputLineTuple = tuple(inputLineList)
         outputdata.append(outputLineTuple)
 
@@ -41,10 +41,11 @@ def featureAggregator(inputdata):
 
 
 def featureExtractor(sentStr):
-    charCount = getCharCount(sentStr)
-    wordCount = getWordCount(sentStr)
+    featList = {}
+    featList['charCount'] = getCharCount(sentStr)
+    featList['wordCount'] = getWordCount(sentStr)
 
-    return (charCount, wordCount)
+    return featList
 
 
 

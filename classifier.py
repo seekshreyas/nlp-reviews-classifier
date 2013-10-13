@@ -18,18 +18,34 @@ from __future__ import division
 
 import parser
 import extractor
+
 import random
+import nltk
 
 
 def splitfeatdata(rawdata, frac=0.9):
     """
     Randomize, Shuffle and split the data into tranining and test dataset
     """
-    random.shuffle(rawdata)
 
-    split = int(len(rawdata) * frac)
-    train = rawdata[:split]
-    test = rawdata[split:]
+    labeldata = []
+    for row in rawdata:
+
+        if row[2] > 0:
+            label = 'pos'
+        elif row[2] == 0:
+            label = 'neutral'
+        else:
+            label = 'neg'
+
+        labeldata.append((row[4], label))
+
+
+    random.shuffle(labeldata)
+
+    split = int(len(labeldata) * frac)
+    train = labeldata[:split]
+    test = labeldata[split:]
 
     return (train, test)
 
@@ -42,8 +58,10 @@ def main():
     parsedata = parser.parseFiles(fileList)
 
     featdata = extractor.featureAggregator(parsedata)
-    (traindata, testdata) = splitfeatdata(featdata, 0.75)
+    (traindata, testdata) = splitfeatdata(featdata)
 
+    classifier = nltk.NaiveBayesClassifier.train(traindata)
+    print nltk.classify.accuracy(classifier, testdata)
 
 
 
