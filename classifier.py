@@ -100,7 +100,7 @@ def main():
 
 
 
-    print featdata[20]
+    # print featdata[20]
 
 
 
