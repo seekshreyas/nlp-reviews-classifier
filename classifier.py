@@ -19,11 +19,13 @@ from __future__ import division
 import parser
 import extractor
 
+import math
 import random
 import nltk
 
 
-def splitfeatdata(rawdata, frac=0.9):
+
+def splitfeatdata(rawdata, fold=10):
     """
     Randomize, Shuffle and split the data into tranining and test dataset
     """
@@ -43,11 +45,31 @@ def splitfeatdata(rawdata, frac=0.9):
 
     random.shuffle(labeldata)
 
-    split = int(len(labeldata) * frac)
-    train = labeldata[:split]
-    test = labeldata[split:]
+    size = int(math.floor(len(labeldata) / 10.0))
+    # train = labeldata[:split]
+    # test = labeldata[split:]
 
-    return (train, test)
+    # code for k-fold validation referred from:
+    # http://stackoverflow.com/questions/16379313/how-to-use-the-a-10-fold-cross-validation-with-naive-bayes-classifier-and-nltk
+    claccuracy = []
+    for i in range(fold):
+        test_this_round = labeldata[i*size:][:size]
+        train_this_round = labeldata[:i*size] + labeldata[(i+1)*size:]
+
+        acc = myclassifier(train_this_round, test_this_round)
+
+        claccuracy.append(acc)
+
+    return claccuracy
+
+
+
+
+def myclassifier(train_data, test_data):
+    classifier = nltk.NaiveBayesClassifier.train(train_data)
+
+    # print classifier.show_most_informative_features()
+    return nltk.classify.accuracy(classifier, test_data)
 
 
 
@@ -58,10 +80,13 @@ def main():
     parsedata = parser.parseFiles(fileList)
 
     featdata = extractor.featureAggregator(parsedata)
-    (traindata, testdata) = splitfeatdata(featdata)
 
-    classifier = nltk.NaiveBayesClassifier.train(traindata)
-    print nltk.classify.accuracy(classifier, testdata)
+    allacc = splitfeatdata(featdata)
+
+    print "Accuracy Values: %s" % (allacc)
+    print "Overall Classifier Accuracy %4.2f " % (sum(allacc)/len(allacc))
+
+
 
 
 
