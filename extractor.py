@@ -17,6 +17,11 @@ from __future__ import division
 from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
 
+from nltk.collocations import BigramCollocationFinder
+from nltk.metrics import BigramAssocMeasures as BAM
+from itertools import chain
+
+
 from nltk import FreqDist
 
 #using my parser.py file for getting the input
@@ -62,10 +67,12 @@ def featureExtractor(sentStr):
     featList['percentCount'] = getPercentCount(sentStr)
     featList['etcCount'] = getEtcCount(sentStr)
     featList['dollarCount'] = getDollarCount(sentStr)
-    # featList["avgWordLen"]= getAvgWordLen(sentStr)
+    featList["avgWordLen"]= getAvgWordLen(sentStr)
 
     # feature for presence of top words
     featList.update(getReviewDict(sentStr))
+    featList.update(getUnigramWordFeatures(sentStr))
+    featList.update(getBigramWordFeatures(sentStr))
 
 
     return featList
@@ -82,6 +89,23 @@ def getReviewDict(sent):
         contain_features['contains(%s)' % (word)] = (word in set(sent))
 
     return contain_features
+
+
+def getUnigramWordFeatures(sent):
+    words = [w.lower() for w in word_tokenize(sent)
+                if w
+                    not in stopwords.words('english')
+                    and len(w) > 1]
+    return dict((word, True) for word in words)
+
+
+def getBigramWordFeatures(sent, score_fn=BAM.chi_sq, n=200):
+    words = word_tokenize(sent)
+    bigram_finder = BigramCollocationFinder.from_words(words)
+    bigrams = bigram_finder.nbest(score_fn, n)
+
+    return dict((bg, True) for bg in chain(words, bigrams))
+
 
 
 
