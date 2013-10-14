@@ -70,7 +70,7 @@ def featureExtractor(sentStr):
     featList['percentCount'] = getPercentCount(sentStr)
     featList['etcCount'] = getEtcCount(sentStr)
     featList['dollarCount'] = getDollarCount(sentStr)
-    featList["avgWordLen"]= getAvgWordLen(sentStr)
+    # featList["avgWordLen"]= getAvgWordLen(sentStr)
 
     # feature for presence of top words
     # featList.update(getReviewDict(sentStr))
@@ -106,7 +106,7 @@ def getReviewDict(sent):
 
 def getUnigramWordFeatures(sent, words):
 
-    return dict((word, True) for word in words)
+    return dict(('contains("%s")' % word, True) for word in words)
 
 
 def getBigramWordFeatures(sent, words, score_fn=BAM.chi_sq, n=200):
@@ -114,7 +114,7 @@ def getBigramWordFeatures(sent, words, score_fn=BAM.chi_sq, n=200):
     bigram_finder = BigramCollocationFinder.from_words(words)
     bigrams = bigram_finder.nbest(score_fn, n)
 
-    return dict((bg, True) for bg in chain(words, bigrams))
+    return dict(('contains("%s")' % str(bg), True) for bg in chain(words, bigrams))
 
 
 
