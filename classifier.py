@@ -114,8 +114,8 @@ def main():
     print "\n\nFeatures of this Data Item"
     print "-" * 79
     for key,val in featdata[20][4].items():
-        print "%30s : %10s" % (key, val )
-    # print  "A sample feature: %s" % (featdata[:20])
+        print "%50s : %10s" % (key, val )
+    # print  "A sample feature: %s" % (featdata[20][4])
 
 
 

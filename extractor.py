@@ -12,6 +12,8 @@ output a list of tuples with
 author = "Shreyas"
 email = "shreyas@ischool.berkeley.edu"
 python_version = "Python 2.7.5 :: Anaconda 1.6.1 (x86_64)"
+
+"commaCount to countRV"--Sayantan
 """
 from __future__ import division
 from nltk.tokenize import word_tokenize
@@ -60,46 +62,64 @@ def featureExtractor(sentStr):
     featList = {}
 
     featList['charCount'] = getCharCount(sentStr)
-    # featList['wordCount'] = getWordCount(sentStr)
-    # featList['commaCount']= getCommaCount(sentStr)
-    # featList['semicolonCount']= getSemicolonCount(sentStr)
-    # featList['uppercount']=getUpperCount(sentStr)
-    # featList['digitcount']=getDigitCount(sentStr)
-    # featList['exclaimCount'] = getExclaimCount(sentStr)
-    # featList['whiteSpaceCount'] = getWhiteSpaceCount(sentStr)
-    # featList['tabCount'] = getTabCount(sentStr)
-    # featList['percentCount'] = getPercentCount(sentStr)    
-    # featList['etcCount'] = getEtcCount(sentStr)
-    # featList['dollarCount'] = getDollarCount(sentStr)
-    # featList["avgWordLen"]= getAvgWordLen(sentStr)
-    # featList["wordLen6"]= getWordLen6(sentStr)
-    #featList["uniqueWords"]= getUniqueWords(sentStr)
-    # featList["countJJ"]=getCountJJ(sentStr)
-    # featList["countCC"]=getCountCC(sentStr)
-    #featList.update(getReviewDict(sentStr))
-    # featList["countIN"]=getCountIN(sentStr)
-    # featList["countRB"]=getCountRB(sentStr)
-    # featList["countPRP"]=getCountPRP(sentStr)
-    # featList["countTO"]=getCountTO(sentStr)
-    # featList["countVBD"]=getCountVBD(sentStr)
-    # featList["countJJR"]=getCountJJR(sentStr)
-    # featList["countNN"]=getCountNN(sentStr)
-    # featList["countNNS"]=getCountNNS(sentStr)
-    # featList["countNNP"]=getCountNNP(sentStr)
-    # featList["countRB"]=getCountRB(sentStr)
-    # featList["countVBG"]=getCountVBG(sentStr)
-    # featList["countVBZ"]=getCountVBZ(sentStr)
-    # featList["countVBP"]=getCountVBP(sentStr)
-    # featList["countVBN"]=getCountVBN(sentStr)
-    # featList["countMD"]=getCountMD(sentStr)
-    # featList["countWDT"]=getCountWDT(sentStr)
-    # featList["countPRPA"]=getCountPRPA(sentStr)
-    # featList["countJN"]=getCountJN(sentStr)
-    # featList["countRJ"]=getCountRJ(sentStr)
-    # featList["countJJC"]=getCountJJC(sentStr)
-    # featList["countNJ"]=getCountNJ(sentStr)
-    # featList["countRV"]=getCountRV(sentStr)
 
+    featList['wordCount'] = getWordCount(sentStr)
+    featList['commaCount']= getCommaCount(sentStr)
+    featList['semicolonCount']= getSemicolonCount(sentStr)
+    featList['uppercount']=getUpperCount(sentStr)
+    featList['digitcount']=getDigitCount(sentStr)
+    featList['exclaimCount'] = getExclaimCount(sentStr)
+    featList['whiteSpaceCount'] = getWhiteSpaceCount(sentStr)
+    featList['tabCount'] = getTabCount(sentStr)
+    featList['percentCount'] = getPercentCount(sentStr)    
+    featList['etcCount'] = getEtcCount(sentStr)
+    featList['dollarCount'] = getDollarCount(sentStr)
+    featList["avgWordLen"]= getAvgWordLen(sentStr)
+    featList["wordLen6"]= getWordLen6(sentStr)
+    featList["uniqueWords"]= getUniqueWords(sentStr)
+    featList["countJJ"]=getCountJJ(sentStr)
+    featList["countCC"]=getCountCC(sentStr)
+    featList.update(getReviewDict(sentStr))
+    featList["countIN"]=getCountIN(sentStr)
+    featList["countRB"]=getCountRB(sentStr)
+    featList["countPRP"]=getCountPRP(sentStr)
+    featList["countTO"]=getCountTO(sentStr)
+    featList["countVBD"]=getCountVBD(sentStr)
+    featList["countJJR"]=getCountJJR(sentStr)
+    featList["countNN"]=getCountNN(sentStr)
+    featList["countNNS"]=getCountNNS(sentStr)
+    featList["countNNP"]=getCountNNP(sentStr)
+    featList["countRB"]=getCountRB(sentStr)
+    featList["countVBG"]=getCountVBG(sentStr)
+    featList["countVBZ"]=getCountVBZ(sentStr)
+    featList["countVBP"]=getCountVBP(sentStr)
+    featList["countVBN"]=getCountVBN(sentStr)
+    featList["countMD"]=getCountMD(sentStr)
+    featList["countWDT"]=getCountWDT(sentStr)
+    featList["countPRPA"]=getCountPRPA(sentStr)
+    featList["countJN"]=getCountJN(sentStr)
+    featList["countRJ"]=getCountRJ(sentStr)
+    featList["countJJC"]=getCountJJC(sentStr)
+    featList["countNJ"]=getCountNJ(sentStr)
+    featList["countRV"]=getCountRV(sentStr)
+
+# =======
+#     featList['wordCount'] = getWordCount(sentStr)
+#     featList['commaCount']= getCommaCount(sentStr)
+#     featList['semicolonCount']= getSemicolonCount(sentStr)
+#     featList['uppercount']=getUpperCount(sentStr)
+#     featList['digitcount']=getDigitCount(sentStr)
+#     featList['exclaimCount'] = getExclaimCount(sentStr)
+#     featList['whiteSpaceCount'] = getWhiteSpaceCount(sentStr)
+#     featList['tabCount'] = getTabCount(sentStr)
+#     featList['percentCount'] = getPercentCount(sentStr)
+#     featList['etcCount'] = getEtcCount(sentStr)
+#     featList['dollarCount'] = getDollarCount(sentStr)
+#     # featList["avgWordLen"]= getAvgWordLen(sentStr)
+
+#     # feature for presence of top words
+#     # featList.update(getReviewDict(sentStr))
+# >>>>>>> 6273c80bfbc2a74fb447e3c9f3e7ca22235d0268
     featList.update(getUnigramWordFeatures(sentStr, sentwords))
     #featList.update(getBigramWordFeatures(sentStr, sentwords))
 
@@ -132,7 +152,7 @@ def getReviewDict(sent):
 
 def getUnigramWordFeatures(sent, words):
 
-    return dict((word, True) for word in words)
+    return dict(('contains("%s")' % word, True) for word in words)
 
 
 def getBigramWordFeatures(sent, words, score_fn=BAM.chi_sq, n=200):
@@ -140,7 +160,7 @@ def getBigramWordFeatures(sent, words, score_fn=BAM.chi_sq, n=200):
     bigram_finder = BigramCollocationFinder.from_words(words)
     bigrams = bigram_finder.nbest(score_fn, n)
 
-    return dict((bg, True) for bg in chain(words, bigrams))
+    return dict(('contains("%s")' % str(bg), True) for bg in chain(words, bigrams))
 
 
 
@@ -442,7 +462,7 @@ def getCountJN(sent):
     text=nltk.pos_tag(sent)
     for i in range(len(text)):
         if text[i][1]=="JJ" and text[i+1][1]=="NN": countjn+=1
-        if x[i][1]=="JJ" and x[i+1][1]=="NNS": countjn+=1
+        if text[i][1]=="JJ" and text[i+1][1]=="NNS": countjn+=1
     return countjn
 
 def getCountRJ(sent):
@@ -450,9 +470,9 @@ def getCountRJ(sent):
     sent= nltk.word_tokenize(sent)
     text=nltk.pos_tag(sent)
     for i in range(len(text)):
-        if x[i][1]=="RB" and x[i+1][1]=="JJ": countrj+=1
-        if x[i][1]=="RBR" and x[i+1][1]=="JJ": countrj+=1
-        if x[i][1]=="RBS" and x[i+1][1]=="JJ": countrj+=1
+        if text[i][1]=="RB" and text[i+1][1]=="JJ": countrj+=1
+        if text[i][1]=="RBR" and text[i+1][1]=="JJ": countrj+=1
+        if text[i][1]=="RBS" and text[i+1][1]=="JJ": countrj+=1
     return countrj
 
 def getCountJJC(sent):
@@ -460,7 +480,7 @@ def getCountJJC(sent):
     sent= nltk.word_tokenize(sent)
     text=nltk.pos_tag(sent)
     for i in range(len(text)):
-        if x[i][1]=="JJ" and x[i+1][1]=="JJ": countjjc +=1
+        if text[i][1]=="JJ" and text[i+1][1]=="JJ": countjjc +=1
     return countjjc
 
 def getCountNJ(sent):
@@ -468,7 +488,7 @@ def getCountNJ(sent):
     sent= nltk.word_tokenize(sent)
     text=nltk.pos_tag(sent)
     for i in range(len(text)):
-        if x[i][1]=="NNS" and x[i+1][1]=="jj": countnj+=1
+        if text[i][1]=="NNS" and text[i+1][1]=="jj": countnj+=1
     return countnj
 
 def getCountRV(sent):
@@ -476,18 +496,18 @@ def getCountRV(sent):
     sent= nltk.word_tokenize(sent)
     text=nltk.pos_tag(sent)
     for i in range(len(text)):
-        if x[i][1]=="RR" and x[i+1][1]=="VB": countrv+=1
-        if x[i][1]=="RBS" and x[i+1][1]=="VBN": countrv+=1
-        if x[i][1]=="RBR" and x[i+1][1]=="VBD": countrv+=1
-        if x[i][1]=="RR" and x[i+1][1]=="VB": countrv+=1
-        if x[i][1]=="RBR" and x[i+1][1]=="VBN": countrv+=1
-        if x[i][1]=="RBS" and x[i+1][1]=="VBD": countrv+=1
-        if x[i][1]=="RR" and x[i+1][1]=="VB": countrv+=1
-        if x[i][1]=="RBR" and x[i+1][1]=="VBN": countrv+=1
-        if x[i][1]=="RBS" and x[i+1][1]=="VBD": countrv+=1
-        if x[i][1]=="RR" and x[i+1][1]=="VBG": countrv+=1
-        if x[i][1]=="RBR" and x[i+1][1]=="VBG": countrv+=1
-        if x[i][1]=="RBS" and x[i+1][1]=="VBG": countrv+=1
+        if text[i][1]=="RR" and text[i+1][1]=="VB": countrv+=1
+        if text[i][1]=="RBS" and text[i+1][1]=="VBN": countrv+=1
+        if text[i][1]=="RBR" and text[i+1][1]=="VBD": countrv+=1
+        if text[i][1]=="RR" and text[i+1][1]=="VB": countrv+=1
+        if text[i][1]=="RBR" and text[i+1][1]=="VBN": countrv+=1
+        if text[i][1]=="RBS" and text[i+1][1]=="VBD": countrv+=1
+        if text[i][1]=="RR" and text[i+1][1]=="VB": countrv+=1
+        if text[i][1]=="RBR" and text[i+1][1]=="VBN": countrv+=1
+        if text[i][1]=="RBS" and text[i+1][1]=="VBD": countrv+=1
+        if text[i][1]=="RR" and text[i+1][1]=="VBG": countrv+=1
+        if text[i][1]=="RBR" and text[i+1][1]=="VBG": countrv+=1
+        if text[i][1]=="RBS" and text[i+1][1]=="VBG": countrv+=1
     return countrv
 
 
