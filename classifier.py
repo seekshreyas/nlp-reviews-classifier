@@ -15,6 +15,9 @@ email = "shreyas@ischool.berkeley.edu"
 python_version = "Python 2.7.5 :: Anaconda 1.6.1 (x86_64)"
 """
 from __future__ import division
+from nltk.tokenize import word_tokenize
+from nltk.corpus import stopwords
+from nltk import FreqDist
 
 import parser
 import extractor
@@ -24,6 +27,7 @@ import random
 import nltk
 
 
+top_words = []
 
 def splitfeatdata(rawdata, fold=10):
     """
@@ -79,12 +83,50 @@ def main():
     fileList = parser.getFiles(userInput['train'])
     parsedata = parser.parseFiles(fileList)
 
+
+    allsent = ''
+    for f in parsedata:
+        allsent += f[3]
+
+    all_words = FreqDist(w.lower()
+                    for w in word_tokenize(allsent)
+                        if w not in stopwords.words('english') )
+
+    global top_words
+    top_words = all_words.keys()[:500]
+
+
     featdata = extractor.featureAggregator(parsedata)
+
+
+
+    # print featdata[20]
+
+
+
+
+    print "Sample Data Item:\n\n"
+
+    print "%20s %4s %4s %20s" % ("FILENAME", "LINENUM", "VOTE", "SENTENCE" )
+    print "-" * 79
+    print "%10s %4s %4s %20s" % (featdata[20][0], featdata[20][1], featdata[20][2], featdata[20][3])
+
+    print "\n\nFeatures of this Data Item"
+    print "-" * 79
+    for key,val in featdata[20][4].items():
+        print "%50s : %10s" % (key, val )
+    # print  "A sample feature: %s" % (featdata[20][4])
+
+
+
 
     allacc = splitfeatdata(featdata)
 
+    print "\n\n"
+    print "-" * 60
     print "Accuracy Values: %s" % (allacc)
-    print "Overall Classifier Accuracy %4.2f " % (sum(allacc)/len(allacc))
+    print "==" * 60
+    print "Overall Classifier Accuracy %4.4f " % (sum(allacc)/len(allacc))
 
 
 
