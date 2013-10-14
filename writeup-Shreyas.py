@@ -350,6 +350,13 @@ def classification():
         - accuracy is average of accuracy on all folds separately.
         - most informative features is printed for classification on each-fold
 
+
+    K(default) = 10
+
+    Current Accuracy Report (At time of submission):
+        - Training Data : ~ 50.9 %
+        - Held Out Data : ~ 52 %
+
     """
     print classification.__doc__
 
