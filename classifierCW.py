@@ -18,7 +18,7 @@ from __future__ import division
 from nltk.tokenize import word_tokenize
 
 import parseReview
-import extractor
+import extractorCW
 
 import math
 import random
@@ -114,7 +114,7 @@ def main():
     #fileList = parser.getFiles(userInput['train'])
     fileList = parser.getFiles("data/raw/training")
     parsedata = parser.parseFiles(fileList)
-    featdata = extractor.featureAggregator(parsedata)
+    featdata = extractorCW.featureAggregator(parsedata)
     allacc = splitfeatdata(featdata)
 
     print "Accuracy Values: %s" % (allacc)
@@ -123,7 +123,7 @@ def main():
     print "Test product files:"
     testFileList = getTestFiles("data/raw/charles-testing")
     testParseData = parseTestFiles(testFileList)
-    featdata = extractor.featureAggregator(testParseData)
+    featdata = extractorCW.featureAggregator(testParseData)
     printOutput(featdata)
 
 
