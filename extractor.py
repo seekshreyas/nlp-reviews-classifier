@@ -17,6 +17,11 @@ from __future__ import division
 from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
 
+from nltk.collocations import BigramCollocationFinder
+from nltk.metrics import BigramAssocMeasures as BAM
+from itertools import chain
+
+
 from nltk import FreqDist
 
 #using my parser.py file for getting the input
@@ -26,7 +31,7 @@ import re, nltk
 
 
 
-
+global top_words
 top_words = []
 
 def featureAggregator(inputdata):
@@ -49,8 +54,12 @@ def featureAggregator(inputdata):
 
 
 def featureExtractor(sentStr):
+
+    sentwords = getWordsFromSent(sentStr)
+
     featList = {}
-    # featList['charCount'] = getCharCount(sentStr)
+
+    featList['charCount'] = getCharCount(sentStr)
     # featList['wordCount'] = getWordCount(sentStr)
     # featList['commaCount']= getCommaCount(sentStr)
     # featList['semicolonCount']= getSemicolonCount(sentStr)
@@ -74,9 +83,9 @@ def featureExtractor(sentStr):
     # featList["countTO"]=getCountTO(sentStr)
     # featList["countVBD"]=getCountVBD(sentStr)
     # featList["countJJR"]=getCountJJR(sentStr)
-    featList["countNN"]=getCountNN(sentStr)
-    featList["countNNS"]=getCountNNS(sentStr)
-    featList["countNNP"]=getCountNNP(sentStr)
+    # featList["countNN"]=getCountNN(sentStr)
+    # featList["countNNS"]=getCountNNS(sentStr)
+    # featList["countNNP"]=getCountNNP(sentStr)
     # featList["countRB"]=getCountRB(sentStr)
     # featList["countVBG"]=getCountVBG(sentStr)
     # featList["countVBZ"]=getCountVBZ(sentStr)
@@ -91,8 +100,21 @@ def featureExtractor(sentStr):
     # featList["countNJ"]=getCountNJ(sentStr)
     # featList["countRV"]=getCountRV(sentStr)
 
+    featList.update(getUnigramWordFeatures(sentStr, sentwords))
+    #featList.update(getBigramWordFeatures(sentStr, sentwords))
+
 
     return featList
+
+
+
+def getWordsFromSent(sent):
+    words = [w.lower() for w in word_tokenize(sent)
+                if w
+                    not in stopwords.words('english')
+                    # and len(w) > 1
+            ]
+    return words
 
 
 
@@ -106,6 +128,20 @@ def getReviewDict(sent):
         contain_features['contains(%s)' % (word)] = (word in set(sent))
 
     return contain_features
+
+
+def getUnigramWordFeatures(sent, words):
+
+    return dict((word, True) for word in words)
+
+
+def getBigramWordFeatures(sent, words, score_fn=BAM.chi_sq, n=200):
+
+    bigram_finder = BigramCollocationFinder.from_words(words)
+    bigrams = bigram_finder.nbest(score_fn, n)
+
+    return dict((bg, True) for bg in chain(words, bigrams))
+
 
 
 
@@ -196,11 +232,12 @@ def getAvgWordLen(sent):
     avg, total = 0,0
     sent=sent.split(" ")
     ln= len(sent)
-    for i in sent:
-        i=str(i)
-        lnword=len(i)
-        total=total+lnword
-    avg=total/ln
+    if ln>0:
+        for i in sent:
+            i=str(i)
+            lnword=len(i)
+            total=total+lnword
+        avg=total/ln
     return avg 
 
 def getWordLen6(sent):
@@ -453,6 +490,8 @@ def getCountRV(sent):
         if x[i][1]=="RBS" and x[i+1][1]=="VBG": countrv+=1
     return countrv
 
+
+
 def main():
     userInput = parser.getInput()
     fileList = parser.getFiles(userInput['train'])
@@ -468,7 +507,7 @@ def main():
                         if w not in stopwords.words('english') )
 
     global top_words
-    top_words = all_words.keys()[:100]
+    top_words = all_words.keys()[:500]
 
     # pdata = getParseData()
     featdata = featureAggregator(pdata)
