@@ -27,6 +27,7 @@ from nltk import FreqDist
 #using my parser.py file for getting the input
 import parser
 import re
+import os
 
 
 
@@ -82,6 +83,10 @@ def featureExtractor(sentStr):
 
 
 
+
+
+
+
 def getWordsFromSent(sent):
     words = [w.lower() for w in word_tokenize(sent)
                 if w
@@ -114,7 +119,7 @@ def getBigramWordFeatures(sent, words, score_fn=BAM.chi_sq, n=200):
     bigram_finder = BigramCollocationFinder.from_words(words)
     bigrams = bigram_finder.nbest(score_fn, n)
 
-    return dict(('contains("%s")' % str(bg), True) for bg in chain(words, bigrams))
+    return dict((bg, True) for bg in chain(words, bigrams))
 
 
 
@@ -212,10 +217,36 @@ def getAvgWordLen(sent):
     avg=total/ln
     return avg
 
+
+
+def parseOpinionLexicon():
+
+    print os.getcwd()
+    opinionLexPath = '../../../lexicon/opinionwords/'
+
+    posfileObj = open(opinionLexPath + 'positive-words.txt')
+    negfileObj = open(opinionLexPath + 'negative-words.txt')
+
+    lexWords = {}
+    lexWords['positive'] = [l[:-2] for l in posfileObj if not l.startswith(';') and l[:-2] is not '']
+    lexWords['negative'] = [l[:-2] for l in negfileObj if not l.startswith(';') and l[:-2] is not '']
+
+    return lexWords
+
+
+
+
+
+
+
+
 def main():
     userInput = parser.getInput()
     fileList = parser.getFiles(userInput['train'])
     pdata = parser.parseFiles(fileList)
+
+
+    opinionWords = parseOpinionLexicon()
 
 
     allsent = ''
