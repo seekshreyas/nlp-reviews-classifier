@@ -21,6 +21,8 @@ from nltk.corpus import stopwords
 
 from nltk.collocations import BigramCollocationFinder
 from nltk.metrics import BigramAssocMeasures as BAM
+from nltk.metrics import TrigramAssocMeasures as TAM
+
 from itertools import chain
 
 
@@ -61,54 +63,60 @@ def featureAggregator(inputdata):
 def featureExtractor(sentStr):
 
     sentwords = getWordsFromSent(sentStr)
+    taggedSent = getTaggedSents(sentwords)
+    opinionWords = parseOpinionLexicon()
+
+
 
     featList = {}
 
     featList['charCount']       = getCharCount(sentStr)
     featList['wordCount']       = getWordCount(sentStr)
-    featList['commaCount']      = getCommaCount(sentStr)
-    featList['semicolonCount']  = getSemicolonCount(sentStr)
-    featList['uppercount']      = getUpperCount(sentStr)
-    featList['digitcount']      = getDigitCount(sentStr)
-    featList['exclaimCount']    = getExclaimCount(sentStr)
-    featList['whiteSpaceCount'] = getWhiteSpaceCount(sentStr)
-    featList['tabCount']        = getTabCount(sentStr)
-    featList['percentCount']    = getPercentCount(sentStr)
-    featList['etcCount']        = getEtcCount(sentStr)
-    featList['dollarCount']     = getDollarCount(sentStr)
-    featList["avgWordLen"]      = getAvgWordLen(sentStr)
-    featList["wordLen6"]        = getWordLen6(sentStr)
-    featList["uniqueWords"]     = getUniqueWords(sentStr)
-    featList["countJJ"]         = getCountJJ(sentStr)
-    featList["countCC"]         = getCountCC(sentStr)
-    featList["countIN"]         = getCountIN(sentStr)
-    featList["countRB"]         = getCountRB(sentStr)
-    featList["countPRP"]        = getCountPRP(sentStr)
-    featList["countTO"]         = getCountTO(sentStr)
-    featList["countVBD"]        = getCountVBD(sentStr)
-    featList["countJJR"]        = getCountJJR(sentStr)
-    featList["countNN"]         = getCountNN(sentStr)
-    featList["countNNS"]        = getCountNNS(sentStr)
-    featList["countNNP"]        = getCountNNP(sentStr)
-    featList["countRB"]         = getCountRB(sentStr)
-    featList["countVBG"]        = getCountVBG(sentStr)
-    featList["countVBZ"]        = getCountVBZ(sentStr)
-    featList["countVBP"]        = getCountVBP(sentStr)
-    featList["countVBN"]        = getCountVBN(sentStr)
-    featList["countMD"]         = getCountMD(sentStr)
-    featList["countWDT"]        = getCountWDT(sentStr)
-    featList["countPRPA"]       = getCountPRPA(sentStr)
-    featList["countJN"]         = getCountJN(sentStr)
-    featList["countRJ"]         = getCountRJ(sentStr)
-    featList["countJJC"]        = getCountJJC(sentStr)
-    featList["countNJ"]         = getCountNJ(sentStr)
-    featList["countRV"]         = getCountRV(sentStr)
+    # featList['commaCount']      = getCommaCount(sentStr)
+    # featList['semicolonCount']  = getSemicolonCount(sentStr)
+    # featList['uppercount']      = getUpperCount(sentStr)
+    # featList['digitcount']      = getDigitCount(sentStr)
+    # featList['exclaimCount']    = getExclaimCount(sentStr)
+    # featList['whiteSpaceCount'] = getWhiteSpaceCount(sentStr)
+    # featList['tabCount']        = getTabCount(sentStr)
+    # featList['percentCount']    = getPercentCount(sentStr)
+    # featList['etcCount']        = getEtcCount(sentStr)
+    # featList['dollarCount']     = getDollarCount(sentStr)
+    # featList["avgWordLen"]      = getAvgWordLen(sentStr)
+    # featList["wordLen6"]        = getWordLen6(sentStr)
+    # featList["uniqueWords"]     = getUniqueWords(sentStr)
+    # featList["countJJ"]         = getCountJJ(sentStr)
+    # featList["countCC"]         = getCountCC(sentStr)
+    # featList["countIN"]         = getCountIN(sentStr)
+    # featList["countRB"]         = getCountRB(sentStr)
+    # featList["countPRP"]        = getCountPRP(sentStr)
+    # featList["countTO"]         = getCountTO(sentStr)
+    # featList["countVBD"]        = getCountVBD(sentStr)
+    # featList["countJJR"]        = getCountJJR(sentStr)
+    # featList["countNN"]         = getCountNN(sentStr)
+    # featList["countNNS"]        = getCountNNS(sentStr)
+    # featList["countNNP"]        = getCountNNP(sentStr)
+    # featList["countRB"]         = getCountRB(sentStr)
+    # featList["countVBG"]        = getCountVBG(sentStr)
+    # featList["countVBZ"]        = getCountVBZ(sentStr)
+    # featList["countVBP"]        = getCountVBP(sentStr)
+    # featList["countVBN"]        = getCountVBN(sentStr)
+    # featList["countMD"]         = getCountMD(sentStr)
+    # featList["countWDT"]        = getCountWDT(sentStr)
+    # featList["countPRPA"]       = getCountPRPA(sentStr)
+    # featList["countJN"]         = getCountJN(sentStr)
+    # featList["countRJ"]         = getCountRJ(sentStr)
+    # featList["countJJC"]        = getCountJJC(sentStr)
+    # featList["countNJ"]         = getCountNJ(sentStr)
+    # featList["countRV"]         = getCountRV(sentStr)
 
-
-
+    # featList["tagBeforeNoun"] = getTagBeforeNoun(taggedSent)
+    # featList["overallOpinionScore"]  = getSentOverallOpinion(sentStr, sentwords, opinionWords)
+    # featList["adjOpinionScore"] = getAdjOpinionScore(taggedSent, opinionWords)
     # featList.update(getReviewDict(sentStr))
     featList.update(getUnigramWordFeatures(sentStr, sentwords))
     featList.update(getBigramWordFeatures(sentStr, sentwords))
+    featList.update(getTrigramWordFeatures(sentStr, sentwords))
 
 
     return featList
@@ -129,6 +137,14 @@ def getWordsFromSent(sent):
 
 
 
+def getTaggedSents(sentStr):
+    return nltk.pos_tag(sentStr)
+
+
+
+
+
+
 
 
 
@@ -144,17 +160,66 @@ def getReviewDict(sent):
     return contain_features
 
 
-def getUnigramWordFeatures(sent, words):
 
+
+
+def getAdjOpinionScore(tagSent, opinioncorpus):
+
+
+    score = 0
+    for (word, tag) in tagSent:
+
+        if tag == 'JJ' or tag == 'ADV' or tag == 'VBG' or tag == 'RB' or tag == 'VBZ' or tag == 'JJS':
+
+            if word in opinioncorpus['positive']:
+                print word
+                score += 1
+            # if word in opinioncorpus['negative']:
+            #     score -= 1
+
+    return score
+
+
+
+
+
+
+def getUnigramWordFeatures(sent, words):
     return dict(('contains("%s")' % word, True) for word in words)
 
 
-def getBigramWordFeatures(sent, words, score_fn=BAM.chi_sq, n=200):
+
+def getBigramWordFeatures(sent, words, score_fn=BAM.pmi, n=200):
 
     bigram_finder = BigramCollocationFinder.from_words(words)
+    # score = bigram_finder.score_ngrams(BAM.jaccard)
+
     bigrams = bigram_finder.nbest(score_fn, n)
 
     return dict((bg, True) for bg in chain(words, bigrams))
+
+
+
+
+
+
+
+
+def getSentOverallOpinion(sent, words, opinioncorpus):
+
+
+    score = 0.0
+
+    if len(words) != 0:
+        for w in words:
+            if w in opinioncorpus['positive']:
+                score += 1.0
+            elif w in opinioncorpus['negative']:
+                score -= 1.0
+
+        return score
+    else:
+        return score
 
 
 
@@ -510,7 +575,7 @@ def getCountRV(sent):
 
 def parseOpinionLexicon():
 
-    print os.getcwd()
+    # print os.getcwd()
     opinionLexPath = '../../../lexicon/opinionwords/'
 
     posfileObj = open(opinionLexPath + 'positive-words.txt')
@@ -519,6 +584,9 @@ def parseOpinionLexicon():
     lexWords = {}
     lexWords['positive'] = [l[:-2] for l in posfileObj if not l.startswith(';') and l[:-2] is not '']
     lexWords['negative'] = [l[:-2] for l in negfileObj if not l.startswith(';') and l[:-2] is not '']
+
+    posfileObj.close()
+    negfileObj.close()
 
     return lexWords
 
@@ -535,7 +603,7 @@ def main():
     pdata = parser.parseFiles(fileList)
 
 
-    opinionWords = parseOpinionLexicon()
+
 
 
     allsent = ''
