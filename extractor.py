@@ -12,6 +12,8 @@ output a list of tuples with
 author = "Shreyas"
 email = "shreyas@ischool.berkeley.edu"
 python_version = "Python 2.7.5 :: Anaconda 1.6.1 (x86_64)"
+
+"commaCount to countRV"--Sayantan
 """
 from __future__ import division
 from nltk.tokenize import word_tokenize
@@ -26,8 +28,10 @@ from nltk import FreqDist
 
 #using my parser.py file for getting the input
 import parser
+
 import re
 import os
+import nltk
 
 
 
@@ -59,7 +63,9 @@ def featureExtractor(sentStr):
     sentwords = getWordsFromSent(sentStr)
 
     featList = {}
+
     featList['charCount'] = getCharCount(sentStr)
+
     featList['wordCount'] = getWordCount(sentStr)
     featList['commaCount']= getCommaCount(sentStr)
     featList['semicolonCount']= getSemicolonCount(sentStr)
@@ -71,12 +77,54 @@ def featureExtractor(sentStr):
     featList['percentCount'] = getPercentCount(sentStr)
     featList['etcCount'] = getEtcCount(sentStr)
     featList['dollarCount'] = getDollarCount(sentStr)
-    # featList["avgWordLen"]= getAvgWordLen(sentStr)
+    featList["avgWordLen"]= getAvgWordLen(sentStr)
+    featList["wordLen6"]= getWordLen6(sentStr)
+    featList["uniqueWords"]= getUniqueWords(sentStr)
+    featList["countJJ"]=getCountJJ(sentStr)
+    featList["countCC"]=getCountCC(sentStr)
+    featList.update(getReviewDict(sentStr))
+    featList["countIN"]=getCountIN(sentStr)
+    featList["countRB"]=getCountRB(sentStr)
+    featList["countPRP"]=getCountPRP(sentStr)
+    featList["countTO"]=getCountTO(sentStr)
+    featList["countVBD"]=getCountVBD(sentStr)
+    featList["countJJR"]=getCountJJR(sentStr)
+    featList["countNN"]=getCountNN(sentStr)
+    featList["countNNS"]=getCountNNS(sentStr)
+    featList["countNNP"]=getCountNNP(sentStr)
+    featList["countRB"]=getCountRB(sentStr)
+    featList["countVBG"]=getCountVBG(sentStr)
+    featList["countVBZ"]=getCountVBZ(sentStr)
+    featList["countVBP"]=getCountVBP(sentStr)
+    featList["countVBN"]=getCountVBN(sentStr)
+    featList["countMD"]=getCountMD(sentStr)
+    featList["countWDT"]=getCountWDT(sentStr)
+    featList["countPRPA"]=getCountPRPA(sentStr)
+    featList["countJN"]=getCountJN(sentStr)
+    featList["countRJ"]=getCountRJ(sentStr)
+    featList["countJJC"]=getCountJJC(sentStr)
+    featList["countNJ"]=getCountNJ(sentStr)
+    featList["countRV"]=getCountRV(sentStr)
 
-    # feature for presence of top words
-    # featList.update(getReviewDict(sentStr))
+# =======
+#     featList['wordCount'] = getWordCount(sentStr)
+#     featList['commaCount']= getCommaCount(sentStr)
+#     featList['semicolonCount']= getSemicolonCount(sentStr)
+#     featList['uppercount']=getUpperCount(sentStr)
+#     featList['digitcount']=getDigitCount(sentStr)
+#     featList['exclaimCount'] = getExclaimCount(sentStr)
+#     featList['whiteSpaceCount'] = getWhiteSpaceCount(sentStr)
+#     featList['tabCount'] = getTabCount(sentStr)
+#     featList['percentCount'] = getPercentCount(sentStr)
+#     featList['etcCount'] = getEtcCount(sentStr)
+#     featList['dollarCount'] = getDollarCount(sentStr)
+#     # featList["avgWordLen"]= getAvgWordLen(sentStr)
+
+#     # feature for presence of top words
+#     # featList.update(getReviewDict(sentStr))
+# >>>>>>> 6273c80bfbc2a74fb447e3c9f3e7ca22235d0268
     featList.update(getUnigramWordFeatures(sentStr, sentwords))
-    featList.update(getBigramWordFeatures(sentStr, sentwords))
+    #featList.update(getBigramWordFeatures(sentStr, sentwords))
 
 
     return featList
@@ -209,13 +257,267 @@ def getDollarCount(sent):
 
 def getAvgWordLen(sent):
     avg, total = 0,0
+    sent=sent.split(" ")
     ln= len(sent)
-    for i in sent:
-        i=str(i)
-        lnword=len(i)
-        total=total+lnword
-    avg=total/ln
+    if ln>0:
+        for i in sent:
+            i=str(i)
+            lnword=len(i)
+            total=total+lnword
+        avg=total/ln
     return avg
+
+def getWordLen6(sent):
+    numoccur = 0
+    for i in sent:
+        if len(i)>= 6:
+            numoccur+=1
+    return numoccur
+
+def getUniqueWords(sent):
+    word=[]
+    wunique=0
+    for item in sent:
+        if item not in word:
+            wunique+=1
+    return wunique
+
+def getCountJJ(sent):
+    countjj= 0
+    sent= nltk.word_tokenize(sent)
+    text=nltk.pos_tag(sent)
+    for i in range(len(sent)):
+        if text[i][1]=="JJ":
+            countjj+=1
+    return countjj
+
+def getCountCC(sent):
+    countcc= 0
+    sent= nltk.word_tokenize(sent)
+    text=nltk.pos_tag(sent)
+    for i in range(len(sent)):
+        if text[i][1]=="CC":
+            countcc+=1
+    return countcc
+
+def getCountIN(sent):
+    countin= 0
+    sent= nltk.word_tokenize(sent)
+    text=nltk.pos_tag(sent)
+    for i in range(len(sent)):
+        if text[i][1]=="IN":
+            countin+=1
+    return countin
+
+def getCountRB(sent):
+    countrb= 0
+    sent= nltk.word_tokenize(sent)
+    text=nltk.pos_tag(sent)
+    for i in range(len(sent)):
+        if text[i][1]=="RB":
+            countrb+=1
+    return countrb
+
+def getCountPRP(sent):
+    countprp= 0
+    sent= nltk.word_tokenize(sent)
+    text=nltk.pos_tag(sent)
+    for i in range(len(sent)):
+        if text[i][1]=="PRP":
+            countprp+=1
+    return countprp
+
+def getCountTO(sent):
+    countto= 0
+    sent= nltk.word_tokenize(sent)
+    text=nltk.pos_tag(sent)
+    for i in range(len(sent)):
+        if text[i][1]=="TO":
+            countto+=1
+    return countto
+
+def getCountVBD(sent):
+    countvbd= 0
+    sent= nltk.word_tokenize(sent)
+    text=nltk.pos_tag(sent)
+    for i in range(len(sent)):
+        if text[i][1]=="VBD":
+            countvbd+=1
+    return countvbd
+
+
+def getCountJJR(sent):
+    countjjr= 0
+    sent= nltk.word_tokenize(sent)
+    text=nltk.pos_tag(sent)
+    for i in range(len(sent)):
+        if text[i][1]=="JJR":
+            countjjr+=1
+    return countjjr
+
+def getCountNN(sent):
+    countnn= 0
+    sent= nltk.word_tokenize(sent)
+    text=nltk.pos_tag(sent)
+    for i in range(len(sent)):
+        if text[i][1]=="NN":
+            countnn+=1
+    return countnn
+
+def getCountNNS(sent):
+    countnns= 0
+    sent= nltk.word_tokenize(sent)
+    text=nltk.pos_tag(sent)
+    for i in range(len(sent)):
+        if text[i][1]=="NNS":
+            countnns+=1
+    return countnns
+
+def getCountNNP(sent):
+    countnnp= 0
+    sent= nltk.word_tokenize(sent)
+    text=nltk.pos_tag(sent)
+    for i in range(len(sent)):
+        if text[i][1]=="NNP":
+            countnnp+=1
+    return countnnp
+
+def getCountRBR(sent):
+    countrbr= 0
+    sent= nltk.word_tokenize(sent)
+    text=nltk.pos_tag(sent)
+    for i in range(len(sent)):
+        if text[i][1]=="RBR":
+            countrbr+=1
+    return countrbr
+
+def getCountVB(sent):
+    countvb= 0
+    sent= nltk.word_tokenize(sent)
+    text=nltk.pos_tag(sent)
+    for i in range(len(sent)):
+        if text[i][1]=="VB":
+            countvb+=1
+    return countvb
+
+def getCountVBP(sent):
+    countvbp= 0
+    sent= nltk.word_tokenize(sent)
+    text=nltk.pos_tag(sent)
+    for i in range(len(sent)):
+        if text[i][1]=="VBP":
+            countvbp+=1
+    return countvbp
+
+def getCountVBZ(sent):
+    countvbz= 0
+    sent= nltk.word_tokenize(sent)
+    text=nltk.pos_tag(sent)
+    for i in range(len(sent)):
+        if text[i][1]=="VBZ":
+            countvbz+=1
+    return countvbz
+
+def getCountVBG(sent):
+    countvbg= 0
+    sent= nltk.word_tokenize(sent)
+    text=nltk.pos_tag(sent)
+    for i in range(len(sent)):
+        if text[i][1]=="VBG":
+            countvbg+=1
+    return countvbg
+
+def getCountVBN(sent):
+    countvbn= 0
+    sent= nltk.word_tokenize(sent)
+    text=nltk.pos_tag(sent)
+    for i in range(len(sent)):
+        if text[i][1]=="VBN":
+            countvbn+=1
+    return countvbn
+
+def getCountMD(sent):
+    countmd= 0
+    sent= nltk.word_tokenize(sent)
+    text=nltk.pos_tag(sent)
+    for i in range(len(sent)):
+        if text[i][1]=="MD":
+            countmd+=1
+    return countmd
+
+def getCountWDT(sent):
+    countwdt= 0
+    sent= nltk.word_tokenize(sent)
+    text=nltk.pos_tag(sent)
+    for i in range(len(sent)):
+        if text[i][1]=="WDT":
+            countwdt+=1
+    return countwdt
+
+def getCountPRPA(sent):
+    countprpa= 0
+    sent= nltk.word_tokenize(sent)
+    text=nltk.pos_tag(sent)
+    for i in range(len(sent)):
+        if text[i][1]=="PRP$":
+            countprpa+=1
+    return countprpa
+
+def getCountJN(sent):
+    countjn= 0
+    sent= nltk.word_tokenize(sent)
+    text=nltk.pos_tag(sent)
+    for i in range(len(text)):
+        if text[i][1]=="JJ" and text[i+1][1]=="NN": countjn+=1
+        if text[i][1]=="JJ" and text[i+1][1]=="NNS": countjn+=1
+    return countjn
+
+def getCountRJ(sent):
+    countrj= 0
+    sent= nltk.word_tokenize(sent)
+    text=nltk.pos_tag(sent)
+    for i in range(len(text)):
+        if text[i][1]=="RB" and text[i+1][1]=="JJ": countrj+=1
+        if text[i][1]=="RBR" and text[i+1][1]=="JJ": countrj+=1
+        if text[i][1]=="RBS" and text[i+1][1]=="JJ": countrj+=1
+    return countrj
+
+def getCountJJC(sent):
+    countjjc= 0
+    sent= nltk.word_tokenize(sent)
+    text=nltk.pos_tag(sent)
+    for i in range(len(text)):
+        if text[i][1]=="JJ" and text[i+1][1]=="JJ": countjjc +=1
+    return countjjc
+
+def getCountNJ(sent):
+    countnj= 0
+    sent= nltk.word_tokenize(sent)
+    text=nltk.pos_tag(sent)
+    for i in range(len(text)):
+        if text[i][1]=="NNS" and text[i+1][1]=="jj": countnj+=1
+    return countnj
+
+def getCountRV(sent):
+    countrv= 0
+    sent= nltk.word_tokenize(sent)
+    text=nltk.pos_tag(sent)
+    for i in range(len(text)):
+        if text[i][1]=="RR" and text[i+1][1]=="VB": countrv+=1
+        if text[i][1]=="RBS" and text[i+1][1]=="VBN": countrv+=1
+        if text[i][1]=="RBR" and text[i+1][1]=="VBD": countrv+=1
+        if text[i][1]=="RR" and text[i+1][1]=="VB": countrv+=1
+        if text[i][1]=="RBR" and text[i+1][1]=="VBN": countrv+=1
+        if text[i][1]=="RBS" and text[i+1][1]=="VBD": countrv+=1
+        if text[i][1]=="RR" and text[i+1][1]=="VB": countrv+=1
+        if text[i][1]=="RBR" and text[i+1][1]=="VBN": countrv+=1
+        if text[i][1]=="RBS" and text[i+1][1]=="VBD": countrv+=1
+        if text[i][1]=="RR" and text[i+1][1]=="VBG": countrv+=1
+        if text[i][1]=="RBR" and text[i+1][1]=="VBG": countrv+=1
+        if text[i][1]=="RBS" and text[i+1][1]=="VBG": countrv+=1
+    return countrv
+
+
 
 
 
