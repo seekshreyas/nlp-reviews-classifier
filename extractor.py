@@ -106,23 +106,9 @@ def featureExtractor(sentStr):
     featList["countNJ"]=getCountNJ(sentStr)
     featList["countRV"]=getCountRV(sentStr)
 
-# =======
-#     featList['wordCount'] = getWordCount(sentStr)
-#     featList['commaCount']= getCommaCount(sentStr)
-#     featList['semicolonCount']= getSemicolonCount(sentStr)
-#     featList['uppercount']=getUpperCount(sentStr)
-#     featList['digitcount']=getDigitCount(sentStr)
-#     featList['exclaimCount'] = getExclaimCount(sentStr)
-#     featList['whiteSpaceCount'] = getWhiteSpaceCount(sentStr)
-#     featList['tabCount'] = getTabCount(sentStr)
-#     featList['percentCount'] = getPercentCount(sentStr)
-#     featList['etcCount'] = getEtcCount(sentStr)
-#     featList['dollarCount'] = getDollarCount(sentStr)
-#     # featList["avgWordLen"]= getAvgWordLen(sentStr)
 
-#     # feature for presence of top words
-#     # featList.update(getReviewDict(sentStr))
-# >>>>>>> 6273c80bfbc2a74fb447e3c9f3e7ca22235d0268
+    # featList.update(getReviewDict(sentStr))
+
     featList.update(getUnigramWordFeatures(sentStr, sentwords))
     #featList.update(getBigramWordFeatures(sentStr, sentwords))
 
