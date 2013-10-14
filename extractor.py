@@ -82,7 +82,6 @@ def featureExtractor(sentStr):
     featList["uniqueWords"]= getUniqueWords(sentStr)
     featList["countJJ"]=getCountJJ(sentStr)
     featList["countCC"]=getCountCC(sentStr)
-    featList.update(getReviewDict(sentStr))
     featList["countIN"]=getCountIN(sentStr)
     featList["countRB"]=getCountRB(sentStr)
     featList["countPRP"]=getCountPRP(sentStr)
@@ -107,10 +106,10 @@ def featureExtractor(sentStr):
     featList["countRV"]=getCountRV(sentStr)
 
 
-    # featList.update(getReviewDict(sentStr))
 
+    # featList.update(getReviewDict(sentStr))
     featList.update(getUnigramWordFeatures(sentStr, sentwords))
-    #featList.update(getBigramWordFeatures(sentStr, sentwords))
+    featList.update(getBigramWordFeatures(sentStr, sentwords))
 
 
     return featList
@@ -128,6 +127,9 @@ def getWordsFromSent(sent):
                     # and len(w) > 1
             ]
     return words
+
+
+
 
 
 
