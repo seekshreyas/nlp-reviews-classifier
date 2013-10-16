@@ -72,7 +72,7 @@ def splitfeatdata(rawdata, fold=10):
 def myclassifier(train_data, test_data):
     classifier = nltk.NaiveBayesClassifier.train(train_data)
 
-    # print classifier.show_most_informative_features()
+    print classifier.show_most_informative_features()
     return nltk.classify.accuracy(classifier, test_data)
 
 

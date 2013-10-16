@@ -141,8 +141,13 @@ def main():
     print "Test product files:"
     testFileList = getTestFiles("data/raw/charles-testing")
     testParseData = parseTestFiles(testFileList)
+<<<<<<< HEAD
     testFeatdata = extractorCW.featureAggregator(testParseData)
     printOutput(testFeatdata, featdata)
+=======
+    featdata = extractorCW.featureAggregator(testParseData)
+    printOutput(featdata)
+>>>>>>> f881e733a9873442c2a754ee99d8167dd5d1ef87
 
 
 if __name__ == '__main__':

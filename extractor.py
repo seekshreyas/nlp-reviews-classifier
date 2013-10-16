@@ -13,14 +13,17 @@ author = "Shreyas"
 email = "shreyas@ischool.berkeley.edu"
 python_version = "Python 2.7.5 :: Anaconda 1.6.1 (x86_64)"
 
-"commaCount to countRV"--Sayantan
+"I have worked on the featires mentioned in this file from getCommaCount to Affinity"--Sayantan
 """
 from __future__ import division
+import math
 from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
 
 from nltk.collocations import BigramCollocationFinder
 from nltk.metrics import BigramAssocMeasures as BAM
+from nltk.metrics import TrigramAssocMeasures as TAM
+
 from itertools import chain
 
 
@@ -33,6 +36,23 @@ import re
 import os
 import nltk
 
+import os, sys
+
+#Dictionary from Chuang 206 class
+
+dc={}
+f = open("/Users/sayantanm/Documents/Study Time/Semester 3/Marti/nlp-reviews-classifier/AFINN-111.txt")
+f=f.read()
+f=str(f.split("\t"))
+f=f.replace("'","")
+f=f.replace(" ","")
+f=f.split("\\n")
+for i in range(len(f)):
+    r= f[i]
+    r= r.split(',')
+    r1=r[0]
+    r2=r[1]
+    dc[r1] = r2
 
 
 
@@ -61,6 +81,10 @@ def featureAggregator(inputdata):
 def featureExtractor(sentStr):
 
     sentwords = getWordsFromSent(sentStr)
+    taggedSent = getTaggedSents(sentwords)
+    opinionWords = parseOpinionLexicon()
+
+
 
     featList = {}
 
@@ -72,6 +96,44 @@ def featureExtractor(sentStr):
     featList['digitcount']      = getDigitCount(sentStr)
     featList['exclaimCount']    = getExclaimCount(sentStr)
     featList['whiteSpaceCount'] = getWhiteSpaceCount(sentStr)
+
+    featList['tabCount'] = getTabCount(sentStr)
+    featList['percentCount'] = getPercentCount(sentStr)    
+    featList['etcCount'] = getEtcCount(sentStr)
+    featList['dollarCount'] = getDollarCount(sentStr)
+    featList["avgWordLen"]= getAvgWordLen(sentStr)
+    featList["wordLen6"]= getWordLen6(sentStr)
+    featList["uniqueWords"]= getUniqueWords(sentStr)
+    featList["countJJ"]=getCountJJ(sentStr)
+    featList["countCC"]=getCountCC(sentStr)
+    featList["countIN"]=getCountIN(sentStr)
+    featList["countRB"]=getCountRB(sentStr)
+    featList["countPRP"]=getCountPRP(sentStr)
+    featList["countTO"]=getCountTO(sentStr)
+    featList["countVBD"]=getCountVBD(sentStr)
+    featList["countJJR"]=getCountJJR(sentStr)
+    featList["countNN"]=getCountNN(sentStr)
+    featList["countNNS"]=getCountNNS(sentStr)
+    featList["countNNP"]=getCountNNP(sentStr)
+    featList["countRB"]=getCountRB(sentStr)
+    featList["countVBG"]=getCountVBG(sentStr)
+    featList["countVBZ"]=getCountVBZ(sentStr)
+    featList["countVBP"]=getCountVBP(sentStr)
+    featList["countVBN"]=getCountVBN(sentStr)
+    featList["countMD"]=getCountMD(sentStr)
+    featList["countWDT"]=getCountWDT(sentStr)
+    featList["countPRPA"]=getCountPRPA(sentStr)
+    featList["countJN"]=getCountJN(sentStr)
+    featList["countRJ"]=getCountRJ(sentStr)
+    featList["countJJC"]=getCountJJC(sentStr)
+    featList["countNJ"]=getCountNJ(sentStr)
+    featList["countRV"]=getCountRV(sentStr)
+    featList["pmiRelated"]=pmiScore(sentStr)
+    featList["Affinity"]=getAfinn(sentStr)
+
+    featList.update(getReviewDict(sentStr))
+
+
     featList['tabCount']        = getTabCount(sentStr)
     featList['percentCount']    = getPercentCount(sentStr)
     featList['etcCount']        = getEtcCount(sentStr)
@@ -98,17 +160,33 @@ def featureExtractor(sentStr):
     featList["countMD"]         = getCountMD(sentStr)
     featList["countWDT"]        = getCountWDT(sentStr)
     featList["countPRPA"]       = getCountPRPA(sentStr)
-    featList["countJN"]         = getCountJN(sentStr)
-    featList["countRJ"]         = getCountRJ(sentStr)
-    featList["countJJC"]        = getCountJJC(sentStr)
-    featList["countNJ"]         = getCountNJ(sentStr)
-    featList["countRV"]         = getCountRV(sentStr)
+    # featList["countJN"]         = getCountJN(sentStr)
+    # featList["countRJ"]         = getCountRJ(sentStr)
+    # featList["countJJC"]        = getCountJJC(sentStr)
+    # featList["countNJ"]         = getCountNJ(sentStr)
+    # featList["countRV"]         = getCountRV(sentStr)
+
+    # featList["tagBeforeNoun"] = getTagBeforeNoun(taggedSent)
 
 
 
-    # featList.update(getReviewDict(sentStr))
+    #Charles' Features
+    featList['upperCount']   = getUpperCount(sentStr)
+    featList['postiveWordCount'] = getPostiveWordCount(sentStr)
+    featList['negativeWordCount'] = getNegativeWordCount(sentStr)
+    featList['bigramBeginWithNotCount'] = getBigramBeginWithNotCount(sentStr)
+
+
+
+
+
+    featList["overallOpinionScore"]  = getSentOverallOpinion(sentStr, sentwords, opinionWords)
+    featList["adjOpinionScore"] = getAdjOpinionScore(taggedSent, opinionWords)
+    featList.update(getReviewDict(sentStr))
+
     featList.update(getUnigramWordFeatures(sentStr, sentwords))
     featList.update(getBigramWordFeatures(sentStr, sentwords))
+    # featList.update(getTrigramWordFeatures(sentStr, sentwords))
 
 
     return featList
@@ -129,6 +207,14 @@ def getWordsFromSent(sent):
 
 
 
+def getTaggedSents(sentWords):
+    return nltk.pos_tag(sentWords)
+
+
+
+
+
+
 
 
 
@@ -144,17 +230,174 @@ def getReviewDict(sent):
     return contain_features
 
 
-def getUnigramWordFeatures(sent, words):
 
+
+
+def getAdjOpinionScore(tagSent, opinioncorpus):
+    score = 0
+    for (word, tag) in tagSent:
+
+        if tag == 'JJ' or tag == 'ADV' or tag == 'VBG' or tag == 'RB' or tag == 'VBZ' or tag == 'JJS':
+
+            if word in opinioncorpus['positive']:
+
+                score += 1
+            if word in opinioncorpus['negative']:
+                score -= 1
+
+    return score
+
+
+
+
+
+
+
+##
+## Charles' Features
+##
+
+def getUpperCount(sent):
+    uppercase_meaningless_words = ["A", "I", "IPOD", "USB", "MP3", "CD", "FM", "GB", "PC", "LCD", "MP-3", "WMA", "WMP",
+                               "AC/DC", "PDA", "PXC250", "XP", "LED", "AC", "AGK", "DVD", "SD", "MB"]
+    upperCount = 0
+    for word in sent.split(" "):
+        word = word.replace(".","").replace(",","").replace("!","").replace("?","").replace("##","").replace("(","").replace(")","").replace("**","")
+        for letter in word:
+            if letter.isdigit():
+                word = word.replace(letter, "")
+            else:
+                break
+        if word.isupper() and len(word) != 1 and not word in uppercase_meaningless_words:
+            upperCount += 1
+    return upperCount
+
+def getPostiveWordCount(sent):
+    positive_keywords = ["good", "happy", "love", "great", "reasonable", "glad", "simple", "outstanding", "easy",
+                     "wonderful", "cool", "remarkably", "remarkable", "enjoy", "nice", "thoughtful", "pretty",
+                     "responsive", "comforatable", "favorite", "desire", "best", "solid", "cool", "impressed",
+                     "sleek", "appealing", "rocks", "blazing", "amazing", "plus", "blessing", "awesome", "loved",
+                        "enjoyed", "desired", "impressive", "impress", "rocked", "bless", "positive", "fabulous"]
+    postiveCount = 0
+    for word in sent.split(" "):
+        word = word.replace(".","").replace(",","").replace("!","").replace("?","").replace("##","").replace("(","").replace(")","").replace("**","")
+        if word.lower() in positive_keywords:
+            postiveCount += 1
+    return postiveCount
+
+
+
+def getNegativeWordCount(sent):
+    negative_keywords = ["bad", "sad", "don't", "could not", "crappy", "unfortunately", "remove", "why", "poor",
+                     "bothersome", "terrible", "although", "complaints", "outrageous", "isn't", "poorly",
+                     "drawback", "annoying", "against", "irritating", "wouldn't", "won't", "wasn't", "couldn't",
+                     "awful", "didn't", "hasn't", "difficult", "hate", "incorrect", "junk", "trash", "removed",
+                         "complain", "complained", "hated", "negative"]
+    negativeCount = 0
+    for word in sent.split(" "):
+        word = word.replace(".","").replace(",","").replace("!","").replace("?","").replace("##","").replace("(","").replace(")","").replace("**","")
+        if word.lower() in negative_keywords:
+            negativeCount += 1
+    return negativeCount
+
+
+
+
+def getBigramBeginWithNotCount(sent):
+    negative_keywords = ["bad", "sad", "don't", "could not", "crappy", "unfortunately", "remove", "why", "poor",
+                     "bothersome", "terrible", "although", "complaints", "outrageous", "isn't", "poorly",
+                     "drawback", "annoying", "against", "irritating", "wouldn't", "won't", "wasn't", "couldn't",
+                     "awful", "didn't", "hasn't", "difficult", "hate", "incorrect", "junk", "trash", "removed",
+                         "complain", "complained", "hated", "negative"]
+    bigramPostiveCount = 0
+    '''
+    from nltk.corpus import brown
+    brown_tagged_sents = brown.tagged_sents(categories='news')
+    brown_sents = brown.sents(categories='news')
+    unigram_tagger = nltk.UnigramTagger(brown_tagged_sents)
+
+    for bigram in nltk.bigrams(word_tokenize(sent)):
+        if bigram[0].lower() == "not" and bigram[1].lower() in negative_keywords:
+            print sent
+            print bigram
+            print unigram_tagger.tag(word_tokenize(sent))
+            bigramNotCount += 1
+    '''
+    for i, word in enumerate(word_tokenize(sent)):
+        if word.lower() == "not":
+            if word_tokenize(sent)[i + 1] in negative_keywords : # e.g. NOT bad
+                bigramPostiveCount += 1
+            if i < len(word_tokenize(sent)) - 2 and word_tokenize(sent)[i + 2] in negative_keywords: # e.g. NOT too bad
+                bigramPostiveCount += 1
+            else:                                                # e.g. NOT good
+                bigramPostiveCount -= 1
+    return bigramPostiveCount
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+def getUnigramWordFeatures(sent, words):
     return dict(('contains("%s")' % word, True) for word in words)
 
 
-def getBigramWordFeatures(sent, words, score_fn=BAM.chi_sq, n=200):
+
+def getBigramWordFeatures(sent, words, score_fn=BAM.pmi, n=200):
 
     bigram_finder = BigramCollocationFinder.from_words(words)
+    # score = bigram_finder.score_ngrams(BAM.jaccard)
+
     bigrams = bigram_finder.nbest(score_fn, n)
 
     return dict((bg, True) for bg in chain(words, bigrams))
+
+
+
+
+
+
+
+
+def getSentOverallOpinion(sent, words, opinioncorpus):
+
+
+    score = 0.0
+
+    if len(words) != 0:
+        for w in words:
+            if w in opinioncorpus['positive']:
+                score += 1.0
+            elif w in opinioncorpus['negative']:
+                score -= 1.0
+
+        return score
+    else:
+        return score
 
 
 
@@ -455,8 +698,7 @@ def getCountJN(sent):
     sent= nltk.word_tokenize(sent)
     text=nltk.pos_tag(sent)
     for i in range(len(text)):
-        if text[i][1]=="JJ" and text[i+1][1]=="NN": countjn+=1
-        if text[i][1]=="JJ" and text[i+1][1]=="NNS": countjn+=1
+        if text[i-1][1]=="JJ" and text[i][1] in ["NN","NNS"]: countjn+=1
     return countjn
 
 def getCountRJ(sent):
@@ -464,9 +706,7 @@ def getCountRJ(sent):
     sent= nltk.word_tokenize(sent)
     text=nltk.pos_tag(sent)
     for i in range(len(text)):
-        if text[i][1]=="RB" and text[i+1][1]=="JJ": countrj+=1
-        if text[i][1]=="RBR" and text[i+1][1]=="JJ": countrj+=1
-        if text[i][1]=="RBS" and text[i+1][1]=="JJ": countrj+=1
+        if text[i-1][1] in ["RB","RBR","RBS"] and text[i][1]=="JJ": countrj+=1
     return countrj
 
 def getCountJJC(sent):
@@ -474,7 +714,7 @@ def getCountJJC(sent):
     sent= nltk.word_tokenize(sent)
     text=nltk.pos_tag(sent)
     for i in range(len(text)):
-        if text[i][1]=="JJ" and text[i+1][1]=="JJ": countjjc +=1
+        if text[i-1][1]=="JJ" and text[i][1]=="JJ": countjjc +=1
     return countjjc
 
 def getCountNJ(sent):
@@ -482,7 +722,7 @@ def getCountNJ(sent):
     sent= nltk.word_tokenize(sent)
     text=nltk.pos_tag(sent)
     for i in range(len(text)):
-        if text[i][1]=="NNS" and text[i+1][1]=="jj": countnj+=1
+        if text[i-1][1]=="NNS" and text[i][1]=="jj": countnj+=1
     return countnj
 
 def getCountRV(sent):
@@ -490,19 +730,51 @@ def getCountRV(sent):
     sent= nltk.word_tokenize(sent)
     text=nltk.pos_tag(sent)
     for i in range(len(text)):
-        if text[i][1]=="RR" and text[i+1][1]=="VB": countrv+=1
-        if text[i][1]=="RBS" and text[i+1][1]=="VBN": countrv+=1
-        if text[i][1]=="RBR" and text[i+1][1]=="VBD": countrv+=1
-        if text[i][1]=="RR" and text[i+1][1]=="VB": countrv+=1
-        if text[i][1]=="RBR" and text[i+1][1]=="VBN": countrv+=1
-        if text[i][1]=="RBS" and text[i+1][1]=="VBD": countrv+=1
-        if text[i][1]=="RR" and text[i+1][1]=="VB": countrv+=1
-        if text[i][1]=="RBR" and text[i+1][1]=="VBN": countrv+=1
-        if text[i][1]=="RBS" and text[i+1][1]=="VBD": countrv+=1
-        if text[i][1]=="RR" and text[i+1][1]=="VBG": countrv+=1
-        if text[i][1]=="RBR" and text[i+1][1]=="VBG": countrv+=1
-        if text[i][1]=="RBS" and text[i+1][1]=="VBG": countrv+=1
+        if text[i-1][1]==["RR","RBS","RBR"] and text[i][1]==["VB", "VBN", "VBD", "VBG"]: countrv+=1
     return countrv
+
+
+def getAfinn(sent):
+    w=str(sent)
+    w=w.lower()
+    w=w.split()
+    total, avg=0,0
+    ln = len(w)
+    if ln>0:
+        for item in range(len(w)):
+            for i in range(len(dc)):
+                if dc.keys()[i]==w[item]:
+                    temp = int(dc.values()[i])
+                    total += temp
+        avg=total/ln
+        print avg
+    return avg
+
+
+def pmiScore(sent):
+    sent = nltk.word_tokenize(sent)
+    x=nltk.pos_tag(sent)
+    
+    # print x
+    
+    countnn, countjj, countnj=0,0,0
+    pnn, pjj, pjn=0,0,0
+    for i in range(len(x)):
+        if x[i][1] in ["NN", "NNP"]:countnn+=1
+        if x[i][1]=="JJ":countjj+=1
+    
+    for i in range(len(x)):
+        if str(x[i-1][1])in ["NN","NNP", "JJ"] and x[i][1]==["JJ","RB","NN","VB", "VBP", "VBD","VBR", "VBG","VBZ"]: countnj+=1
+    if (len(sent)-1)>0:
+        pnn=countnn/len(sent)
+        pjj=countjj/len(sent)
+        pnj=countnj/(len(sent)-1)
+        
+        # print pnn, pjj, pnj
+        
+        if pnj>0:
+            pmi= math.log(pnj/(pnn*pjj))
+            return pmi
 
 
 
@@ -510,7 +782,7 @@ def getCountRV(sent):
 
 def parseOpinionLexicon():
 
-    print os.getcwd()
+    # print os.getcwd()
     opinionLexPath = '../../../lexicon/opinionwords/'
 
     posfileObj = open(opinionLexPath + 'positive-words.txt')
@@ -519,6 +791,9 @@ def parseOpinionLexicon():
     lexWords = {}
     lexWords['positive'] = [l[:-2] for l in posfileObj if not l.startswith(';') and l[:-2] is not '']
     lexWords['negative'] = [l[:-2] for l in negfileObj if not l.startswith(';') and l[:-2] is not '']
+
+    posfileObj.close()
+    negfileObj.close()
 
     return lexWords
 
@@ -535,7 +810,7 @@ def main():
     pdata = parser.parseFiles(fileList)
 
 
-    opinionWords = parseOpinionLexicon()
+
 
 
     allsent = ''
