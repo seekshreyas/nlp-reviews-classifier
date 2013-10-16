@@ -13,9 +13,10 @@ author = "Shreyas"
 email = "shreyas@ischool.berkeley.edu"
 python_version = "Python 2.7.5 :: Anaconda 1.6.1 (x86_64)"
 
-"commaCount to countRV"--Sayantan
+"I have worked on the featires mentioned in this file from getCommaCount to Affinity"--Sayantan
 """
 from __future__ import division
+import math
 from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
 
@@ -35,6 +36,23 @@ import re
 import os
 import nltk
 
+import os, sys
+
+#Dictionary from Chuang 206 class
+
+dc={}
+f = open("/Users/sayantanm/Documents/Study Time/Semester 3/Marti/nlp-reviews-classifier/AFINN-111.txt")
+f=f.read()
+f=str(f.split("\t"))
+f=f.replace("'","")
+f=f.replace(" ","")
+f=f.split("\\n")
+for i in range(len(f)):
+    r= f[i]
+    r= r.split(',')
+    r1=r[0]
+    r2=r[1]
+    dc[r1] = r2
 
 
 
@@ -78,6 +96,44 @@ def featureExtractor(sentStr):
     featList['digitcount']      = getDigitCount(sentStr)
     featList['exclaimCount']    = getExclaimCount(sentStr)
     featList['whiteSpaceCount'] = getWhiteSpaceCount(sentStr)
+
+    featList['tabCount'] = getTabCount(sentStr)
+    featList['percentCount'] = getPercentCount(sentStr)    
+    featList['etcCount'] = getEtcCount(sentStr)
+    featList['dollarCount'] = getDollarCount(sentStr)
+    featList["avgWordLen"]= getAvgWordLen(sentStr)
+    featList["wordLen6"]= getWordLen6(sentStr)
+    featList["uniqueWords"]= getUniqueWords(sentStr)
+    featList["countJJ"]=getCountJJ(sentStr)
+    featList["countCC"]=getCountCC(sentStr)
+    featList["countIN"]=getCountIN(sentStr)
+    featList["countRB"]=getCountRB(sentStr)
+    featList["countPRP"]=getCountPRP(sentStr)
+    featList["countTO"]=getCountTO(sentStr)
+    featList["countVBD"]=getCountVBD(sentStr)
+    featList["countJJR"]=getCountJJR(sentStr)
+    featList["countNN"]=getCountNN(sentStr)
+    featList["countNNS"]=getCountNNS(sentStr)
+    featList["countNNP"]=getCountNNP(sentStr)
+    featList["countRB"]=getCountRB(sentStr)
+    featList["countVBG"]=getCountVBG(sentStr)
+    featList["countVBZ"]=getCountVBZ(sentStr)
+    featList["countVBP"]=getCountVBP(sentStr)
+    featList["countVBN"]=getCountVBN(sentStr)
+    featList["countMD"]=getCountMD(sentStr)
+    featList["countWDT"]=getCountWDT(sentStr)
+    featList["countPRPA"]=getCountPRPA(sentStr)
+    featList["countJN"]=getCountJN(sentStr)
+    featList["countRJ"]=getCountRJ(sentStr)
+    featList["countJJC"]=getCountJJC(sentStr)
+    featList["countNJ"]=getCountNJ(sentStr)
+    featList["countRV"]=getCountRV(sentStr)
+    featList["pmiRelated"]=pmiScore(sentStr)
+    featList["Affinity"]=getAfinn(sentStr)
+
+    featList.update(getReviewDict(sentStr))
+
+
     featList['tabCount']        = getTabCount(sentStr)
     featList['percentCount']    = getPercentCount(sentStr)
     featList['etcCount']        = getEtcCount(sentStr)
@@ -127,6 +183,7 @@ def featureExtractor(sentStr):
     featList["overallOpinionScore"]  = getSentOverallOpinion(sentStr, sentwords, opinionWords)
     featList["adjOpinionScore"] = getAdjOpinionScore(taggedSent, opinionWords)
     featList.update(getReviewDict(sentStr))
+
     featList.update(getUnigramWordFeatures(sentStr, sentwords))
     featList.update(getBigramWordFeatures(sentStr, sentwords))
     # featList.update(getTrigramWordFeatures(sentStr, sentwords))
@@ -641,8 +698,7 @@ def getCountJN(sent):
     sent= nltk.word_tokenize(sent)
     text=nltk.pos_tag(sent)
     for i in range(len(text)):
-        if text[i][1]=="JJ" and text[i+1][1]=="NN": countjn+=1
-        if text[i][1]=="JJ" and text[i+1][1]=="NNS": countjn+=1
+        if text[i-1][1]=="JJ" and text[i][1] in ["NN","NNS"]: countjn+=1
     return countjn
 
 def getCountRJ(sent):
@@ -650,9 +706,7 @@ def getCountRJ(sent):
     sent= nltk.word_tokenize(sent)
     text=nltk.pos_tag(sent)
     for i in range(len(text)):
-        if text[i][1]=="RB" and text[i+1][1]=="JJ": countrj+=1
-        if text[i][1]=="RBR" and text[i+1][1]=="JJ": countrj+=1
-        if text[i][1]=="RBS" and text[i+1][1]=="JJ": countrj+=1
+        if text[i-1][1] in ["RB","RBR","RBS"] and text[i][1]=="JJ": countrj+=1
     return countrj
 
 def getCountJJC(sent):
@@ -660,7 +714,7 @@ def getCountJJC(sent):
     sent= nltk.word_tokenize(sent)
     text=nltk.pos_tag(sent)
     for i in range(len(text)):
-        if text[i][1]=="JJ" and text[i+1][1]=="JJ": countjjc +=1
+        if text[i-1][1]=="JJ" and text[i][1]=="JJ": countjjc +=1
     return countjjc
 
 def getCountNJ(sent):
@@ -668,7 +722,7 @@ def getCountNJ(sent):
     sent= nltk.word_tokenize(sent)
     text=nltk.pos_tag(sent)
     for i in range(len(text)):
-        if text[i][1]=="NNS" and text[i+1][1]=="jj": countnj+=1
+        if text[i-1][1]=="NNS" and text[i][1]=="jj": countnj+=1
     return countnj
 
 def getCountRV(sent):
@@ -676,19 +730,51 @@ def getCountRV(sent):
     sent= nltk.word_tokenize(sent)
     text=nltk.pos_tag(sent)
     for i in range(len(text)):
-        if text[i][1]=="RR" and text[i+1][1]=="VB": countrv+=1
-        if text[i][1]=="RBS" and text[i+1][1]=="VBN": countrv+=1
-        if text[i][1]=="RBR" and text[i+1][1]=="VBD": countrv+=1
-        if text[i][1]=="RR" and text[i+1][1]=="VB": countrv+=1
-        if text[i][1]=="RBR" and text[i+1][1]=="VBN": countrv+=1
-        if text[i][1]=="RBS" and text[i+1][1]=="VBD": countrv+=1
-        if text[i][1]=="RR" and text[i+1][1]=="VB": countrv+=1
-        if text[i][1]=="RBR" and text[i+1][1]=="VBN": countrv+=1
-        if text[i][1]=="RBS" and text[i+1][1]=="VBD": countrv+=1
-        if text[i][1]=="RR" and text[i+1][1]=="VBG": countrv+=1
-        if text[i][1]=="RBR" and text[i+1][1]=="VBG": countrv+=1
-        if text[i][1]=="RBS" and text[i+1][1]=="VBG": countrv+=1
+        if text[i-1][1]==["RR","RBS","RBR"] and text[i][1]==["VB", "VBN", "VBD", "VBG"]: countrv+=1
     return countrv
+
+
+def getAfinn(sent):
+    w=str(sent)
+    w=w.lower()
+    w=w.split()
+    total, avg=0,0
+    ln = len(w)
+    if ln>0:
+        for item in range(len(w)):
+            for i in range(len(dc)):
+                if dc.keys()[i]==w[item]:
+                    temp = int(dc.values()[i])
+                    total += temp
+        avg=total/ln
+        print avg
+    return avg
+
+
+def pmiScore(sent):
+    sent = nltk.word_tokenize(sent)
+    x=nltk.pos_tag(sent)
+    
+    # print x
+    
+    countnn, countjj, countnj=0,0,0
+    pnn, pjj, pjn=0,0,0
+    for i in range(len(x)):
+        if x[i][1] in ["NN", "NNP"]:countnn+=1
+        if x[i][1]=="JJ":countjj+=1
+    
+    for i in range(len(x)):
+        if str(x[i-1][1])in ["NN","NNP", "JJ"] and x[i][1]==["JJ","RB","NN","VB", "VBP", "VBD","VBR", "VBG","VBZ"]: countnj+=1
+    if (len(sent)-1)>0:
+        pnn=countnn/len(sent)
+        pjj=countjj/len(sent)
+        pnj=countnj/(len(sent)-1)
+        
+        # print pnn, pjj, pnj
+        
+        if pnj>0:
+            pmi= math.log(pnj/(pnn*pjj))
+            return pmi
 
 
 
