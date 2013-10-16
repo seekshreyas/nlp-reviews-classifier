@@ -64,10 +64,12 @@ def parseFiles(fList):
                     vote = getVotes(feat)
                     rev = l.split('##')[1]
 
+                    new_vote = standardizeVote(vote)
+
                     rev = re.sub('\\r\\n', '', rev)
 
 
-                    allSents.append((f, linenum, vote, rev))
+                    allSents.append((f, linenum, new_vote, rev))
 
                 else:
                     # more than 1 reviews in a sentence
@@ -82,8 +84,12 @@ def parseFiles(fList):
                     vote1 = getVotes(feat1)
                     vote2 = getVotes(rev1_feat2)
 
-                    allSents.append((f, linenum, vote1, rev1))
-                    allSents.append((f, linenum, vote2, rev2))
+
+                    new_vote1 = standardizeVote(vote1)
+                    new_vote2 = standardizeVote(vote2)
+
+                    allSents.append((f, linenum, new_vote1, rev1))
+                    allSents.append((f, linenum, new_vote2, rev2))
 
                     # print allSents[-1]
 
@@ -98,6 +104,20 @@ def parseFiles(fList):
     return allSents
 
 
+
+
+
+def standardizeVote(v):
+    new_v = ''
+
+    if v > 0:
+        new_v = 'pos'
+    elif v == 0:
+        new_v = 'neutral'
+    else:
+        new_v = 'neg'
+
+    return new_v
 
 def cleanReview(revstr):
     """

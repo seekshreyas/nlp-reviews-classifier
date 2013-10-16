@@ -82,7 +82,7 @@ def featureExtractor(sentStr):
 
     sentwords = getWordsFromSent(sentStr)
     taggedSent = getTaggedSents(sentwords)
-    opinionWords = parseOpinionLexicon()
+    # opinionWords = parseOpinionLexicon()
 
 
 
@@ -94,7 +94,7 @@ def featureExtractor(sentStr):
     # featList['semicolonCount']  = getSemicolonCount(sentStr)
     # featList['uppercount']      = getUpperCount(sentStr)
     # featList['digitcount']      = getDigitCount(sentStr)
-    featList['exclaimCount']    = getExclaimCount(sentStr)
+    # featList['exclaimCount']    = getExclaimCount(sentStr)
     # featList['whiteSpaceCount'] = getWhiteSpaceCount(sentStr)
 
     # featList['tabCount'] = getTabCount(sentStr)
@@ -141,7 +141,7 @@ def featureExtractor(sentStr):
     # featList["avgWordLen"]      = getAvgWordLen(sentStr)
     # featList["wordLen6"]        = getWordLen6(sentStr)
     # featList["uniqueWords"]     = getUniqueWords(sentStr)
-    featList["countJJ"]         = getCountJJ(sentStr)
+    # featList["countJJ"]         = getCountJJ(sentStr)
     # featList["countCC"]         = getCountCC(sentStr)
     # featList["countIN"]         = getCountIN(sentStr)
     # featList["countRB"]         = getCountRB(sentStr)
@@ -153,7 +153,7 @@ def featureExtractor(sentStr):
     # featList["countNNS"]        = getCountNNS(sentStr)
     # featList["countNNP"]        = getCountNNP(sentStr)
     # featList["countRB"]         = getCountRB(sentStr)
-    featList["countVBG"]        = getCountVBG(sentStr)
+    # featList["countVBG"]        = getCountVBG(sentStr)
     # featList["countVBZ"]        = getCountVBZ(sentStr)
     # featList["countVBP"]        = getCountVBP(sentStr)
     # featList["countVBN"]        = getCountVBN(sentStr)
@@ -171,15 +171,15 @@ def featureExtractor(sentStr):
 
 
     #Charles' Features
-    featList['upperCount']   = getUpperCount(sentStr)
-    featList['postiveWordCount'] = getPostiveWordCount(sentStr)
-    featList['negativeWordCount'] = getNegativeWordCount(sentStr)
-    featList['bigramBeginWithNotCount'] = getBigramBeginWithNotCount(sentStr)
-    featList['charlesScore'] = getCharlesScore(
-        featList['upperCount'],
-        featList['postiveWordCount'],
-        featList['negativeWordCount'],
-        featList['bigramBeginWithNotCount'])
+    # featList['upperCount']   = getUpperCount(sentStr)
+    # featList['postiveWordCount'] = getPostiveWordCount(sentStr)
+    # featList['negativeWordCount'] = getNegativeWordCount(sentStr)
+    # featList['bigramBeginWithNotCount'] = getBigramBeginWithNotCount(sentStr)
+    # featList['charlesScore'] = getCharlesScore(
+    #     featList['upperCount'],
+    #     featList['postiveWordCount'],
+    #     featList['negativeWordCount'],
+    #     featList['bigramBeginWithNotCount'])
 
 
 
@@ -790,7 +790,7 @@ def pmiScore(sent):
 def parseOpinionLexicon():
 
     # print os.getcwd()
-    opinionLexPath = '../../../lexicon/opinionwords/'
+    opinionLexPath = 'lexicon/opinionwords/'
 
     posfileObj = open(opinionLexPath + 'positive-words.txt')
     negfileObj = open(opinionLexPath + 'negative-words.txt')

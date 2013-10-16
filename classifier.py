@@ -18,6 +18,7 @@ from __future__ import division
 from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
 from nltk import FreqDist
+from cPickle import dump
 
 import parser
 import extractor
@@ -25,6 +26,7 @@ import extractor
 import math
 import random
 import nltk
+import os
 
 
 top_words = []
@@ -37,13 +39,15 @@ def splitfeatdata(rawdata, fold=10):
     labeldata = []
     for row in rawdata:
 
-        if row[2] > 0:
-            label = 'pos'
-        elif row[2] == 0:
-            label = 'neutral'
-        else:
-            label = 'neg'
+        # if row[2] > 0:
+        #     label = 'pos'
+        # elif row[2] == 0:
+        #     label = 'neutral'
+        # else:
+        #     label = 'neg'
 
+
+        label = row[2]
         labeldata.append((row[4], label))
 
 
@@ -64,6 +68,17 @@ def splitfeatdata(rawdata, fold=10):
 
         claccuracy.append(acc)
 
+
+
+    print os.getcwd()
+
+
+    mySentClassifier = nltk.NaiveBayesClassifier.train(labeldata)
+    f = open('../../../mySentClassifier.pickle', 'wb')
+    dump(mySentClassifier, f)
+    f.close()
+
+
     return claccuracy
 
 
@@ -71,6 +86,7 @@ def splitfeatdata(rawdata, fold=10):
 
 def myclassifier(train_data, test_data):
     classifier = nltk.NaiveBayesClassifier.train(train_data)
+
 
     print classifier.show_most_informative_features()
     return nltk.classify.accuracy(classifier, test_data)
