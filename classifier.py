@@ -74,7 +74,7 @@ def splitfeatdata(rawdata, fold=10):
 
 
     mySentClassifier = nltk.NaiveBayesClassifier.train(labeldata)
-    f = open('../../../mySentClassifier.pickle', 'wb')
+    f = open('../../../mySentClassifier2.pickle', 'wb')
     dump(mySentClassifier, f)
     f.close()
 

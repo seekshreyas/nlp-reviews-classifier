@@ -34,7 +34,7 @@ def getInput():
 
 
 def getClassifier():
-    fObj = open('mySentClassifier.pickle')
+    fObj = open('mySentClassifier2.pickle')
 
     cl = load(fObj)
     fObj.close()
@@ -53,10 +53,12 @@ def main():
 
     featdata = extractor.featureAggregator(pdata)
 
-
+    print pdata[4]
 
     output = []
     outputFileObj = open('../../output.txt', 'w')
+
+    # if pdata[4]
     for featdatarow in featdata:
         cl = classifier.classify(featdatarow[4])
 

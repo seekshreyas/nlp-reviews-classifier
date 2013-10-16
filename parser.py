@@ -47,7 +47,7 @@ def parseFiles(fList):
         linenum = 0
         for l in fileObj:
             linenum += 1
-            if not l.startswith('*') and not l.startswith('[t]'):
+            if not l.startswith('*'):
 
 
                 #find all occurrence of ## in the sentence

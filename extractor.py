@@ -88,7 +88,7 @@ def featureExtractor(sentStr):
 
     featList = {}
 
-    featList['charCount']       = getCharCount(sentStr)
+    # featList['charCount']       = getCharCount(sentStr)
     featList['wordCount']       = getWordCount(sentStr)
     # # featList['commaCount']      = getCommaCount(sentStr)
     # # featList['semicolonCount']  = getSemicolonCount(sentStr)
@@ -100,30 +100,30 @@ def featureExtractor(sentStr):
     # featList['tabCount'] = getTabCount(sentStr)
     # featList['percentCount'] = getPercentCount(sentStr)
     # featList['etcCount'] = getEtcCount(sentStr)
-    featList['dollarCount'] = getDollarCount(sentStr)
-    # featList["avgWordLen"]= getAvgWordLen(sentStr)
-    # featList["wordLen6"]= getWordLen6(sentStr)
-    # # featList["uniqueWords"]= getUniqueWords(sentStr)
+    # featList['dollarCount'] = getDollarCount(sentStr)
+    # # featList["avgWordLen"]= getAvgWordLen(sentStr)
+    # # featList["wordLen6"]= getWordLen6(sentStr)
+    # # # featList["uniqueWords"]= getUniqueWords(sentStr)
     featList["countJJ"]=getCountJJ(sentStr)
     featList["countCC"]=getCountCC(sentStr)
-    featList["countIN"]=getCountIN(sentStr)
-    featList["countRB"]=getCountRB(sentStr)
-    featList["countPRP"]=getCountPRP(sentStr)
-    # featList["countTO"]=getCountTO(sentStr)
+    # featList["countIN"]=getCountIN(sentStr)
+    # # featList["countRB"]=getCountRB(sentStr)
+    # # featList["countPRP"]=getCountPRP(sentStr)
+    # # featList["countTO"]=getCountTO(sentStr)
     featList["countVBD"]=getCountVBD(sentStr)
-    featList["countJJR"]=getCountJJR(sentStr)
-    featList["countNN"]=getCountNN(sentStr)
-    featList["countNNS"]=getCountNNS(sentStr)
-    featList["countNNP"]=getCountNNP(sentStr)
+    # featList["countJJR"]=getCountJJR(sentStr)
+    # featList["countNN"]=getCountNN(sentStr)
+    # featList["countNNS"]=getCountNNS(sentStr)
+    # featList["countNNP"]=getCountNNP(sentStr)
     featList["countRB"]=getCountRB(sentStr)
     featList["countVBG"]=getCountVBG(sentStr)
     featList["countVBZ"]=getCountVBZ(sentStr)
-    featList["countVBP"]=getCountVBP(sentStr)
-    featList["countVBN"]=getCountVBN(sentStr)
-    featList["countMD"]=getCountMD(sentStr)
-    featList["countWDT"]=getCountWDT(sentStr)
-    featList["countPRPA"]=getCountPRPA(sentStr)
-    featList["countJN"]=getCountJN(sentStr)
+    # featList["countVBP"]=getCountVBP(sentStr)
+    # featList["countVBN"]=getCountVBN(sentStr)
+    # featList["countMD"]=getCountMD(sentStr)
+    # featList["countWDT"]=getCountWDT(sentStr)
+    # featList["countPRPA"]=getCountPRPA(sentStr)
+    # featList["countJN"]=getCountJN(sentStr)
     # featList["countRJ"]=getCountRJ(sentStr)
     # featList["countJJC"]=getCountJJC(sentStr)
     # featList["countNJ"]=getCountNJ(sentStr)
@@ -159,7 +159,7 @@ def featureExtractor(sentStr):
     # featList["adjOpinionScore"] = getAdjOpinionScore(taggedSent, opinionWords)
     # featList.update(getReviewDict(sentStr))
 
-    featList.update(getUnigramWordFeatures(sentStr, sentwords))
+    # featList.update(getUnigramWordFeatures(sentStr, sentwords))
     featList.update(getBigramWordFeatures(sentStr, sentwords))
     # featList.update(getTrigramWordFeatures(sentStr, sentwords))
 
@@ -191,7 +191,7 @@ def getTaggedSents(sentWords):
 
 
 def getCharlesScore(upperCount, negativeWordCount, positiveWordCount, bigramBeginWithNotCount):
-    new_vote = 0 - upperCount - negativeWordCount + positiveWordCount + 2 * bigramBeginWithNotCount
+    new_vote = 0  - upperCount - negativeWordCount + positiveWordCount + 2 * bigramBeginWithNotCount
 
     return new_vote
 
