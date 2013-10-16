@@ -22,6 +22,8 @@ from nltk.corpus import stopwords
 
 from nltk.collocations import BigramCollocationFinder
 from nltk.metrics import BigramAssocMeasures as BAM
+from nltk.metrics import TrigramAssocMeasures as TAM
+
 from itertools import chain
 
 
@@ -29,7 +31,10 @@ from nltk import FreqDist
 
 #using my parser.py file for getting the input
 import parser
-import re, nltk
+
+import re
+import os
+import nltk
 
 import os, sys
 
@@ -76,18 +81,22 @@ def featureAggregator(inputdata):
 def featureExtractor(sentStr):
 
     sentwords = getWordsFromSent(sentStr)
+    taggedSent = getTaggedSents(sentwords)
+    opinionWords = parseOpinionLexicon()
+
+
 
     featList = {}
 
-    featList['charCount'] = getCharCount(sentStr)
-
-    featList['wordCount'] = getWordCount(sentStr)
-    featList['commaCount']= getCommaCount(sentStr)
-    featList['semicolonCount']= getSemicolonCount(sentStr)
-    featList['uppercount']=getUpperCount(sentStr)
-    featList['digitcount']=getDigitCount(sentStr)
-    featList['exclaimCount'] = getExclaimCount(sentStr)
+    featList['charCount']       = getCharCount(sentStr)
+    featList['wordCount']       = getWordCount(sentStr)
+    featList['commaCount']      = getCommaCount(sentStr)
+    featList['semicolonCount']  = getSemicolonCount(sentStr)
+    featList['uppercount']      = getUpperCount(sentStr)
+    featList['digitcount']      = getDigitCount(sentStr)
+    featList['exclaimCount']    = getExclaimCount(sentStr)
     featList['whiteSpaceCount'] = getWhiteSpaceCount(sentStr)
+
     featList['tabCount'] = getTabCount(sentStr)
     featList['percentCount'] = getPercentCount(sentStr)    
     featList['etcCount'] = getEtcCount(sentStr)
@@ -124,28 +133,54 @@ def featureExtractor(sentStr):
 
     featList.update(getReviewDict(sentStr))
 
-# =======
-#     featList['wordCount'] = getWordCount(sentStr)
-#     featList['commaCount']= getCommaCount(sentStr)
-#     featList['semicolonCount']= getSemicolonCount(sentStr)
-#     featList['uppercount']=getUpperCount(sentStr)
-#     featList['digitcount']=getDigitCount(sentStr)
-#     featList['exclaimCount'] = getExclaimCount(sentStr)
-#     featList['whiteSpaceCount'] = getWhiteSpaceCount(sentStr)
-#     featList['tabCount'] = getTabCount(sentStr)
-#     featList['percentCount'] = getPercentCount(sentStr)
-#     featList['etcCount'] = getEtcCount(sentStr)
-#     featList['dollarCount'] = getDollarCount(sentStr)
-#     # featList["avgWordLen"]= getAvgWordLen(sentStr)
 
-#     # feature for presence of top words
-#     # featList.update(getReviewDict(sentStr))
-# >>>>>>> 6273c80bfbc2a74fb447e3c9f3e7ca22235d0268
+    featList['tabCount']        = getTabCount(sentStr)
+    featList['percentCount']    = getPercentCount(sentStr)
+    featList['etcCount']        = getEtcCount(sentStr)
+    featList['dollarCount']     = getDollarCount(sentStr)
+    featList["avgWordLen"]      = getAvgWordLen(sentStr)
+    featList["wordLen6"]        = getWordLen6(sentStr)
+    featList["uniqueWords"]     = getUniqueWords(sentStr)
+    featList["countJJ"]         = getCountJJ(sentStr)
+    featList["countCC"]         = getCountCC(sentStr)
+    featList["countIN"]         = getCountIN(sentStr)
+    featList["countRB"]         = getCountRB(sentStr)
+    featList["countPRP"]        = getCountPRP(sentStr)
+    featList["countTO"]         = getCountTO(sentStr)
+    featList["countVBD"]        = getCountVBD(sentStr)
+    featList["countJJR"]        = getCountJJR(sentStr)
+    featList["countNN"]         = getCountNN(sentStr)
+    featList["countNNS"]        = getCountNNS(sentStr)
+    featList["countNNP"]        = getCountNNP(sentStr)
+    featList["countRB"]         = getCountRB(sentStr)
+    featList["countVBG"]        = getCountVBG(sentStr)
+    featList["countVBZ"]        = getCountVBZ(sentStr)
+    featList["countVBP"]        = getCountVBP(sentStr)
+    featList["countVBN"]        = getCountVBN(sentStr)
+    featList["countMD"]         = getCountMD(sentStr)
+    featList["countWDT"]        = getCountWDT(sentStr)
+    featList["countPRPA"]       = getCountPRPA(sentStr)
+    # featList["countJN"]         = getCountJN(sentStr)
+    # featList["countRJ"]         = getCountRJ(sentStr)
+    # featList["countJJC"]        = getCountJJC(sentStr)
+    # featList["countNJ"]         = getCountNJ(sentStr)
+    # featList["countRV"]         = getCountRV(sentStr)
+
+    # featList["tagBeforeNoun"] = getTagBeforeNoun(taggedSent)
+    featList["overallOpinionScore"]  = getSentOverallOpinion(sentStr, sentwords, opinionWords)
+    featList["adjOpinionScore"] = getAdjOpinionScore(taggedSent, opinionWords)
+    featList.update(getReviewDict(sentStr))
+
     featList.update(getUnigramWordFeatures(sentStr, sentwords))
-    #featList.update(getBigramWordFeatures(sentStr, sentwords))
+    featList.update(getBigramWordFeatures(sentStr, sentwords))
+    # featList.update(getTrigramWordFeatures(sentStr, sentwords))
 
 
     return featList
+
+
+
+
 
 
 
@@ -156,6 +191,17 @@ def getWordsFromSent(sent):
                     # and len(w) > 1
             ]
     return words
+
+
+
+def getTaggedSents(sentWords):
+    return nltk.pos_tag(sentWords)
+
+
+
+
+
+
 
 
 
@@ -171,17 +217,64 @@ def getReviewDict(sent):
     return contain_features
 
 
-def getUnigramWordFeatures(sent, words):
 
+
+
+def getAdjOpinionScore(tagSent, opinioncorpus):
+    score = 0
+    for (word, tag) in tagSent:
+
+        if tag == 'JJ' or tag == 'ADV' or tag == 'VBG' or tag == 'RB' or tag == 'VBZ' or tag == 'JJS':
+
+            if word in opinioncorpus['positive']:
+
+                score += 1
+            if word in opinioncorpus['negative']:
+                score -= 1
+
+    return score
+
+
+
+
+
+
+def getUnigramWordFeatures(sent, words):
     return dict(('contains("%s")' % word, True) for word in words)
 
 
-def getBigramWordFeatures(sent, words, score_fn=BAM.chi_sq, n=200):
+
+def getBigramWordFeatures(sent, words, score_fn=BAM.pmi, n=200):
 
     bigram_finder = BigramCollocationFinder.from_words(words)
+    # score = bigram_finder.score_ngrams(BAM.jaccard)
+
     bigrams = bigram_finder.nbest(score_fn, n)
 
-    return dict(('contains("%s")' % str(bg), True) for bg in chain(words, bigrams))
+    return dict((bg, True) for bg in chain(words, bigrams))
+
+
+
+
+
+
+
+
+def getSentOverallOpinion(sent, words, opinioncorpus):
+
+
+    score = 0.0
+
+    if len(words) != 0:
+        for w in words:
+            if w in opinioncorpus['positive']:
+                score += 1.0
+            elif w in opinioncorpus['negative']:
+                score -= 1.0
+
+        return score
+    else:
+        return score
 
 
 
@@ -279,7 +372,7 @@ def getAvgWordLen(sent):
             lnword=len(i)
             total=total+lnword
         avg=total/ln
-    return avg 
+    return avg
 
 def getWordLen6(sent):
     numoccur = 0
@@ -297,7 +390,7 @@ def getUniqueWords(sent):
     return wunique
 
 def getCountJJ(sent):
-    countjj= 0 
+    countjj= 0
     sent= nltk.word_tokenize(sent)
     text=nltk.pos_tag(sent)
     for i in range(len(sent)):
@@ -306,7 +399,7 @@ def getCountJJ(sent):
     return countjj
 
 def getCountCC(sent):
-    countcc= 0 
+    countcc= 0
     sent= nltk.word_tokenize(sent)
     text=nltk.pos_tag(sent)
     for i in range(len(sent)):
@@ -315,7 +408,7 @@ def getCountCC(sent):
     return countcc
 
 def getCountIN(sent):
-    countin= 0 
+    countin= 0
     sent= nltk.word_tokenize(sent)
     text=nltk.pos_tag(sent)
     for i in range(len(sent)):
@@ -324,7 +417,7 @@ def getCountIN(sent):
     return countin
 
 def getCountRB(sent):
-    countrb= 0 
+    countrb= 0
     sent= nltk.word_tokenize(sent)
     text=nltk.pos_tag(sent)
     for i in range(len(sent)):
@@ -333,7 +426,7 @@ def getCountRB(sent):
     return countrb
 
 def getCountPRP(sent):
-    countprp= 0 
+    countprp= 0
     sent= nltk.word_tokenize(sent)
     text=nltk.pos_tag(sent)
     for i in range(len(sent)):
@@ -342,7 +435,7 @@ def getCountPRP(sent):
     return countprp
 
 def getCountTO(sent):
-    countto= 0 
+    countto= 0
     sent= nltk.word_tokenize(sent)
     text=nltk.pos_tag(sent)
     for i in range(len(sent)):
@@ -351,7 +444,7 @@ def getCountTO(sent):
     return countto
 
 def getCountVBD(sent):
-    countvbd= 0 
+    countvbd= 0
     sent= nltk.word_tokenize(sent)
     text=nltk.pos_tag(sent)
     for i in range(len(sent)):
@@ -361,7 +454,7 @@ def getCountVBD(sent):
 
 
 def getCountJJR(sent):
-    countjjr= 0 
+    countjjr= 0
     sent= nltk.word_tokenize(sent)
     text=nltk.pos_tag(sent)
     for i in range(len(sent)):
@@ -370,7 +463,7 @@ def getCountJJR(sent):
     return countjjr
 
 def getCountNN(sent):
-    countnn= 0 
+    countnn= 0
     sent= nltk.word_tokenize(sent)
     text=nltk.pos_tag(sent)
     for i in range(len(sent)):
@@ -379,7 +472,7 @@ def getCountNN(sent):
     return countnn
 
 def getCountNNS(sent):
-    countnns= 0 
+    countnns= 0
     sent= nltk.word_tokenize(sent)
     text=nltk.pos_tag(sent)
     for i in range(len(sent)):
@@ -388,7 +481,7 @@ def getCountNNS(sent):
     return countnns
 
 def getCountNNP(sent):
-    countnnp= 0 
+    countnnp= 0
     sent= nltk.word_tokenize(sent)
     text=nltk.pos_tag(sent)
     for i in range(len(sent)):
@@ -397,7 +490,7 @@ def getCountNNP(sent):
     return countnnp
 
 def getCountRBR(sent):
-    countrbr= 0 
+    countrbr= 0
     sent= nltk.word_tokenize(sent)
     text=nltk.pos_tag(sent)
     for i in range(len(sent)):
@@ -406,7 +499,7 @@ def getCountRBR(sent):
     return countrbr
 
 def getCountVB(sent):
-    countvb= 0 
+    countvb= 0
     sent= nltk.word_tokenize(sent)
     text=nltk.pos_tag(sent)
     for i in range(len(sent)):
@@ -415,7 +508,7 @@ def getCountVB(sent):
     return countvb
 
 def getCountVBP(sent):
-    countvbp= 0 
+    countvbp= 0
     sent= nltk.word_tokenize(sent)
     text=nltk.pos_tag(sent)
     for i in range(len(sent)):
@@ -424,7 +517,7 @@ def getCountVBP(sent):
     return countvbp
 
 def getCountVBZ(sent):
-    countvbz= 0 
+    countvbz= 0
     sent= nltk.word_tokenize(sent)
     text=nltk.pos_tag(sent)
     for i in range(len(sent)):
@@ -433,7 +526,7 @@ def getCountVBZ(sent):
     return countvbz
 
 def getCountVBG(sent):
-    countvbg= 0 
+    countvbg= 0
     sent= nltk.word_tokenize(sent)
     text=nltk.pos_tag(sent)
     for i in range(len(sent)):
@@ -442,7 +535,7 @@ def getCountVBG(sent):
     return countvbg
 
 def getCountVBN(sent):
-    countvbn= 0 
+    countvbn= 0
     sent= nltk.word_tokenize(sent)
     text=nltk.pos_tag(sent)
     for i in range(len(sent)):
@@ -451,7 +544,7 @@ def getCountVBN(sent):
     return countvbn
 
 def getCountMD(sent):
-    countmd= 0 
+    countmd= 0
     sent= nltk.word_tokenize(sent)
     text=nltk.pos_tag(sent)
     for i in range(len(sent)):
@@ -460,7 +553,7 @@ def getCountMD(sent):
     return countmd
 
 def getCountWDT(sent):
-    countwdt= 0 
+    countwdt= 0
     sent= nltk.word_tokenize(sent)
     text=nltk.pos_tag(sent)
     for i in range(len(sent)):
@@ -469,7 +562,7 @@ def getCountWDT(sent):
     return countwdt
 
 def getCountPRPA(sent):
-    countprpa= 0 
+    countprpa= 0
     sent= nltk.word_tokenize(sent)
     text=nltk.pos_tag(sent)
     for i in range(len(sent)):
@@ -478,7 +571,7 @@ def getCountPRPA(sent):
     return countprpa
 
 def getCountJN(sent):
-    countjn= 0 
+    countjn= 0
     sent= nltk.word_tokenize(sent)
     text=nltk.pos_tag(sent)
     for i in range(len(text)):
@@ -486,7 +579,7 @@ def getCountJN(sent):
     return countjn
 
 def getCountRJ(sent):
-    countrj= 0 
+    countrj= 0
     sent= nltk.word_tokenize(sent)
     text=nltk.pos_tag(sent)
     for i in range(len(text)):
@@ -494,7 +587,7 @@ def getCountRJ(sent):
     return countrj
 
 def getCountJJC(sent):
-    countjjc= 0 
+    countjjc= 0
     sent= nltk.word_tokenize(sent)
     text=nltk.pos_tag(sent)
     for i in range(len(text)):
@@ -502,7 +595,7 @@ def getCountJJC(sent):
     return countjjc
 
 def getCountNJ(sent):
-    countnj= 0 
+    countnj= 0
     sent= nltk.word_tokenize(sent)
     text=nltk.pos_tag(sent)
     for i in range(len(text)):
@@ -510,7 +603,7 @@ def getCountNJ(sent):
     return countnj
 
 def getCountRV(sent):
-    countrv= 0 
+    countrv= 0
     sent= nltk.word_tokenize(sent)
     text=nltk.pos_tag(sent)
     for i in range(len(text)):
@@ -562,10 +655,39 @@ def pmiScore(sent):
 
 
 
+
+
+def parseOpinionLexicon():
+
+    # print os.getcwd()
+    opinionLexPath = '../../../lexicon/opinionwords/'
+
+    posfileObj = open(opinionLexPath + 'positive-words.txt')
+    negfileObj = open(opinionLexPath + 'negative-words.txt')
+
+    lexWords = {}
+    lexWords['positive'] = [l[:-2] for l in posfileObj if not l.startswith(';') and l[:-2] is not '']
+    lexWords['negative'] = [l[:-2] for l in negfileObj if not l.startswith(';') and l[:-2] is not '']
+
+    posfileObj.close()
+    negfileObj.close()
+
+    return lexWords
+
+
+
+
+
+
+
+
 def main():
     userInput = parser.getInput()
     fileList = parser.getFiles(userInput['train'])
     pdata = parser.parseFiles(fileList)
+
+
+
 
 
     allsent = ''

@@ -10,24 +10,21 @@ After Feature Extraction, that returns a data of the format
 build a classifier so that for a give new sentence it could predict
 the positive, neutral or negative sentiment
 
-author = "Shreyas"
+author = "Shreyas" and "Charles"
 email = "shreyas@ischool.berkeley.edu"
 python_version = "Python 2.7.5 :: Anaconda 1.6.1 (x86_64)"
 """
 from __future__ import division
 from nltk.tokenize import word_tokenize
-from nltk.corpus import stopwords
-from nltk import FreqDist
 
-import parser
-import extractor
+import parseReview
+import extractorCW
 
 import math
 import random
 import nltk
 
-
-top_words = []
+import os
 
 def splitfeatdata(rawdata, fold=10):
     """
@@ -45,7 +42,6 @@ def splitfeatdata(rawdata, fold=10):
             label = 'neg'
 
         labeldata.append((row[4], label))
-
 
     random.shuffle(labeldata)
 
@@ -72,65 +68,63 @@ def splitfeatdata(rawdata, fold=10):
 def myclassifier(train_data, test_data):
     classifier = nltk.NaiveBayesClassifier.train(train_data)
 
-    print classifier.show_most_informative_features()
+    # print classifier.show_most_informative_features()
     return nltk.classify.accuracy(classifier, test_data)
 
 
+def getTestFiles(directory):
+    os.chdir("../../../")
+    os.chdir(directory)
+    for files in sorted(os.listdir(".")):
+        if files.endswith(".txt"):
+            print files
+    datafiles = [f for f in os.listdir('.') if f.endswith('.txt')]
+    return datafiles
 
+
+def parseTestFiles(fList):
+    allSents = []
+
+    for f in fList:
+        fileObj = open(f)
+        linenum = 0
+        for l in fileObj:
+            linenum += 1
+            vote = 0
+            l = l.split('\t')[1].replace("\n","")
+            allSents.append((f, linenum, vote, l))
+        fileObj.close()
+    return allSents
+
+def printOutput(featureList):
+    os.chdir("../../../")
+    f = open('output-charles.txt', 'w')
+    for sentTuple in featureList:
+        sensitivity = 0
+        if sentTuple[2] > 0:
+            sensitivity = 1
+        elif sentTuple[2] < 0:
+            sensitivity = -1
+        f.write(sentTuple[0].replace(" ","") + "\t" + str(sentTuple[1]) + "\t" + str(sensitivity) + "\n")
+    f.close()
 
 def main():
-    userInput = parser.getInput()
-    fileList = parser.getFiles(userInput['train'])
+    parser = parseReview
+    #userInput = parser.getInput()
+    #fileList = parser.getFiles(userInput['train'])
+    fileList = parser.getFiles("data/raw/training")
     parsedata = parser.parseFiles(fileList)
-
-
-    allsent = ''
-    for f in parsedata:
-        allsent += f[3]
-
-    all_words = FreqDist(w.lower()
-                    for w in word_tokenize(allsent)
-                        if w not in stopwords.words('english') )
-
-    global top_words
-    top_words = all_words.keys()[:500]
-
-
-    featdata = extractor.featureAggregator(parsedata)
-
-
-
-    # print featdata[20]
-
-
-
-
-    print "Sample Data Item:\n\n"
-
-    print "%20s %4s %4s %20s" % ("FILENAME", "LINENUM", "VOTE", "SENTENCE" )
-    print "-" * 79
-    print "%10s %4s %4s %20s" % (featdata[20][0], featdata[20][1], featdata[20][2], featdata[20][3])
-
-    print "\n\nFeatures of this Data Item"
-    print "-" * 79
-    for key,val in featdata[20][4].items():
-        print "%50s : %10s" % (key, val )
-    # print  "A sample feature: %s" % (featdata[20][4])
-
-
-
-
+    featdata = extractorCW.featureAggregator(parsedata)
     allacc = splitfeatdata(featdata)
 
-    print "\n\n"
-    print "-" * 60
     print "Accuracy Values: %s" % (allacc)
-    print "==" * 60
-    print "Overall Classifier Accuracy %4.4f " % (sum(allacc)/len(allacc))
+    print "Overall Classifier Accuracy %4.2f " % (sum(allacc)/len(allacc))
 
-
-
-
+    print "Test product files:"
+    testFileList = getTestFiles("data/raw/charles-testing")
+    testParseData = parseTestFiles(testFileList)
+    featdata = extractorCW.featureAggregator(testParseData)
+    printOutput(featdata)
 
 
 if __name__ == '__main__':
