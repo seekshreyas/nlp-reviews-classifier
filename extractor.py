@@ -40,19 +40,19 @@ import os, sys
 
 #Dictionary from Chuang 206 class
 
-dc={}
-f = open("./AFINN-111.txt")
-f=f.read()
-f=str(f.split("\t"))
-f=f.replace("'","")
-f=f.replace(" ","")
-f=f.split("\\n")
-for i in range(len(f)):
-    r= f[i]
-    r= r.split(',')
-    r1=r[0]
-    r2=r[1]
-    dc[r1] = r2
+# dc={}
+# f = open("./AFINN-111.txt")
+# f=f.read()
+# f=str(f.split("\t"))
+# f=f.replace("'","")
+# f=f.replace(" ","")
+# f=f.split("\\n")
+# for i in range(len(f)):
+#     r= f[i]
+#     r= r.split(',')
+#     r1=r[0]
+#     r2=r[1]
+#     dc[r1] = r2
 
 
 
@@ -90,26 +90,26 @@ def featureExtractor(sentStr):
 
     featList['charCount']       = getCharCount(sentStr)
     featList['wordCount']       = getWordCount(sentStr)
-    # featList['commaCount']      = getCommaCount(sentStr)
-    # featList['semicolonCount']  = getSemicolonCount(sentStr)
-    # featList['uppercount']      = getUpperCount(sentStr)
-    # featList['digitcount']      = getDigitCount(sentStr)
+    # # featList['commaCount']      = getCommaCount(sentStr)
+    # # featList['semicolonCount']  = getSemicolonCount(sentStr)
+    # # featList['uppercount']      = getUpperCount(sentStr)
+    featList['digitcount']      = getDigitCount(sentStr)
     featList['exclaimCount']    = getExclaimCount(sentStr)
     # featList['whiteSpaceCount'] = getWhiteSpaceCount(sentStr)
 
     # featList['tabCount'] = getTabCount(sentStr)
     # featList['percentCount'] = getPercentCount(sentStr)
     # featList['etcCount'] = getEtcCount(sentStr)
-    # featList['dollarCount'] = getDollarCount(sentStr)
+    featList['dollarCount'] = getDollarCount(sentStr)
     # featList["avgWordLen"]= getAvgWordLen(sentStr)
     # featList["wordLen6"]= getWordLen6(sentStr)
-    # featList["uniqueWords"]= getUniqueWords(sentStr)
+    # # featList["uniqueWords"]= getUniqueWords(sentStr)
     featList["countJJ"]=getCountJJ(sentStr)
     featList["countCC"]=getCountCC(sentStr)
     featList["countIN"]=getCountIN(sentStr)
     featList["countRB"]=getCountRB(sentStr)
     featList["countPRP"]=getCountPRP(sentStr)
-    featList["countTO"]=getCountTO(sentStr)
+    # featList["countTO"]=getCountTO(sentStr)
     featList["countVBD"]=getCountVBD(sentStr)
     featList["countJJR"]=getCountJJR(sentStr)
     featList["countNN"]=getCountNN(sentStr)
@@ -124,47 +124,17 @@ def featureExtractor(sentStr):
     featList["countWDT"]=getCountWDT(sentStr)
     featList["countPRPA"]=getCountPRPA(sentStr)
     featList["countJN"]=getCountJN(sentStr)
-    featList["countRJ"]=getCountRJ(sentStr)
-    featList["countJJC"]=getCountJJC(sentStr)
-    featList["countNJ"]=getCountNJ(sentStr)
-    featList["countRV"]=getCountRV(sentStr)
-    featList["pmiRelated"]=pmiScore(sentStr)
-    featList["Affinity"]=getAfinn(sentStr)
+    # featList["countRJ"]=getCountRJ(sentStr)
+    # featList["countJJC"]=getCountJJC(sentStr)
+    # featList["countNJ"]=getCountNJ(sentStr)
+    # featList["countRV"]=getCountRV(sentStr)
+    # featList["pmiRelated"]=pmiScore(sentStr)
+    # featList["Affinity"]=getAfinn(sentStr)
 
     # featList.update(getReviewDict(sentStr))
 
 
-    featList['tabCount']        = getTabCount(sentStr)
-    featList['percentCount']    = getPercentCount(sentStr)
-    featList['etcCount']        = getEtcCount(sentStr)
-    featList['dollarCount']     = getDollarCount(sentStr)
-    featList["avgWordLen"]      = getAvgWordLen(sentStr)
-    featList["wordLen6"]        = getWordLen6(sentStr)
-    featList["uniqueWords"]     = getUniqueWords(sentStr)
-    featList["countJJ"]         = getCountJJ(sentStr)
-    featList["countCC"]         = getCountCC(sentStr)
-    featList["countIN"]         = getCountIN(sentStr)
-    featList["countRB"]         = getCountRB(sentStr)
-    featList["countPRP"]        = getCountPRP(sentStr)
-    featList["countTO"]         = getCountTO(sentStr)
-    featList["countVBD"]        = getCountVBD(sentStr)
-    featList["countJJR"]        = getCountJJR(sentStr)
-    featList["countNN"]         = getCountNN(sentStr)
-    featList["countNNS"]        = getCountNNS(sentStr)
-    featList["countNNP"]        = getCountNNP(sentStr)
-    featList["countRB"]         = getCountRB(sentStr)
-    featList["countVBG"]        = getCountVBG(sentStr)
-    featList["countVBZ"]        = getCountVBZ(sentStr)
-    featList["countVBP"]        = getCountVBP(sentStr)
-    featList["countVBN"]        = getCountVBN(sentStr)
-    featList["countMD"]         = getCountMD(sentStr)
-    featList["countWDT"]        = getCountWDT(sentStr)
-    featList["countPRPA"]       = getCountPRPA(sentStr)
-    featList["countJN"]         = getCountJN(sentStr)
-    featList["countRJ"]         = getCountRJ(sentStr)
-    featList["countJJC"]        = getCountJJC(sentStr)
-    featList["countNJ"]         = getCountNJ(sentStr)
-    featList["countRV"]         = getCountRV(sentStr)
+
 
     # featList["tagBeforeNoun"] = getTagBeforeNoun(taggedSent)
 
@@ -374,16 +344,18 @@ def getUnigramWordFeatures(sent, words):
 
 
 
-def getBigramWordFeatures(sent, words, score_fn=BAM.pmi, n=200):
+def getBigramWordFeatures(sent, words, score_fn=BAM.chi_sq, n=2000):
 
-    bigram_finder = BigramCollocationFinder.from_words(words)
+
+    filtered_words = [w for w in words if w != '.' and w != '?' and w != ')' and w != '(' and w != '-']
+
+    bigram_finder = BigramCollocationFinder.from_words(filtered_words)
     # score = bigram_finder.score_ngrams(BAM.jaccard)
 
     bigrams = bigram_finder.nbest(score_fn, n)
 
-    for b in bigrams:
-        if b != '.' or b != '?':
-            return dict((bg, True) for bg in chain(words, bigrams))
+
+    return dict((bg, True) for bg in chain(filtered_words, bigrams))
 
 
 
@@ -756,7 +728,7 @@ def getAfinn(sent):
                     temp = int(dc.values()[i])
                     total += temp
         avg=total/ln
-        print avg
+        # print avg
     return avg
 
 
