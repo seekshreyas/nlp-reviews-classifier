@@ -96,15 +96,33 @@ def parseTestFiles(fList):
         fileObj.close()
     return allSents
 
-def printOutput(featureList):
+def printOutput(testFeatureList, trainFeatureList):
+    labeldata = []
+    for row in trainFeatureList:
+
+        if row[2] > 0:
+            label = 1
+        elif row[2] == 0:
+            label = 0
+        else:
+            label = -1
+
+        labeldata.append((row[4], label))
+
+    random.shuffle(labeldata)
+    print type(labeldata)
+    classifier = nltk.NaiveBayesClassifier.train(labeldata)
     os.chdir("../../../")
     f = open('output-charles.txt', 'w')
-    for sentTuple in featureList:
+    for sentTuple in testFeatureList:
+        '''
         sensitivity = 0
         if sentTuple[2] > 0:
             sensitivity = 1
         elif sentTuple[2] < 0:
             sensitivity = -1
+        '''
+        sensitivity = classifier.classify(sentTuple[4])
         f.write(sentTuple[0].replace(" ","") + "\t" + str(sentTuple[1]) + "\t" + str(sensitivity) + "\n")
     f.close()
 
@@ -123,8 +141,8 @@ def main():
     print "Test product files:"
     testFileList = getTestFiles("data/raw/charles-testing")
     testParseData = parseTestFiles(testFileList)
-    featdata = extractorCW.featureAggregator(testParseData)
-    printOutput(featdata)
+    testFeatdata = extractorCW.featureAggregator(testParseData)
+    printOutput(testFeatdata, featdata)
 
 
 if __name__ == '__main__':
