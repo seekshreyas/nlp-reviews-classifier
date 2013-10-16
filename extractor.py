@@ -104,11 +104,11 @@ def featureExtractor(sentStr):
     featList["countMD"]         = getCountMD(sentStr)
     featList["countWDT"]        = getCountWDT(sentStr)
     featList["countPRPA"]       = getCountPRPA(sentStr)
-    featList["countJN"]         = getCountJN(sentStr)
-    featList["countRJ"]         = getCountRJ(sentStr)
-    featList["countJJC"]        = getCountJJC(sentStr)
-    featList["countNJ"]         = getCountNJ(sentStr)
-    featList["countRV"]         = getCountRV(sentStr)
+    # featList["countJN"]         = getCountJN(sentStr)
+    # featList["countRJ"]         = getCountRJ(sentStr)
+    # featList["countJJC"]        = getCountJJC(sentStr)
+    # featList["countNJ"]         = getCountNJ(sentStr)
+    # featList["countRV"]         = getCountRV(sentStr)
 
     # featList["tagBeforeNoun"] = getTagBeforeNoun(taggedSent)
 
