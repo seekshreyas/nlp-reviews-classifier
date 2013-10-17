@@ -56,7 +56,11 @@ def parseFiles(fList):
                 if len(delimPos) == 0:
                     # no reviews in a sentence
                     feat = 'None'
-                    rev = 'N.A.'
+                    rev = '[t]'
+                    vote = 'neutral'
+
+
+                    allSents.append((f, linenum, vote, rev))
                     # print l
                 elif len(delimPos) == 1:
                     #simple case of only 1 sentence
